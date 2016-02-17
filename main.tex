@@ -1,0 +1,190 @@
+
+% This is LLNCS.DEM the demonstration file of
+% the LaTeX macro package from Springer-Verlag
+% for Lecture Notes in Computer Science,
+% version 2.2 for LaTeX2e
+%
+\documentclass{llncs}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% *** MISC UTILITY PACKAGES ***
+%
+\usepackage{ifpdf}
+
+% *** CITATION PACKAGES ***
+\usepackage{cite}
+
+% *** GRAPHICS RELATED PACKAGES ***
+%
+\usepackage[pdftex]{graphicx}
+
+% *** MATH PACKAGES ***
+\usepackage[cmex10]{amsmath}
+
+% *** SPECIALIZED LIST PACKAGES ***
+\usepackage{algorithmic}
+
+%SP: Added to reduce verticle space between the subsections
+\setlength{\topskip}{0pt}
+
+% *** ALIGNMENT PACKAGES ***
+\usepackage{array}
+\usepackage{mdwmath}
+\usepackage{mdwtab}
+%\usepackage{eqparbox}
+
+% *** SUBFIGURE PACKAGES ***
+%\usepackage[tight,footnotesize]{subfigure}
+\usepackage{caption}
+\usepackage{subcaption}
+
+% *** FLOAT PACKAGES ***
+\usepackage{fixltx2e}
+
+%\usepackage{stfloats}
+% stfloats.sty was written by Sigitas Tolusis. This package gives LaTeX2e
+% the ability to do double column floats at the bottom of the page as well
+% as the top. (e.g., "\begin{figure*}[!b]" is not normally possible in
+% LaTeX2e). It also provides a command:
+%\fnbelowfloat
+% to enable the placement of footnotes below bottom floats 
+
+% *** PDF, URL AND HYPERLINK PACKAGES ***
+\usepackage{url}
+
+% correct bad hyphenation here
+\hyphenation{Open-SHMEM Sec-tion Warn-ing Symme-tric Vari-able Shar-ed Memo-ry Pass-ing  Mess-age Be-sides bench-mark su-pports uni-versity Carolina}
+
+\usepackage{flushend}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{framed}  %package for framing images
+\usepackage{lscape}
+\usepackage{hyperref}
+%\usepackage{subfig}
+\usepackage{float}
+
+%\usepackage[options]{algorithm}
+
+%\floatstyle{boxed} 
+\restylefloat{figure}
+
+\setcounter{secnumdepth}{5}
+% NOTE:
+%\section{} % level 1
+%\subsection{}  %level 2
+%\subsubsection{} % level 3
+%\paragraph{} % level 4 - equivalent to subsubsubsection
+%\subparagraph{} % level 5
+% 
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+ 
+\lstset{ 
+  language=C,                     % the language of the code
+  %basicstyle=\footnotesize, 
+  basicstyle=\ttfamily\scriptsize,      % the size of the fonts that are used for the code
+  numbers=left,                   % where to put the line-numbers
+  numberstyle=\tiny\color{gray},  % the style that is used for the line-numbers
+  stepnumber=1,                   % the step between two line-numbers. If it's 1, each line 
+                                    % will be numbered 
+  backgroundcolor=\color{white},  % choose the background color. You must add \usepackage{color}
+  showspaces=false,               % show spaces adding particular underscores
+  showstringspaces=false,         % underline spaces within strings
+  showtabs=false,                 % show tabs within strings adding particular underscores
+  rulecolor=\color{black},        % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. commens (green here))
+  tabsize=1,                      % sets default tabsize to 2 spaces
+  %captionpos=b,                   % sets the caption-position to bottom
+  breaklines=true,                % sets automatic line breaking
+  breakatwhitespace=true,        % sets if automatic breaks should only happen at whitespace
+  %title=\lstname,                 % show the filename of files included with \lstinputlisting;
+  caption=\lstname,                                 % also try caption instead of title
+  keywordstyle=\color{blue},          % keyword style
+  commentstyle=\color{dkgreen},       % comment style
+  stringstyle=\color{mauve},         % string literal style
+  escapeinside={\%*}{*)},            % if you want to add LaTeX within your code
+  xleftmargin=15pt,
+  morekeywords={*,...}              % if you want to add more keywords to the set
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{makeidx}  % allows for indexgeneration
+%
+\lstset{numbers=left,numberblanklines=false,escapeinside=||}
+\let\origthelstnumber\thelstnumber
+\makeatletter
+\newcommand*\Suppressnumber{%
+  \lst@AddToHook{OnNewLine}{%
+    \let\thelstnumber\relax%
+     \advance\c@lstnumber-\@ne\relax%
+    }%
+}
+
+\newcommand*\Reactivatenumber{%
+  \lst@AddToHook{OnNewLine}{%
+   \let\thelstnumber\origthelstnumber%
+   \advance\c@lstnumber\@ne\relax}%
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%
+\frontmatter          % for the preliminaries
+%
+\pagestyle{headings}  % switches on printing of running heads
+%\mainmatter              % start of the contributions
+%%
+\title{Working Title: Exploring OpenMP Affinity on Power8 Architecture }
+%
+%\titlerunning{Hamiltonian Mechanics}  % abbreviated title (for running head)
+%                                     also used for the TOC unless
+%                                     \toctitle is used
+%
+\author{Swaroop Pophale \and Oscar Hernandez
+}
+%
+%%%% modified list of authors for the TOC (add the affiliations)
+\tocauthor{Swaroop Pophale, Oscar Hernandez (Oak Ridge National Laboratory)}
+%
+\institute{
+Oak Ridge National Laboratory, Oak Ridge, Tennessee, 37840, USA\\
+\email{pophaless,oscar@ornl.gov}
+}
+\maketitle              % typeset the title of the contribution
+
+\begin{abstract}
+\input{text/abs}
+\end{abstract}
+
+\section{Introduction}
+\label{sec:intro}
+\input{text/intro}
+
+\section{Motivation}
+\label{sec:motivation}
+\input{text/moti}
+
+\section{Methodology}
+\label{sec:method}
+\input{text/method} %methodology, implementation and results here
+
+\section{Results}
+\label{sec:results}
+\input{text/results} 
+
+\section{Related Work}
+\label{sec:related}
+\input{text/related}
+
+\section{Conclusions and Future Work}
+\label{sec:conclusion}
+\input{text/conclusion}
+
+
+% conference papers do not normally have an appendix
+
+%\section{Acknowledgments}
+%\input{ack}
+
+\bibliographystyle{splncs}
+\bibliography{references}
+
+\end{document}
