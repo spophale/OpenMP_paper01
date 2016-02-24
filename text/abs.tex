@@ -1,0 +1,9 @@
+As we move toward Exascale, compute nodes are becoming more complex to program.
+The next generation systems will have massive amounts of parallelisms where threads 
+may be running on CPUs as well as accelerators. Advances in the next generation of memory interconnects
+will provide a shared memory view for different types of memories that the application will access, some of them
+being high bandwidth memory, DRAM, or persistent memory. OpenPOWER for HPC is one of such systems.
+As a result, more understanding of how the current programming models like OpenMP support
+the concept of memory thread affinity as well as memory placement for massive thread-based systems that may contain accelerators. 
+In this paper, we evaluate the latest affinity features of OpenMP 4.5 using DOE mini-apps 
+and test them on a system with two Power8 and K40 NVIDIAs. We experiment with different hardware counters  and derive metrics provided by the POWER8 system to measure the effects of affinity on the mini-apps. Based on this study we describe the current state of art, the challenges we faced in quantifying effects of affinity, inadequacy in the current OpenMP programming model and how some of these may be addressed in OpenMP 5.0.
