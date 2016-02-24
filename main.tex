@@ -152,13 +152,17 @@ Oak Ridge National Laboratory, Oak Ridge, Tennessee, 37840, USA\\
 
 \begin{abstract}
 \input{text/abs}
+% Importance of affinity, it is well understood for traditional systems but lil understanding on massively multi-threaded heterogeneous architectures (including the different memories). OpenMP implicitly controls affinity but there is no explicit way to control memory hierarchy.
 \end{abstract}
 
 \section{Introduction}
+% How affinity works on 4.0 and 4.5
+% What discussions are being proposed for 5.0 --telecon
 \label{sec:intro}
 \input{text/intro}
 
 \section{Motivation}
+%How do affinity constructs work and see their adequacy and propose extensions ---on OpenPOWER 
 \label{sec:motivation}
 \input{text/moti}
 
