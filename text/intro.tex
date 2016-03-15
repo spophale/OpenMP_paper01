@@ -1,2 +1,52 @@
-The effects of affinity is a widely studied problem. Most programming models take advantage of the architecture and data-access patterns by providing some implicit or explicit control over data and process/thread placement. For example, OpenMP provides implicit data affinity control through policies like \textit{first-touch} and \textit{next-touch}. First-touch is more appropriate for applications where the first access to data is representative of the application\'s data accesses throughout the life of the application. This policy has been adopted as default on many systems. For applications that have a more dynamic access pattern, the \textit{next-touch} policy may be more appropriate. Here the data is marked to be placed closest to the next thread that accesses it. The new OpenMP 4.5 release provides a substantial improvement on the support for programming of accelerator and GPU devices. Amongst the new features introduced are, support for parallelization of loops with well-structured dependencies, mechanisms for unstructured data mapping and asynchronous execution, support to divide loops into tasks without requiring all threads to execute the loop, reductions for C\/C++ arrays, a new hint mechanisms to provide guidance on the relative priority of tasks and on preferred synchronization implementations, SIMD extensions, improved support for Fortran 2003, and
-thread affinity support through runtime functions to determine the effect of thread affinity clauses. In this paper we focus on the affinity aspect of OpenMP with respect to the emerging OpenPOWER systems.
+The effects of affinity is a widely studied problem. Most programming models 
+take advantage of the architecture and data-access patterns by providing some 
+implicit or explicit control over data and process/thread placement. For example,
+Unified Parallel C (UPC), a Partitioned Global Address Space (PGAS) language 
+provides a \textbf{shared} qualifier to distinguish between data 
+accessible to all the UPC \textit{threads} vs. private data. The \textit{shared} scalar data has 
+affinity to thread 0, while arrays can have affinity granularity of \textit{cyclic, blocked-cyclic ,}
+and \textit{blocked}. These are chosen by the application programmer based on the 
+knowledge of the data access patterns within the application. 
+
+Similarly for OpenMP, there are 
+different ways to specify and affect affinity of data, threads, and work units or \textit{tasks}. 
+The new OpenMP 4.5 release provides a substantial 
+improvement on the support for programming of accelerator and GPU devices. 
+Amongst the new features introduced are, support for parallelization of loops with 
+well-structured dependencies, mechanisms for unstructured data mapping and 
+asynchronous execution, support to divide loops into tasks without requiring all 
+threads to execute the loop, reductions for C\/C++ arrays, a new hint mechanisms to 
+provide guidance on the relative priority of tasks and on preferred synchronization 
+implementations, SIMD extensions, improved support for Fortran 2003, and
+thread affinity support through runtime functions to determine the effect of thread 
+affinity clauses. In this paper we focus on the affinity aspect of OpenMP with respect 
+to the emerging OpenPOWER systems.
+
+\subsection{Memory Binding}
+Most systems provide implicit data affinity control through policies like \textit{first-touch} 
+and \textit{next-touch}. First-touch is more appropriate for applications where the 
+first access to data is representative of the application\'s data accesses throughout 
+the life of the application. This policy has been adopted as default on many systems. 
+For applications that have a more dynamic access pattern, the \textit{next-touch} 
+policy may be more appropriate. Here the data is marked to be placed on the node of the 
+next CPU that accesses it. For OpenMP, \textit{first-touch} translates to data being 
+placed near the thread that first accesses it. Even without any other affinity mechanism this 
+can cause significant impact, for e.g., if the data is initialized by thread 0 only, but later is accessed 
+by all the threads, the \textit{first-touch} policy would locate memory on the node where 
+thread 0 is placed thus resulting in high cost accesses for threads not placed on the same node. 
+
+\subsection{Thread Placement}
+OpenMP provides OMP\_PROC\_BIND ICV to set the thread affinity policy. The legitimate value for this environment variable is either true, false, or a comma separated list of master, close, or spread. When the values are specified in a list, they correspond to the thread affinity policy to be used for parallel regions at the corresponding nested level. In combination 
+with the OMP\_PLACES ICV, users may have complete control on the thread affinity and their placement 
+on a given hardware. OMP\_PLACES ICV can be one of two types of values: either an abstract name describing a set of places or an explicit list of places described by non-negative numbers. Pre-defined abstract names include \textit{threads, cores,} and \textit{sockets}.
+
+\subsection{POWER8 System}
+%Needs to be paraphrased 
+The POWER8 processor is the latest RISC (Reduced Instruction Set Computer) microprocessor from IBM and the first processor supporting the new OpenPOWER software environment.
+
+
+
+
+
+
+ 
