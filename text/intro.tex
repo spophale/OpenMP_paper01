@@ -36,13 +36,43 @@ by all the threads, the \textit{first-touch} policy would locate memory on the n
 thread 0 is placed thus resulting in high cost accesses for threads not placed on the same node. 
 
 \subsection{Thread Placement}
-OpenMP provides OMP\_PROC\_BIND ICV to set the thread affinity policy. The legitimate value for this environment variable is either true, false, or a comma separated list of master, close, or spread. When the values are specified in a list, they correspond to the thread affinity policy to be used for parallel regions at the corresponding nested level. In combination 
-with the OMP\_PLACES ICV, users may have complete control on the thread affinity and their placement 
-on a given hardware. OMP\_PLACES ICV can be one of two types of values: either an abstract name describing a set of places or an explicit list of places described by non-negative numbers. Pre-defined abstract names include \textit{threads, cores,} and \textit{sockets}.
+OpenMP provides OMP\_PROC\_BIND ICV to set the thread affinity policy. The legitimate value for 
+this environment variable is either true, false, or a comma separated list of master, close, or spread. 
+When the values are specified in a list, they correspond to the thread affinity policy to be used for 
+parallel regions at the corresponding nested level. In combination with the OMP\_PLACES ICV, 
+users may have complete control on the thread affinity and their placement on a given hardware. 
+OMP\_PLACES ICV can be one of two types of values: either an abstract name describing a set 
+of places or an explicit list of places described by non-negative numbers. Pre-defined abstract 
+names include \textit{threads, cores,} and \textit{sockets}. When expressed as numbers, places 
+represent the smallest unit of execution exposed by the execution environment, which is typically 
+a hardware thread.
+
+In conjunction to places represented by non-negative numbers, intervals is another handy way to 
+express \textit{places} in OpenMP. They are specified using the \textit{$<$lower-bound$>$ : $<$length$>$ : $<$stride$>$} notation. For example, a user could specify exact CPUs to place the OpenMP threads or a range of CPUs based on the application characteristics to best utilize the underlying hardware.
+
 
 \subsection{POWER8 System}
 %Needs to be paraphrased 
-The POWER8 processor is the latest RISC (Reduced Instruction Set Computer) microprocessor from IBM and the first processor supporting the new OpenPOWER software environment.
+The POWER8 processor is the latest RISC (Reduced Instruction Set Computer) microprocessor from IBM and the first processor supporting the new OpenPOWER software environment. 
+
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{0.4\textwidth}
+         {\includegraphics[width=1.0\textwidth]{./Images/P8.pdf}}
+%  	\vspace{-0.0pc}
+	 \caption{Power8 processor chip.~\cite{IBM_P8}}
+ 	 \label{fig:p8_1}
+    \end{subfigure}
+     \centering
+    \begin{subfigure}[b]{0.4\textwidth}
+         {\includegraphics[height=0.7\textwidth]{./Images/P8_memory.pdf}}
+  %	\vspace{-0.0pc}
+	 \caption{Power8 Memory Access.~\cite{IBM_P8}}
+	  \label{fig:p8_2}
+    \end{subfigure}
+  \caption{POWER8 Overview}\label{fig:POWER8}
+\end{figure}
+
 
 
 
