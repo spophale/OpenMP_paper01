@@ -1,15 +1,16 @@
-We look closely at the different hardware counters available on the new POWER8 system to better understand the effects of data affinity and thread placement. \\
+We look closely at the different hardware counters available on the new POWER8 system to better understand the effects of data affinity and thread placement. POWER8 provides a number of hardware counters to monitor application characteristics over the entire run. We first look at these before we try to dissect  the application. The primary hardware counters we focus on are listed in table~\ref{tab:hwct}. The collection of the counter values are enabled by a system provided script. This allows for access to counters that may not be represented as literary strings. 
 
- \centering
-\begin{tabular}{|r|l|}
-  \hline
-  \textbf{HARDWARE COUNTER} & {DESCRIPTION} \\
-   \hline
-  3700 & octal \\
-   \hline
-  11111000000 & binary \\
-  \hline
-  1984 & decimal \\
-  \hline
+\begin{table*}[t]
+\vspace{-0.5pc}
+\caption{POWER8 Relevant Counters}
+\centering
+\begin{tabular} { | c | c | }
+\hline
+{\bf Hardware Counter} & {\bf Description}  \\ \hline
+PM\_CMPLU\_STALL\_DCACHE\_MISS & Stall cycles due to data cache misses	\\	\hline
+PM\_CMPLU\_STALL\_DMISS\_REMOTE & Stall cycles due to data cache miss on remote \\	\hline
+PM\_CMPLU\_STALL\_DMISS\_DISTANT & Stall cycles due to data cache miss on distant \\ \hline
 \end{tabular}
-\\
+\label{tab:hwct}
+%\vspace{-0.0pc}
+\end{table*}
