@@ -1,12 +1,5 @@
-As we move toward pre-Exascale systems, some of the next generation CORAL systems will consists of ``fat" OpenPOWER compute nodes  
-which are  becoming more powerful and complex to program. In these next generation systems will have massive amounts of parallelisms 
-where threads may be running on CPU cores as well as on accelerators. Advances in memory interconnects, such as NVLINK, will provide a 
+As we move toward pre-Exascale systems, two of the next generation DOE CORAL systems will consists of ``fat" OpenPOWER compute nodes  which are  becoming more powerful and complex to program. These will have massive amounts of parallelisms where threads may be running on CPU cores as well as on accelerators. Advances in memory interconnects, such as NVLINK, will provide a 
 shared memory address spaces for different types of memories including high bandwidth memory (HBM), DRAM, etc. 
-In preparation for such systems, we need to work more on our understanding the current in-node programming models like OpenMP supports
-the concept of affinity as well as memory placement on such systems with massive number of thread. Data locality and affinity are key
-concepts to exploit locality and the memory capabilities to achieve good performance an minimize data motion across NUMA domains. In this 
-paper, we evaluate the latest affinity features of OpenMP 4.0 using Oak Ridge National Laboratory mini-apps 
-and test them on a system with two Power8 and K40 NVIDIAs. We experiment with the different affinity settings provided by OpenMP 4.0 and 
-measure their effects via hardware counters available on the POWER8 system to measure affinity at scale. Based on this study we describe 
-the current state of art, the challenges we faced in quantifying effects of affinity, inadequacy in the current OpenMP programming model and 
-how some of these may be addressed in OpenMP 5.0.
+In preparation for such system, we need to improve our understanding on how defacto in-node programming models like OpenMP supports
+the concept of affinity as well as memory placement, and if their will work of future systems with massive number of thread. Data locality and affinity are key concepts to exploit locality and the memory capabilities to achieve good performance an minimize data motion across NUMA domains. In this  paper, we evaluate the state-of-the art affinity features of OpenMP 4.0 and develop a methodology on how to measure its effects on a system with two Power8 and K40 NVIDIAs. We experiment with the different affinity settings provided by OpenMP 4.0 and 
+measure their effects via hardware counters available on the POWER8 system to come up with the best running configuration. Based on this study we describe the current state of art, the challenges we faced in quantifying effects of affinity, and and ideas on how OpenMP 5.0 should be improved to address the affinity application needs of the next generation OpenPOWER systems.
