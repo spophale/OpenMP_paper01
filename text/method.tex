@@ -53,7 +53,7 @@ We use the experiment Crest system at the Oak Ridge National Laboratory for our 
 
 \subsubsection{The Experiment}
 To able to identify the correlation between hardware counters and OpenMP affinity features we use the Jacobi iterative method program to solve a 
-finite difference discretization of Helmholtz equation. We vary the affinity of data by controlling the initialization loop at the start of the program. 
+finite difference discretization of Helmholtz equation (here on referred to as \textit{Jacobi program}). We vary the affinity of data by controlling the initialization loop at the start of the program. 
 When affinity characteristic is \textit{true}, all threads initialize the data arrays in parallel using the omp\_parallel construct, this allows for the 
 \textit{first-touch} policy described in Section~\ref{sec:intro} to place data closer to the physical CPU executing the OpenMP thread. When 
 affinity characteristic is \textit{false}, only the master thread (thread 0) will initialize the data causing data to be placed only around the physical CPU executing thread 0. We then test combinations of OpenMP \textit{bindings} and \textit{places} and collect the performance data and the values of the hardware counters mentioned in Table~\ref{tab:hwct}.
