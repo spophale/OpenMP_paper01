@@ -1,15 +1,18 @@
 The effects of affinity is a widely studied problem. Most programming models 
 take advantage of the architecture and data-access patterns by providing some 
 implicit or explicit control over data and process/thread placement. For example,
-Unified Parallel C (UPC), a Partitioned Global Address Space (PGAS) language 
-provides a \textbf{shared} qualifier to distinguish between data 
-accessible to all the UPC \textit{threads} vs. private data. 
+Partitioned Global Address Space (PGAS) languages/APIs provide mechanisms to specify 
+globally accessible data (with local views) and memory affinities to physical memory. 
+For example, UPC provides a \textbf{shared} qualifier to distinguish between data 
+accessible to all the UPC \textit{threads} vs. private data and distribution keywords to place
+the data on different affine memories. For arrays UPC provides 
+three affinity granularities: blocked, cyclic and blocked-cyclic. 
 %The \textit{shared} scalar data has 
 %affinity to thread 0, while arrays can have affinity granularity of \textit{cyclic, blocked-cyclic ,}
 %and \textit{blocked}. These are chosen by the application programmer based on the 
 %knowledge of the data access patterns within the application. 
 
-Similarly for OpenMP, there are 
+OpenMP being a shared memory programming models, it has 
 different ways to specify and affect affinity of data, threads, and work units or \textit{tasks}. 
 The new OpenMP 4.0 release provides a substantial 
 improvement on the support for programming of accelerator and GPU devices. 
