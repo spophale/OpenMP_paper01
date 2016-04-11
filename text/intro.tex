@@ -1,15 +1,18 @@
 The effects of affinity is a widely studied problem. Most programming models 
 take advantage of the architecture and data-access patterns by providing some 
 implicit or explicit control over data and process/thread placement. For example,
-Unified Parallel C (UPC), a Partitioned Global Address Space (PGAS) language 
-provides a \textbf{shared} qualifier to distinguish between data 
-accessible to all the UPC \textit{threads} vs. private data. 
+Partitioned Global Address Space (PGAS) languages/APIs provide mechanisms to specify 
+globally accessible data (with local views) and memory affinities to physical memory. 
+For example, UPC provides a \textbf{shared} qualifier to distinguish between data 
+accessible to all the UPC \textit{threads} vs. private data and distribution keywords to place
+the data on different affine memories. For arrays UPC provides 
+three affinity granularities: blocked, cyclic and blocked-cyclic. 
 %The \textit{shared} scalar data has 
 %affinity to thread 0, while arrays can have affinity granularity of \textit{cyclic, blocked-cyclic ,}
 %and \textit{blocked}. These are chosen by the application programmer based on the 
 %knowledge of the data access patterns within the application. 
 
-Similarly for OpenMP, there are 
+OpenMP being a shared memory programming models, it has 
 different ways to specify and affect affinity of data, threads, and work units or \textit{tasks}. 
 The new OpenMP 4.0 release provides a substantial 
 improvement on the support for programming of accelerator and GPU devices. 
@@ -72,9 +75,20 @@ The IBM POWER8 system has three possible configurations of either 6, 10 or 12 (6
     \end{subfigure}
   \caption{POWER8 Overview}\label{fig:POWER8}
 \end{figure}
-The POWER8 system has a Non-Uniform Cache Architecture (NUCA) Cache Policy, this allows for scalable bandwidth and latency, allowing migration of most used cache lines to the local L2 cache mad then to the local L3 cache~\cite{IBM_P8}. This is a big improvement over the POWER7 processor. 
+The POWER8 system has a Non-Uniform Cache Architecture (NUCA) Cache Policy, this allows for scalable bandwidth and latency, allowing migration of most used cache lines to the local L2 cache mad then to the local L3 cache~\cite{IBM_P8}. This is a big improvement over the POWER7 processor. For example, NUMA distance is the ratio between the latency of accessing the memory of a remote numa node and local memory access. To illustrate this,  when we run the command \textit{numactl} on a two socket POWER8 system, we get the following 
+NUMA distances (see ~\ref{fig:crest}): 
 
+\begin{figure}[h]
+  \centering
+  \includegraphics[height=0.3\textwidth]{./Images/crest.pdf}
+       \caption{\textit{Numactl} hardware characteristics of a two socket POWER8 system}
+       \label{fig:crest}
+\end{figure}
 
+%[4/9/16, 12:37:55 PM] Oscar: we just need to expand the text for that table
+%[4/9/16, 12:38:07 PM] Oscar: we need to explain why we have these numbers in blue
+%[4/9/16, 12:38:25 PM] Oscar: and why we have these many rows and columns
+%[4/9/16, 12:38:38 PM] Oscar: and how that related to a dual socket POWER8 system
 
 
 

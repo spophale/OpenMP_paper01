@@ -1,12 +1,5 @@
 \subsection{OpenMP Affinity Settings}
-As explained in Section~\ref{sec:intro} OpenMP 4.0 provides two environment variables OMP\_PROC\_BIND and OMP\_PLACES to help users define the thread placement for their shared memory OpenMP application. We experiment with the two flavors of the Jacobi program to observe the behavior over \textit{(a)} under-subscribed socket, \textit{(b)} fully-subscribed socket and \textit{(c)} across-socket utilization of CPUs. The \textit{numactl} hardware characteristics for Crest is as shown in Figure~\ref{fig:crest}
-
-\begin{figure}[h]
-  \centering
-  \includegraphics[height=0.3\textwidth]{./Images/crest.pdf}
-       \caption{\textit{Numactl} hardware characteristics of Crest}
-       \label{fig:crest}
-\end{figure}
+As explained in Section~\ref{sec:intro} OpenMP 4.0 provides two environment variables OMP\_PROC\_BIND and OMP\_PLACES to help users define the thread placement for their shared memory OpenMP application. We experiment with the two flavors of the Jacobi program to observe the behavior over \textit{(a)} under-subscribed socket, \textit{(b)} fully-subscribed socket and \textit{(c)} across-socket utilization of CPUs. 
 %
 \begin{figure}[!h]
     \centering
