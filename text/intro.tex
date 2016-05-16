@@ -75,8 +75,11 @@ The IBM POWER8 system has three possible configurations of either 6, 10 or 12 (6
     \end{subfigure}
   \caption{POWER8 Overview}\label{fig:POWER8}
 \end{figure}
-The POWER8 system has a Non-Uniform Cache Architecture (NUCA) Cache Policy, this allows for scalable bandwidth and latency, allowing migration of most used cache lines to the local L2 cache mad then to the local L3 cache~\cite{IBM_P8}. This is a big improvement over the POWER7 processor. For example, NUMA distance is the ratio between the latency of accessing the memory of a remote numa node and local memory access. To illustrate this,  when we run the command \textit{numactl} on a two socket POWER8 system, we get the following 
-NUMA distances (see ~\ref{fig:crest}): 
+The POWER8 system has a Non-Uniform Cache Architecture (NUCA) Cache Policy, this allows for scalable bandwidth and latency, allowing migration of most used cache lines to the local L2 cache and then to the local L3 cache~\cite{IBM_P8}. This is a big improvement over the POWER7 processor.  Each cache level will have a cost for accessing data locally vs remote.  
+
+%When we run the command  \textit{numactl} the operating system reports the following NUMA nodes on a two socket POWER8 system. 
+A NUMA distance is the ratio between the latency of accessing  a remote numa node memory and local memory access. To illustrate this,  when we run the command \textit{numactl} on a two socket POWER8 system, we get the following 
+NUMA nodes and distances (see ~\ref{fig:crest}): 
 
 \begin{figure}[h]
   \centering
