@@ -134,6 +134,25 @@
 %\mainmatter              % start of the contributions
 %%
 \title{Working Title: Exploring OpenMP Affinity on Power8 Architecture }
+
+%Affinity evaluation in OpenMP 4.5  
+%Affinity and accelerators - using device_num, data regions for the accelerator, however none of these mechanism are aware of NUMA domains.
+%Using the OpenMP 4.5 target data directive it could be a mechanism to control affinity
+%
+%Places in the OpenMP 4.5 we need a new way to specify a NUMA domain in the context of a device. 
+%
+%#pragma omp target data device(host:NUMA1) map(tofrom: a, b: zerocopy)  
+%{
+%
+%#pragma omp target device(host:NUMA1) 
+%pragma omp parallel 
+% // these threads belong to the NUMA node.  
+%  // NUMA domain
+%
+%}
+
+
+
 %
 %\titlerunning{Hamiltonian Mechanics}  % abbreviated title (for running head)
 %                                     also used for the TOC unless

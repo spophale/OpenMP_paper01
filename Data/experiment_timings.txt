@@ -1,0 +1,720 @@
+----------------------
+OMP_NUM_THREADS=1
+OMP_PROC_BIND=false
+OMP_PLACES=threads
+AFFINITY
+ Solver time (sec) =   27.804379395005526     
+NO AFFINITY
+ Solver time (sec) =   27.800239803997101     
+----------------------
+OMP_NUM_THREADS=1
+OMP_PROC_BIND=true
+OMP_PLACES=threads
+AFFINITY
+ Solver time (sec) =   27.977367500017863     
+NO AFFINITY
+ Solver time (sec) =   28.014823252015049     
+----------------------
+OMP_NUM_THREADS=1
+OMP_PROC_BIND=close
+OMP_PLACES=threads
+AFFINITY
+ Solver time (sec) =   27.956152016995475     
+NO AFFINITY
+ Solver time (sec) =   27.973746550997021     
+----------------------
+OMP_NUM_THREADS=1
+OMP_PROC_BIND=spread
+OMP_PLACES=threads
+AFFINITY
+ Solver time (sec) =   27.974228918028530     
+NO AFFINITY
+ Solver time (sec) =   27.988261738006258     
+----------------------
+OMP_NUM_THREADS=1
+OMP_PROC_BIND=master
+OMP_PLACES=threads
+AFFINITY
+ Solver time (sec) =   27.980399774009129     
+NO AFFINITY
+ Solver time (sec) =   27.957184998987941     
+----------------------
+OMP_NUM_THREADS=1
+OMP_PROC_BIND=false
+OMP_PLACES=cores
+AFFINITY
+ Solver time (sec) =   27.793235696008196     
+NO AFFINITY
+ Solver time (sec) =   27.870357681997120     
+----------------------
+OMP_NUM_THREADS=1
+OMP_PROC_BIND=true
+OMP_PLACES=cores
+AFFINITY
+ Solver time (sec) =   27.957779031014070     
+NO AFFINITY
+ Solver time (sec) =   27.891755206015659     
+----------------------
+OMP_NUM_THREADS=1
+OMP_PROC_BIND=close
+OMP_PLACES=cores
+AFFINITY
+ Solver time (sec) =   27.937298382021254     
+NO AFFINITY
+ Solver time (sec) =   27.931990160985151     
+----------------------
+OMP_NUM_THREADS=1
+OMP_PROC_BIND=spread
+OMP_PLACES=cores
+AFFINITY
+ Solver time (sec) =   27.946470272989245     
+NO AFFINITY
+ Solver time (sec) =   27.912226710002869     
+----------------------
+OMP_NUM_THREADS=1
+OMP_PROC_BIND=master
+OMP_PLACES=cores
+AFFINITY
+ Solver time (sec) =   27.924498072999995     
+NO AFFINITY
+ Solver time (sec) =   27.919283214025199     
+----------------------
+OMP_NUM_THREADS=1
+OMP_PROC_BIND=false
+OMP_PLACES=sockets
+AFFINITY
+ Solver time (sec) =   28.617567023000447     
+NO AFFINITY
+ Solver time (sec) =   27.780808351992164     
+----------------------
+OMP_NUM_THREADS=1
+OMP_PROC_BIND=true
+OMP_PLACES=sockets
+AFFINITY
+ Solver time (sec) =   27.794501950003905     
+NO AFFINITY
+ Solver time (sec) =   27.811194520996651     
+----------------------
+OMP_NUM_THREADS=1
+OMP_PROC_BIND=close
+OMP_PLACES=sockets
+AFFINITY
+ Solver time (sec) =   27.816836540005170     
+NO AFFINITY
+ Solver time (sec) =   27.824649106012657     
+----------------------
+OMP_NUM_THREADS=1
+OMP_PROC_BIND=spread
+OMP_PLACES=sockets
+AFFINITY
+ Solver time (sec) =   27.811014845006866     
+NO AFFINITY
+ Solver time (sec) =   27.795429031015374     
+----------------------
+OMP_NUM_THREADS=1
+OMP_PROC_BIND=master
+OMP_PLACES=sockets
+AFFINITY
+ Solver time (sec) =   27.802778938988922     
+NO AFFINITY
+ Solver time (sec) =   27.791637009009719     
+----------------------
+OMP_NUM_THREADS=10
+OMP_PROC_BIND=false
+OMP_PLACES=threads
+AFFINITY
+ Solver time (sec) =   3.1138515420025215     
+NO AFFINITY
+ Solver time (sec) =   4.6001112299854867     
+----------------------
+OMP_NUM_THREADS=10
+OMP_PROC_BIND=true
+OMP_PLACES=threads
+AFFINITY
+ Solver time (sec) =   15.967569817003096     
+NO AFFINITY
+ Solver time (sec) =   15.963452338997740     
+----------------------
+OMP_NUM_THREADS=10
+OMP_PROC_BIND=close
+OMP_PLACES=threads
+AFFINITY
+ Solver time (sec) =   15.959973613993498     
+NO AFFINITY
+ Solver time (sec) =   15.965051996987313     
+----------------------
+OMP_NUM_THREADS=10
+OMP_PROC_BIND=spread
+OMP_PLACES=threads
+AFFINITY
+ Solver time (sec) =   2.9289304630074184     
+NO AFFINITY
+ Solver time (sec) =   3.4541104630043264     
+----------------------
+OMP_NUM_THREADS=10
+OMP_PROC_BIND=master
+OMP_PLACES=threads
+AFFINITY
+ Solver time (sec) =   28.314977283996996     
+NO AFFINITY
+ Solver time (sec) =   28.274532623996492     
+----------------------
+OMP_NUM_THREADS=10
+OMP_PROC_BIND=false
+OMP_PLACES=cores
+AFFINITY
+ Solver time (sec) =   3.0109970970079303     
+NO AFFINITY
+ Solver time (sec) =   3.7380396840162575     
+----------------------
+OMP_NUM_THREADS=10
+OMP_PROC_BIND=true
+OMP_PLACES=cores
+AFFINITY
+ Solver time (sec) =   3.3304895180044696     
+NO AFFINITY
+ Solver time (sec) =   3.9730358220112976     
+----------------------
+OMP_NUM_THREADS=10
+OMP_PROC_BIND=close
+OMP_PLACES=cores
+AFFINITY
+ Solver time (sec) =   3.3212179240072146     
+NO AFFINITY
+ Solver time (sec) =   3.9431449589901604     
+----------------------
+OMP_NUM_THREADS=10
+OMP_PROC_BIND=spread
+OMP_PLACES=cores
+AFFINITY
+ Solver time (sec) =   2.9705292310100049     
+NO AFFINITY
+ Solver time (sec) =   3.5410774759948254     
+----------------------
+OMP_NUM_THREADS=10
+OMP_PROC_BIND=master
+OMP_PLACES=cores
+AFFINITY
+ Solver time (sec) =   19.879682635975769     
+NO AFFINITY
+ Solver time (sec) =   19.778372072003549     
+----------------------
+OMP_NUM_THREADS=10
+OMP_PROC_BIND=false
+OMP_PLACES=sockets
+AFFINITY
+ Solver time (sec) =   3.1205505089892540     
+NO AFFINITY
+ Solver time (sec) =   3.9738752869889140     
+----------------------
+OMP_NUM_THREADS=10
+OMP_PROC_BIND=true
+OMP_PLACES=sockets
+AFFINITY
+ Solver time (sec) =   3.0387582450057380     
+NO AFFINITY
+ Solver time (sec) =   3.8043466359958984     
+----------------------
+OMP_NUM_THREADS=10
+OMP_PROC_BIND=close
+OMP_PLACES=sockets
+AFFINITY
+ Solver time (sec) =   2.9510225460107904     
+NO AFFINITY
+ Solver time (sec) =   3.8594100229965989     
+----------------------
+OMP_NUM_THREADS=10
+OMP_PROC_BIND=spread
+OMP_PLACES=sockets
+AFFINITY
+ Solver time (sec) =   2.9858596170088276     
+NO AFFINITY
+ Solver time (sec) =   3.8228360240173060     
+----------------------
+OMP_NUM_THREADS=10
+OMP_PROC_BIND=master
+OMP_PLACES=sockets
+AFFINITY
+ Solver time (sec) =   6.7492485499824397     
+NO AFFINITY
+ Solver time (sec) =   6.6855504900158849     
+----------------------
+OMP_NUM_THREADS=20
+OMP_PROC_BIND=false
+OMP_PLACES=threads
+AFFINITY
+ Solver time (sec) =   2.3396301959874108     
+NO AFFINITY
+ Solver time (sec) =   3.7027609600045253     
+----------------------
+OMP_NUM_THREADS=20
+OMP_PROC_BIND=true
+OMP_PLACES=threads
+AFFINITY
+ Solver time (sec) =   8.9924809829972219     
+NO AFFINITY
+ Solver time (sec) =   8.8366083370056003     
+----------------------
+OMP_NUM_THREADS=20
+OMP_PROC_BIND=close
+OMP_PLACES=threads
+AFFINITY
+ Solver time (sec) =   8.8572307410067879     
+NO AFFINITY
+ Solver time (sec) =   8.8345967940113042     
+----------------------
+OMP_NUM_THREADS=20
+OMP_PROC_BIND=spread
+OMP_PLACES=threads
+AFFINITY
+ Solver time (sec) =   1.6517432550026570     
+NO AFFINITY
+ Solver time (sec) =   2.2746099299984053     
+----------------------
+OMP_NUM_THREADS=20
+OMP_PROC_BIND=master
+OMP_PLACES=threads
+AFFINITY
+ Solver time (sec) =   27.961290691018803     
+NO AFFINITY
+ Solver time (sec) =   28.011142628005473     
+----------------------
+OMP_NUM_THREADS=20
+OMP_PROC_BIND=false
+OMP_PLACES=cores
+AFFINITY
+ Solver time (sec) =   2.5177050229976885     
+NO AFFINITY
+ Solver time (sec) =   3.6937624239944853     
+----------------------
+OMP_NUM_THREADS=20
+OMP_PROC_BIND=true
+OMP_PLACES=cores
+AFFINITY
+ Solver time (sec) =   1.6583075060043484     
+NO AFFINITY
+ Solver time (sec) =   2.7115684009913821     
+----------------------
+OMP_NUM_THREADS=20
+OMP_PROC_BIND=close
+OMP_PLACES=cores
+AFFINITY
+ Solver time (sec) =   1.6557022299966775     
+NO AFFINITY
+ Solver time (sec) =   2.6799780049768742     
+----------------------
+OMP_NUM_THREADS=20
+OMP_PROC_BIND=spread
+OMP_PLACES=cores
+AFFINITY
+ Solver time (sec) =   1.6688668710121419     
+NO AFFINITY
+ Solver time (sec) =   2.6781862190109678     
+----------------------
+OMP_NUM_THREADS=20
+OMP_PROC_BIND=master
+OMP_PLACES=cores
+AFFINITY
+ Solver time (sec) =   19.737864591006655     
+NO AFFINITY
+ Solver time (sec) =   19.752250998019008     
+----------------------
+OMP_NUM_THREADS=20
+OMP_PROC_BIND=false
+OMP_PLACES=sockets
+AFFINITY
+ Solver time (sec) =   2.3900795340014156     
+NO AFFINITY
+ Solver time (sec) =   3.3809013380086981     
+----------------------
+OMP_NUM_THREADS=20
+OMP_PROC_BIND=true
+OMP_PLACES=sockets
+AFFINITY
+ Solver time (sec) =   1.6779178959841374     
+NO AFFINITY
+ Solver time (sec) =   2.6867705269833095     
+----------------------
+OMP_NUM_THREADS=20
+OMP_PROC_BIND=close
+OMP_PLACES=sockets
+AFFINITY
+ Solver time (sec) =   1.6556354690110311     
+NO AFFINITY
+ Solver time (sec) =   2.7407625019841362     
+----------------------
+OMP_NUM_THREADS=20
+OMP_PROC_BIND=spread
+OMP_PLACES=sockets
+AFFINITY
+ Solver time (sec) =   1.6611759130028076     
+NO AFFINITY
+ Solver time (sec) =   2.8364563899813220     
+----------------------
+OMP_NUM_THREADS=20
+OMP_PROC_BIND=master
+OMP_PLACES=sockets
+AFFINITY
+ Solver time (sec) =   6.3837521169916727     
+NO AFFINITY
+ Solver time (sec) =   6.1467810659960378     
+----------------------
+OMP_NUM_THREADS=40
+OMP_PROC_BIND=false
+OMP_PLACES=threads
+AFFINITY
+ Solver time (sec) =   2.8412012209882960     
+NO AFFINITY
+ Solver time (sec) =   4.0655121710151434     
+----------------------
+OMP_NUM_THREADS=40
+OMP_PROC_BIND=true
+OMP_PLACES=threads
+AFFINITY
+ Solver time (sec) =   7.0246199970133603     
+NO AFFINITY
+ Solver time (sec) =   7.1290223170071840     
+----------------------
+OMP_NUM_THREADS=40
+OMP_PROC_BIND=close
+OMP_PLACES=threads
+AFFINITY
+ Solver time (sec) =   7.0378276430128608     
+NO AFFINITY
+ Solver time (sec) =   7.1228695590107236     
+----------------------
+OMP_NUM_THREADS=40
+OMP_PROC_BIND=spread
+OMP_PLACES=threads
+AFFINITY
+ Solver time (sec) =   1.4609706659975927     
+NO AFFINITY
+ Solver time (sec) =   2.2605971180018969     
+----------------------
+OMP_NUM_THREADS=40
+OMP_PROC_BIND=master
+OMP_PLACES=threads
+AFFINITY
+ Solver time (sec) =   28.065820582007291     
+NO AFFINITY
+ Solver time (sec) =   27.980276731977938     
+----------------------
+OMP_NUM_THREADS=40
+OMP_PROC_BIND=false
+OMP_PLACES=cores
+AFFINITY
+ Solver time (sec) =   2.1907353679998778     
+NO AFFINITY
+ Solver time (sec) =   4.1890189539990388     
+----------------------
+OMP_NUM_THREADS=40
+OMP_PROC_BIND=true
+OMP_PLACES=cores
+AFFINITY
+ Solver time (sec) =   1.4263263030152302     
+NO AFFINITY
+ Solver time (sec) =   2.1918566079984885     
+----------------------
+OMP_NUM_THREADS=40
+OMP_PROC_BIND=close
+OMP_PLACES=cores
+AFFINITY
+ Solver time (sec) =   1.4353056199906860     
+NO AFFINITY
+ Solver time (sec) =   2.4637530859909020     
+----------------------
+OMP_NUM_THREADS=40
+OMP_PROC_BIND=spread
+OMP_PLACES=cores
+AFFINITY
+ Solver time (sec) =   1.4283346269803587     
+NO AFFINITY
+ Solver time (sec) =   2.5695100690063555     
+----------------------
+OMP_NUM_THREADS=40
+OMP_PROC_BIND=master
+OMP_PLACES=cores
+AFFINITY
+ Solver time (sec) =   19.687062151002465     
+NO AFFINITY
+ Solver time (sec) =   19.694321557995863     
+----------------------
+OMP_NUM_THREADS=40
+OMP_PROC_BIND=false
+OMP_PLACES=sockets
+AFFINITY
+ Solver time (sec) =   2.0511925369792152     
+NO AFFINITY
+ Solver time (sec) =   3.2364424560219049     
+----------------------
+OMP_NUM_THREADS=40
+OMP_PROC_BIND=true
+OMP_PLACES=sockets
+AFFINITY
+ Solver time (sec) =   1.4583598900062498     
+NO AFFINITY
+ Solver time (sec) =   2.3144642760162242     
+----------------------
+OMP_NUM_THREADS=40
+OMP_PROC_BIND=close
+OMP_PLACES=sockets
+AFFINITY
+ Solver time (sec) =   1.4534579510218464     
+NO AFFINITY
+ Solver time (sec) =   2.2565551779989619     
+----------------------
+OMP_NUM_THREADS=40
+OMP_PROC_BIND=spread
+OMP_PLACES=sockets
+AFFINITY
+ Solver time (sec) =   1.4618120350060053     
+NO AFFINITY
+ Solver time (sec) =   2.2770411910023540     
+----------------------
+OMP_NUM_THREADS=40
+OMP_PROC_BIND=master
+OMP_PLACES=sockets
+AFFINITY
+ Solver time (sec) =   7.0188462930091191     
+NO AFFINITY
+ Solver time (sec) =   7.0273548509867396     
+----------------------
+OMP_NUM_THREADS=80
+OMP_PROC_BIND=false
+OMP_PLACES=threads
+AFFINITY
+ Solver time (sec) =   2.0515929629909806     
+NO AFFINITY
+ Solver time (sec) =   3.2038086179818492     
+----------------------
+OMP_NUM_THREADS=80
+OMP_PROC_BIND=true
+OMP_PLACES=threads
+AFFINITY
+ Solver time (sec) =   2.5209673720237333     
+NO AFFINITY
+ Solver time (sec) =   3.1601660300220829     
+----------------------
+OMP_NUM_THREADS=80
+OMP_PROC_BIND=close
+OMP_PLACES=threads
+AFFINITY
+ Solver time (sec) =   2.5184595699829515     
+NO AFFINITY
+ Solver time (sec) =   3.1729367170191836     
+----------------------
+OMP_NUM_THREADS=80
+OMP_PROC_BIND=spread
+OMP_PLACES=threads
+AFFINITY
+ Solver time (sec) =   1.3068449499842245     
+NO AFFINITY
+ Solver time (sec) =   2.3744685949932318     
+----------------------
+OMP_NUM_THREADS=80
+OMP_PROC_BIND=master
+OMP_PLACES=threads
+AFFINITY
+ Solver time (sec) =   28.088116539001931     
+NO AFFINITY
+ Solver time (sec) =   28.142784222000046     
+----------------------
+OMP_NUM_THREADS=80
+OMP_PROC_BIND=false
+OMP_PLACES=cores
+AFFINITY
+ Solver time (sec) =   2.1392993199988268     
+NO AFFINITY
+ Solver time (sec) =   2.8411916889890563     
+----------------------
+OMP_NUM_THREADS=80
+OMP_PROC_BIND=true
+OMP_PLACES=cores
+AFFINITY
+ Solver time (sec) =   1.3012911269906908     
+NO AFFINITY
+ Solver time (sec) =   2.2828322279965505     
+----------------------
+OMP_NUM_THREADS=80
+OMP_PROC_BIND=close
+OMP_PLACES=cores
+AFFINITY
+ Solver time (sec) =   1.3037606000143569     
+NO AFFINITY
+ Solver time (sec) =   2.2944511880050413     
+----------------------
+OMP_NUM_THREADS=80
+OMP_PROC_BIND=spread
+OMP_PLACES=cores
+AFFINITY
+ Solver time (sec) =   1.2981667450221721     
+NO AFFINITY
+ Solver time (sec) =   2.3615508869988844     
+----------------------
+OMP_NUM_THREADS=80
+OMP_PROC_BIND=master
+OMP_PLACES=cores
+AFFINITY
+ Solver time (sec) =   19.908495825016871     
+NO AFFINITY
+ Solver time (sec) =   19.922896260977723     
+----------------------
+OMP_NUM_THREADS=80
+OMP_PROC_BIND=false
+OMP_PLACES=sockets
+AFFINITY
+ Solver time (sec) =   2.0427667839976493     
+NO AFFINITY
+ Solver time (sec) =   3.1635040270048194     
+----------------------
+OMP_NUM_THREADS=80
+OMP_PROC_BIND=true
+OMP_PLACES=sockets
+AFFINITY
+ Solver time (sec) =   1.3191851479932666     
+NO AFFINITY
+ Solver time (sec) =   2.1083383109944407     
+----------------------
+OMP_NUM_THREADS=80
+OMP_PROC_BIND=close
+OMP_PLACES=sockets
+AFFINITY
+ Solver time (sec) =   1.3474076119891834     
+NO AFFINITY
+ Solver time (sec) =   2.1917613639961928     
+----------------------
+OMP_NUM_THREADS=80
+OMP_PROC_BIND=spread
+OMP_PLACES=sockets
+AFFINITY
+ Solver time (sec) =   1.3331182239926420     
+NO AFFINITY
+ Solver time (sec) =   2.1469678999856114     
+----------------------
+OMP_NUM_THREADS=80
+OMP_PROC_BIND=master
+OMP_PLACES=sockets
+AFFINITY
+ Solver time (sec) =   6.9907048789900728     
+NO AFFINITY
+ Solver time (sec) =   7.0450661309878342     
+----------------------
+OMP_NUM_THREADS=160
+OMP_PROC_BIND=false
+OMP_PLACES=threads
+AFFINITY
+ Solver time (sec) =   1.4010850719932932     
+NO AFFINITY
+ Solver time (sec) =   2.7055133989779279     
+----------------------
+OMP_NUM_THREADS=160
+OMP_PROC_BIND=true
+OMP_PLACES=threads
+AFFINITY
+ Solver time (sec) =   1.3153620709781535     
+NO AFFINITY
+ Solver time (sec) =   2.2795261619903613     
+----------------------
+OMP_NUM_THREADS=160
+OMP_PROC_BIND=close
+OMP_PLACES=threads
+AFFINITY
+ Solver time (sec) =   1.3098165560222697     
+NO AFFINITY
+ Solver time (sec) =   2.2629663080151659     
+----------------------
+OMP_NUM_THREADS=160
+OMP_PROC_BIND=spread
+OMP_PLACES=threads
+AFFINITY
+ Solver time (sec) =   1.3161007649905514     
+NO AFFINITY
+ Solver time (sec) =   2.2758392399991862     
+----------------------
+OMP_NUM_THREADS=160
+OMP_PROC_BIND=master
+OMP_PLACES=threads
+AFFINITY
+ Solver time (sec) =   28.300511869980255     
+NO AFFINITY
+ Solver time (sec) =   28.285548279003706     
+----------------------
+OMP_NUM_THREADS=160
+OMP_PROC_BIND=false
+OMP_PLACES=cores
+AFFINITY
+ Solver time (sec) =   1.4603680900181644     
+NO AFFINITY
+ Solver time (sec) =   2.6303375889838208     
+----------------------
+OMP_NUM_THREADS=160
+OMP_PROC_BIND=true
+OMP_PLACES=cores
+AFFINITY
+ Solver time (sec) =   1.3111044309916906     
+NO AFFINITY
+ Solver time (sec) =   2.2638585729873739     
+----------------------
+OMP_NUM_THREADS=160
+OMP_PROC_BIND=close
+OMP_PLACES=cores
+AFFINITY
+ Solver time (sec) =   1.3137250949803274     
+NO AFFINITY
+ Solver time (sec) =   2.4445491940132342     
+----------------------
+OMP_NUM_THREADS=160
+OMP_PROC_BIND=spread
+OMP_PLACES=cores
+AFFINITY
+ Solver time (sec) =   1.3139087739982642     
+NO AFFINITY
+ Solver time (sec) =   2.4466282450011931     
+----------------------
+OMP_NUM_THREADS=160
+OMP_PROC_BIND=master
+OMP_PLACES=cores
+AFFINITY
+ Solver time (sec) =   19.940691199997673     
+NO AFFINITY
+ Solver time (sec) =   19.977155144995777     
+----------------------
+OMP_NUM_THREADS=160
+OMP_PROC_BIND=false
+OMP_PLACES=sockets
+AFFINITY
+ Solver time (sec) =   1.4269471910083666     
+NO AFFINITY
+ Solver time (sec) =   2.3899737189931329     
+----------------------
+OMP_NUM_THREADS=160
+OMP_PROC_BIND=true
+OMP_PLACES=sockets
+AFFINITY
+ Solver time (sec) =   1.3162686940049753     
+NO AFFINITY
+ Solver time (sec) =   2.1763586050074082     
+----------------------
+OMP_NUM_THREADS=160
+OMP_PROC_BIND=close
+OMP_PLACES=sockets
+AFFINITY
+ Solver time (sec) =   1.3079331069893669     
+NO AFFINITY
+ Solver time (sec) =   2.2873152710089926     
+----------------------
+OMP_NUM_THREADS=160
+OMP_PROC_BIND=spread
+OMP_PLACES=sockets
+AFFINITY
+ Solver time (sec) =   1.3152178809978068     
+NO AFFINITY
+ Solver time (sec) =   2.3207539879949763     
+----------------------
+OMP_NUM_THREADS=160
+OMP_PROC_BIND=master
+OMP_PLACES=sockets
+AFFINITY
+ Solver time (sec) =   6.9989121440157760     
+NO AFFINITY
+ Solver time (sec) =   7.0143676970037632     
