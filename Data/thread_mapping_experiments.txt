@@ -1,0 +1,5205 @@
+----------------------
+OMP_NUM_THREADS=1
+OMP_PROC_BIND=false
+OMP_PLACES=threads
+MAPPING
+Thread=0, CPUID=23
+
+----------------------
+OMP_NUM_THREADS=1
+OMP_PROC_BIND=true
+OMP_PLACES=threads
+MAPPING
+Thread=0, CPUID=0
+
+----------------------
+OMP_NUM_THREADS=1
+OMP_PROC_BIND=close
+OMP_PLACES=threads
+MAPPING
+Thread=0, CPUID=0
+
+----------------------
+OMP_NUM_THREADS=1
+OMP_PROC_BIND=spread
+OMP_PLACES=threads
+MAPPING
+Thread=0, CPUID=0
+
+----------------------
+OMP_NUM_THREADS=1
+OMP_PROC_BIND=master
+OMP_PLACES=threads
+MAPPING
+Thread=0, CPUID=0
+
+----------------------
+OMP_NUM_THREADS=1
+OMP_PROC_BIND=false
+OMP_PLACES=cores
+MAPPING
+Thread=0, CPUID=33
+
+----------------------
+OMP_NUM_THREADS=1
+OMP_PROC_BIND=true
+OMP_PLACES=cores
+MAPPING
+Thread=0, CPUID=0
+
+----------------------
+OMP_NUM_THREADS=1
+OMP_PROC_BIND=close
+OMP_PLACES=cores
+MAPPING
+Thread=0, CPUID=0
+
+----------------------
+OMP_NUM_THREADS=1
+OMP_PROC_BIND=spread
+OMP_PLACES=cores
+MAPPING
+Thread=0, CPUID=0
+
+----------------------
+OMP_NUM_THREADS=1
+OMP_PROC_BIND=master
+OMP_PLACES=cores
+MAPPING
+Thread=0, CPUID=0
+
+----------------------
+OMP_NUM_THREADS=1
+OMP_PROC_BIND=false
+OMP_PLACES=sockets
+MAPPING
+Thread=0, CPUID=34
+
+----------------------
+OMP_NUM_THREADS=1
+OMP_PROC_BIND=true
+OMP_PLACES=sockets
+MAPPING
+Thread=0, CPUID=8
+
+----------------------
+OMP_NUM_THREADS=1
+OMP_PROC_BIND=close
+OMP_PLACES=sockets
+MAPPING
+Thread=0, CPUID=24
+
+----------------------
+OMP_NUM_THREADS=1
+OMP_PROC_BIND=spread
+OMP_PLACES=sockets
+MAPPING
+Thread=0, CPUID=3
+
+----------------------
+OMP_NUM_THREADS=1
+OMP_PROC_BIND=master
+OMP_PLACES=sockets
+MAPPING
+Thread=0, CPUID=23
+
+----------------------
+OMP_NUM_THREADS=10
+OMP_PROC_BIND=false
+OMP_PLACES=threads
+MAPPING
+Thread=0, CPUID=9
+Thread=1, CPUID=18
+Thread=2, CPUID=27
+Thread=3, CPUID=36
+Thread=4, CPUID=6
+Thread=5, CPUID=7
+Thread=6, CPUID=37
+Thread=7, CPUID=28
+Thread=8, CPUID=10
+Thread=9, CPUID=19
+
+----------------------
+OMP_NUM_THREADS=10
+OMP_PROC_BIND=true
+OMP_PLACES=threads
+MAPPING
+Thread=0, CPUID=0
+Thread=1, CPUID=1
+Thread=2, CPUID=2
+Thread=3, CPUID=3
+Thread=4, CPUID=4
+Thread=5, CPUID=5
+Thread=6, CPUID=6
+Thread=7, CPUID=7
+Thread=8, CPUID=8
+Thread=9, CPUID=9
+
+----------------------
+OMP_NUM_THREADS=10
+OMP_PROC_BIND=close
+OMP_PLACES=threads
+MAPPING
+Thread=0, CPUID=0
+Thread=1, CPUID=1
+Thread=2, CPUID=2
+Thread=3, CPUID=3
+Thread=4, CPUID=4
+Thread=5, CPUID=5
+Thread=6, CPUID=6
+Thread=7, CPUID=7
+Thread=8, CPUID=8
+Thread=9, CPUID=9
+
+----------------------
+OMP_NUM_THREADS=10
+OMP_PROC_BIND=spread
+OMP_PLACES=threads
+MAPPING
+Thread=0, CPUID=0
+Thread=1, CPUID=16
+Thread=2, CPUID=32
+Thread=3, CPUID=48
+Thread=4, CPUID=64
+Thread=5, CPUID=80
+Thread=6, CPUID=96
+Thread=7, CPUID=112
+Thread=8, CPUID=128
+Thread=9, CPUID=144
+
+----------------------
+OMP_NUM_THREADS=10
+OMP_PROC_BIND=master
+OMP_PLACES=threads
+MAPPING
+Thread=0, CPUID=0
+Thread=1, CPUID=0
+Thread=2, CPUID=0
+Thread=3, CPUID=0
+Thread=4, CPUID=0
+Thread=5, CPUID=0
+Thread=6, CPUID=0
+Thread=7, CPUID=0
+Thread=8, CPUID=0
+Thread=9, CPUID=0
+
+----------------------
+OMP_NUM_THREADS=10
+OMP_PROC_BIND=false
+OMP_PLACES=cores
+MAPPING
+Thread=0, CPUID=34
+Thread=1, CPUID=3
+Thread=2, CPUID=12
+Thread=3, CPUID=17
+Thread=4, CPUID=27
+Thread=5, CPUID=28
+Thread=6, CPUID=18
+Thread=7, CPUID=13
+Thread=8, CPUID=35
+Thread=9, CPUID=4
+
+----------------------
+OMP_NUM_THREADS=10
+OMP_PROC_BIND=true
+OMP_PLACES=cores
+MAPPING
+Thread=0, CPUID=0
+Thread=1, CPUID=8
+Thread=2, CPUID=16
+Thread=3, CPUID=24
+Thread=4, CPUID=32
+Thread=5, CPUID=40
+Thread=6, CPUID=48
+Thread=7, CPUID=56
+Thread=8, CPUID=64
+Thread=9, CPUID=72
+
+----------------------
+OMP_NUM_THREADS=10
+OMP_PROC_BIND=close
+OMP_PLACES=cores
+MAPPING
+Thread=0, CPUID=0
+Thread=1, CPUID=8
+Thread=2, CPUID=16
+Thread=3, CPUID=24
+Thread=4, CPUID=32
+Thread=5, CPUID=40
+Thread=6, CPUID=48
+Thread=7, CPUID=56
+Thread=8, CPUID=64
+Thread=9, CPUID=73
+
+----------------------
+OMP_NUM_THREADS=10
+OMP_PROC_BIND=spread
+OMP_PLACES=cores
+MAPPING
+Thread=0, CPUID=0
+Thread=1, CPUID=16
+Thread=2, CPUID=32
+Thread=3, CPUID=48
+Thread=4, CPUID=64
+Thread=5, CPUID=80
+Thread=6, CPUID=96
+Thread=7, CPUID=112
+Thread=8, CPUID=128
+Thread=9, CPUID=144
+
+----------------------
+OMP_NUM_THREADS=10
+OMP_PROC_BIND=master
+OMP_PLACES=cores
+MAPPING
+Thread=0, CPUID=0
+Thread=1, CPUID=1
+Thread=2, CPUID=2
+Thread=3, CPUID=3
+Thread=4, CPUID=4
+Thread=5, CPUID=5
+Thread=6, CPUID=6
+Thread=7, CPUID=7
+Thread=8, CPUID=7
+Thread=9, CPUID=0
+
+----------------------
+OMP_NUM_THREADS=10
+OMP_PROC_BIND=false
+OMP_PLACES=sockets
+MAPPING
+Thread=0, CPUID=33
+Thread=1, CPUID=3
+Thread=2, CPUID=8
+Thread=3, CPUID=19
+Thread=4, CPUID=30
+Thread=5, CPUID=31
+Thread=6, CPUID=20
+Thread=7, CPUID=9
+Thread=8, CPUID=34
+Thread=9, CPUID=24
+
+----------------------
+OMP_NUM_THREADS=10
+OMP_PROC_BIND=true
+OMP_PLACES=sockets
+MAPPING
+Thread=0, CPUID=9
+Thread=1, CPUID=17
+Thread=2, CPUID=41
+Thread=3, CPUID=42
+Thread=4, CPUID=81
+Thread=5, CPUID=80
+Thread=6, CPUID=121
+Thread=7, CPUID=120
+Thread=8, CPUID=31
+Thread=9, CPUID=40
+
+----------------------
+OMP_NUM_THREADS=10
+OMP_PROC_BIND=close
+OMP_PLACES=sockets
+MAPPING
+Thread=0, CPUID=24
+Thread=1, CPUID=36
+Thread=2, CPUID=41
+Thread=3, CPUID=42
+Thread=4, CPUID=81
+Thread=5, CPUID=80
+Thread=6, CPUID=121
+Thread=7, CPUID=120
+Thread=8, CPUID=2
+Thread=9, CPUID=40
+
+----------------------
+OMP_NUM_THREADS=10
+OMP_PROC_BIND=spread
+OMP_PLACES=sockets
+MAPPING
+Thread=0, CPUID=3
+Thread=1, CPUID=12
+Thread=2, CPUID=41
+Thread=3, CPUID=42
+Thread=4, CPUID=81
+Thread=5, CPUID=80
+Thread=6, CPUID=121
+Thread=7, CPUID=120
+Thread=8, CPUID=17
+Thread=9, CPUID=40
+
+----------------------
+OMP_NUM_THREADS=10
+OMP_PROC_BIND=master
+OMP_PLACES=sockets
+MAPPING
+Thread=0, CPUID=18
+Thread=1, CPUID=26
+Thread=2, CPUID=33
+Thread=3, CPUID=5
+Thread=4, CPUID=14
+Thread=5, CPUID=15
+Thread=6, CPUID=6
+Thread=7, CPUID=34
+Thread=8, CPUID=19
+Thread=9, CPUID=8
+
+----------------------
+OMP_NUM_THREADS=20
+OMP_PROC_BIND=false
+OMP_PLACES=threads
+MAPPING
+Thread=0, CPUID=9
+Thread=1, CPUID=21
+Thread=2, CPUID=28
+Thread=3, CPUID=36
+Thread=4, CPUID=7
+Thread=5, CPUID=0
+Thread=6, CPUID=37
+Thread=7, CPUID=29
+Thread=8, CPUID=10
+Thread=9, CPUID=22
+Thread=10, CPUID=1
+Thread=11, CPUID=38
+Thread=12, CPUID=11
+Thread=13, CPUID=30
+Thread=14, CPUID=23
+Thread=15, CPUID=12
+Thread=16, CPUID=2
+Thread=17, CPUID=39
+Thread=18, CPUID=31
+Thread=19, CPUID=16
+
+----------------------
+OMP_NUM_THREADS=20
+OMP_PROC_BIND=true
+OMP_PLACES=threads
+MAPPING
+Thread=0, CPUID=0
+Thread=1, CPUID=1
+Thread=2, CPUID=2
+Thread=3, CPUID=3
+Thread=4, CPUID=4
+Thread=5, CPUID=5
+Thread=6, CPUID=6
+Thread=7, CPUID=7
+Thread=8, CPUID=8
+Thread=9, CPUID=9
+Thread=10, CPUID=10
+Thread=11, CPUID=11
+Thread=12, CPUID=12
+Thread=13, CPUID=13
+Thread=14, CPUID=14
+Thread=15, CPUID=15
+Thread=16, CPUID=16
+Thread=17, CPUID=17
+Thread=18, CPUID=18
+Thread=19, CPUID=19
+
+----------------------
+OMP_NUM_THREADS=20
+OMP_PROC_BIND=close
+OMP_PLACES=threads
+MAPPING
+Thread=0, CPUID=0
+Thread=1, CPUID=1
+Thread=2, CPUID=2
+Thread=3, CPUID=3
+Thread=4, CPUID=4
+Thread=5, CPUID=5
+Thread=6, CPUID=6
+Thread=7, CPUID=7
+Thread=8, CPUID=8
+Thread=9, CPUID=9
+Thread=10, CPUID=10
+Thread=11, CPUID=11
+Thread=12, CPUID=12
+Thread=13, CPUID=13
+Thread=14, CPUID=14
+Thread=15, CPUID=15
+Thread=16, CPUID=16
+Thread=17, CPUID=17
+Thread=18, CPUID=18
+Thread=19, CPUID=19
+
+----------------------
+OMP_NUM_THREADS=20
+OMP_PROC_BIND=spread
+OMP_PLACES=threads
+MAPPING
+Thread=0, CPUID=0
+Thread=1, CPUID=8
+Thread=2, CPUID=16
+Thread=3, CPUID=24
+Thread=4, CPUID=32
+Thread=5, CPUID=40
+Thread=6, CPUID=48
+Thread=7, CPUID=56
+Thread=8, CPUID=64
+Thread=9, CPUID=72
+Thread=10, CPUID=80
+Thread=11, CPUID=88
+Thread=12, CPUID=96
+Thread=13, CPUID=104
+Thread=14, CPUID=112
+Thread=15, CPUID=120
+Thread=16, CPUID=128
+Thread=17, CPUID=136
+Thread=18, CPUID=144
+Thread=19, CPUID=152
+
+----------------------
+OMP_NUM_THREADS=20
+OMP_PROC_BIND=master
+OMP_PLACES=threads
+MAPPING
+Thread=0, CPUID=0
+Thread=1, CPUID=0
+Thread=2, CPUID=0
+Thread=3, CPUID=0
+Thread=4, CPUID=0
+Thread=5, CPUID=0
+Thread=6, CPUID=0
+Thread=7, CPUID=0
+Thread=8, CPUID=0
+Thread=9, CPUID=0
+Thread=10, CPUID=0
+Thread=11, CPUID=0
+Thread=12, CPUID=0
+Thread=13, CPUID=0
+Thread=14, CPUID=0
+Thread=15, CPUID=0
+Thread=16, CPUID=0
+Thread=17, CPUID=0
+Thread=18, CPUID=0
+Thread=19, CPUID=0
+
+----------------------
+OMP_NUM_THREADS=20
+OMP_PROC_BIND=false
+OMP_PLACES=cores
+MAPPING
+Thread=0, CPUID=33
+Thread=1, CPUID=3
+Thread=2, CPUID=11
+Thread=3, CPUID=23
+Thread=4, CPUID=31
+Thread=5, CPUID=24
+Thread=6, CPUID=16
+Thread=7, CPUID=12
+Thread=8, CPUID=4
+Thread=9, CPUID=25
+Thread=10, CPUID=34
+Thread=11, CPUID=17
+Thread=12, CPUID=13
+Thread=13, CPUID=5
+Thread=14, CPUID=6
+Thread=15, CPUID=7
+Thread=16, CPUID=0
+Thread=17, CPUID=1
+Thread=18, CPUID=35
+Thread=19, CPUID=18
+
+----------------------
+OMP_NUM_THREADS=20
+OMP_PROC_BIND=true
+OMP_PLACES=cores
+MAPPING
+Thread=0, CPUID=0
+Thread=1, CPUID=8
+Thread=2, CPUID=16
+Thread=3, CPUID=24
+Thread=4, CPUID=32
+Thread=5, CPUID=40
+Thread=6, CPUID=48
+Thread=7, CPUID=56
+Thread=8, CPUID=64
+Thread=9, CPUID=72
+Thread=10, CPUID=80
+Thread=11, CPUID=88
+Thread=12, CPUID=96
+Thread=13, CPUID=104
+Thread=14, CPUID=112
+Thread=15, CPUID=120
+Thread=16, CPUID=128
+Thread=17, CPUID=136
+Thread=18, CPUID=144
+Thread=19, CPUID=152
+
+----------------------
+OMP_NUM_THREADS=20
+OMP_PROC_BIND=close
+OMP_PLACES=cores
+MAPPING
+Thread=0, CPUID=0
+Thread=1, CPUID=8
+Thread=2, CPUID=16
+Thread=3, CPUID=24
+Thread=4, CPUID=32
+Thread=5, CPUID=40
+Thread=6, CPUID=48
+Thread=7, CPUID=56
+Thread=8, CPUID=64
+Thread=9, CPUID=72
+Thread=10, CPUID=80
+Thread=11, CPUID=88
+Thread=12, CPUID=96
+Thread=13, CPUID=104
+Thread=14, CPUID=112
+Thread=15, CPUID=120
+Thread=16, CPUID=128
+Thread=17, CPUID=136
+Thread=18, CPUID=144
+Thread=19, CPUID=152
+
+----------------------
+OMP_NUM_THREADS=20
+OMP_PROC_BIND=spread
+OMP_PLACES=cores
+MAPPING
+Thread=0, CPUID=0
+Thread=1, CPUID=8
+Thread=2, CPUID=16
+Thread=3, CPUID=24
+Thread=4, CPUID=32
+Thread=5, CPUID=40
+Thread=6, CPUID=48
+Thread=7, CPUID=56
+Thread=8, CPUID=64
+Thread=9, CPUID=72
+Thread=10, CPUID=80
+Thread=11, CPUID=88
+Thread=12, CPUID=96
+Thread=13, CPUID=104
+Thread=14, CPUID=112
+Thread=15, CPUID=120
+Thread=16, CPUID=128
+Thread=17, CPUID=136
+Thread=18, CPUID=144
+Thread=19, CPUID=152
+
+----------------------
+OMP_NUM_THREADS=20
+OMP_PROC_BIND=master
+OMP_PLACES=cores
+MAPPING
+Thread=0, CPUID=0
+Thread=1, CPUID=1
+Thread=2, CPUID=2
+Thread=3, CPUID=0
+Thread=4, CPUID=4
+Thread=5, CPUID=5
+Thread=6, CPUID=7
+Thread=7, CPUID=6
+Thread=8, CPUID=7
+Thread=9, CPUID=4
+Thread=10, CPUID=5
+Thread=11, CPUID=4
+Thread=12, CPUID=5
+Thread=13, CPUID=2
+Thread=14, CPUID=2
+Thread=15, CPUID=3
+Thread=16, CPUID=3
+Thread=17, CPUID=6
+Thread=18, CPUID=6
+Thread=19, CPUID=1
+
+----------------------
+OMP_NUM_THREADS=20
+OMP_PROC_BIND=false
+OMP_PLACES=sockets
+MAPPING
+Thread=0, CPUID=33
+Thread=1, CPUID=3
+Thread=2, CPUID=15
+Thread=3, CPUID=19
+Thread=4, CPUID=25
+Thread=5, CPUID=26
+Thread=6, CPUID=20
+Thread=7, CPUID=8
+Thread=8, CPUID=34
+Thread=9, CPUID=4
+Thread=10, CPUID=27
+Thread=11, CPUID=21
+Thread=12, CPUID=9
+Thread=13, CPUID=35
+Thread=14, CPUID=28
+Thread=15, CPUID=5
+Thread=16, CPUID=22
+Thread=17, CPUID=36
+Thread=18, CPUID=6
+Thread=19, CPUID=7
+
+----------------------
+OMP_NUM_THREADS=20
+OMP_PROC_BIND=true
+OMP_PLACES=sockets
+MAPPING
+Thread=0, CPUID=17
+Thread=1, CPUID=21
+Thread=2, CPUID=27
+Thread=3, CPUID=35
+Thread=4, CPUID=5
+Thread=5, CPUID=40
+Thread=6, CPUID=41
+Thread=7, CPUID=42
+Thread=8, CPUID=47
+Thread=9, CPUID=46
+Thread=10, CPUID=80
+Thread=11, CPUID=83
+Thread=12, CPUID=80
+Thread=13, CPUID=81
+Thread=14, CPUID=82
+Thread=15, CPUID=121
+Thread=16, CPUID=122
+Thread=17, CPUID=124
+Thread=18, CPUID=120
+Thread=19, CPUID=123
+
+----------------------
+OMP_NUM_THREADS=20
+OMP_PROC_BIND=close
+OMP_PLACES=sockets
+MAPPING
+Thread=0, CPUID=36
+Thread=1, CPUID=1
+Thread=2, CPUID=11
+Thread=3, CPUID=19
+Thread=4, CPUID=29
+Thread=5, CPUID=41
+Thread=6, CPUID=42
+Thread=7, CPUID=43
+Thread=8, CPUID=44
+Thread=9, CPUID=40
+Thread=10, CPUID=81
+Thread=11, CPUID=82
+Thread=12, CPUID=83
+Thread=13, CPUID=84
+Thread=14, CPUID=80
+Thread=15, CPUID=121
+Thread=16, CPUID=122
+Thread=17, CPUID=123
+Thread=18, CPUID=124
+Thread=19, CPUID=120
+
+----------------------
+OMP_NUM_THREADS=20
+OMP_PROC_BIND=spread
+OMP_PLACES=sockets
+MAPPING
+Thread=0, CPUID=1
+Thread=1, CPUID=20
+Thread=2, CPUID=24
+Thread=3, CPUID=38
+Thread=4, CPUID=3
+Thread=5, CPUID=40
+Thread=6, CPUID=41
+Thread=7, CPUID=42
+Thread=8, CPUID=43
+Thread=9, CPUID=43
+Thread=10, CPUID=81
+Thread=11, CPUID=82
+Thread=12, CPUID=84
+Thread=13, CPUID=83
+Thread=14, CPUID=80
+Thread=15, CPUID=121
+Thread=16, CPUID=122
+Thread=17, CPUID=123
+Thread=18, CPUID=124
+Thread=19, CPUID=120
+
+----------------------
+OMP_NUM_THREADS=20
+OMP_PROC_BIND=master
+OMP_PLACES=sockets
+MAPPING
+Thread=0, CPUID=22
+Thread=1, CPUID=32
+Thread=2, CPUID=34
+Thread=3, CPUID=37
+Thread=4, CPUID=23
+Thread=5, CPUID=15
+Thread=6, CPUID=6
+Thread=7, CPUID=3
+Thread=8, CPUID=36
+Thread=9, CPUID=38
+Thread=10, CPUID=33
+Thread=11, CPUID=5
+Thread=12, CPUID=14
+Thread=13, CPUID=13
+Thread=14, CPUID=35
+Thread=15, CPUID=4
+Thread=16, CPUID=39
+Thread=17, CPUID=13
+Thread=18, CPUID=25
+Thread=19, CPUID=21
+
+----------------------
+OMP_NUM_THREADS=40
+OMP_PROC_BIND=false
+OMP_PLACES=threads
+MAPPING
+Thread=0, CPUID=14
+Thread=1, CPUID=36
+Thread=2, CPUID=37
+Thread=3, CPUID=32
+Thread=4, CPUID=7
+Thread=5, CPUID=0
+Thread=6, CPUID=33
+Thread=7, CPUID=28
+Thread=8, CPUID=15
+Thread=9, CPUID=38
+Thread=10, CPUID=37
+Thread=11, CPUID=37
+Thread=12, CPUID=45
+Thread=13, CPUID=36
+Thread=14, CPUID=33
+Thread=15, CPUID=35
+Thread=16, CPUID=34
+Thread=17, CPUID=27
+Thread=18, CPUID=38
+Thread=19, CPUID=39
+Thread=20, CPUID=38
+Thread=21, CPUID=39
+Thread=22, CPUID=18
+Thread=23, CPUID=17
+Thread=24, CPUID=32
+Thread=25, CPUID=2
+Thread=26, CPUID=1
+Thread=27, CPUID=35
+Thread=28, CPUID=49
+Thread=29, CPUID=40
+Thread=30, CPUID=34
+Thread=31, CPUID=48
+Thread=32, CPUID=48
+Thread=33, CPUID=36
+Thread=34, CPUID=32
+Thread=35, CPUID=39
+Thread=36, CPUID=33
+Thread=37, CPUID=34
+Thread=38, CPUID=35
+Thread=39, CPUID=40
+
+----------------------
+OMP_NUM_THREADS=40
+OMP_PROC_BIND=true
+OMP_PLACES=threads
+MAPPING
+Thread=0, CPUID=0
+Thread=1, CPUID=1
+Thread=2, CPUID=2
+Thread=3, CPUID=3
+Thread=4, CPUID=4
+Thread=5, CPUID=5
+Thread=6, CPUID=6
+Thread=7, CPUID=7
+Thread=8, CPUID=8
+Thread=9, CPUID=9
+Thread=10, CPUID=10
+Thread=11, CPUID=11
+Thread=12, CPUID=12
+Thread=13, CPUID=13
+Thread=14, CPUID=14
+Thread=15, CPUID=15
+Thread=16, CPUID=16
+Thread=17, CPUID=17
+Thread=18, CPUID=18
+Thread=19, CPUID=19
+Thread=20, CPUID=20
+Thread=21, CPUID=21
+Thread=22, CPUID=22
+Thread=23, CPUID=23
+Thread=24, CPUID=24
+Thread=25, CPUID=25
+Thread=26, CPUID=26
+Thread=27, CPUID=27
+Thread=28, CPUID=28
+Thread=29, CPUID=29
+Thread=30, CPUID=30
+Thread=31, CPUID=31
+Thread=32, CPUID=32
+Thread=33, CPUID=33
+Thread=34, CPUID=34
+Thread=35, CPUID=35
+Thread=36, CPUID=36
+Thread=37, CPUID=37
+Thread=38, CPUID=38
+Thread=39, CPUID=39
+
+----------------------
+OMP_NUM_THREADS=40
+OMP_PROC_BIND=close
+OMP_PLACES=threads
+MAPPING
+Thread=0, CPUID=0
+Thread=1, CPUID=1
+Thread=2, CPUID=2
+Thread=3, CPUID=3
+Thread=4, CPUID=4
+Thread=5, CPUID=5
+Thread=6, CPUID=6
+Thread=7, CPUID=7
+Thread=8, CPUID=8
+Thread=9, CPUID=9
+Thread=10, CPUID=10
+Thread=11, CPUID=11
+Thread=12, CPUID=12
+Thread=13, CPUID=13
+Thread=14, CPUID=14
+Thread=15, CPUID=15
+Thread=16, CPUID=16
+Thread=17, CPUID=17
+Thread=18, CPUID=18
+Thread=19, CPUID=19
+Thread=20, CPUID=20
+Thread=21, CPUID=21
+Thread=22, CPUID=22
+Thread=23, CPUID=23
+Thread=24, CPUID=24
+Thread=25, CPUID=25
+Thread=26, CPUID=26
+Thread=27, CPUID=27
+Thread=28, CPUID=28
+Thread=29, CPUID=29
+Thread=30, CPUID=30
+Thread=31, CPUID=31
+Thread=32, CPUID=32
+Thread=33, CPUID=33
+Thread=34, CPUID=34
+Thread=35, CPUID=35
+Thread=36, CPUID=36
+Thread=37, CPUID=37
+Thread=38, CPUID=38
+Thread=39, CPUID=39
+
+----------------------
+OMP_NUM_THREADS=40
+OMP_PROC_BIND=spread
+OMP_PLACES=threads
+MAPPING
+Thread=0, CPUID=0
+Thread=1, CPUID=4
+Thread=2, CPUID=8
+Thread=3, CPUID=12
+Thread=4, CPUID=16
+Thread=5, CPUID=20
+Thread=6, CPUID=24
+Thread=7, CPUID=28
+Thread=8, CPUID=32
+Thread=9, CPUID=36
+Thread=10, CPUID=40
+Thread=11, CPUID=44
+Thread=12, CPUID=48
+Thread=13, CPUID=52
+Thread=14, CPUID=56
+Thread=15, CPUID=60
+Thread=16, CPUID=64
+Thread=17, CPUID=68
+Thread=18, CPUID=72
+Thread=19, CPUID=76
+Thread=20, CPUID=80
+Thread=21, CPUID=84
+Thread=22, CPUID=88
+Thread=23, CPUID=92
+Thread=24, CPUID=96
+Thread=25, CPUID=100
+Thread=26, CPUID=104
+Thread=27, CPUID=108
+Thread=28, CPUID=112
+Thread=29, CPUID=116
+Thread=30, CPUID=120
+Thread=31, CPUID=124
+Thread=32, CPUID=128
+Thread=33, CPUID=132
+Thread=34, CPUID=136
+Thread=35, CPUID=140
+Thread=36, CPUID=144
+Thread=37, CPUID=148
+Thread=38, CPUID=152
+Thread=39, CPUID=156
+
+----------------------
+OMP_NUM_THREADS=40
+OMP_PROC_BIND=master
+OMP_PLACES=threads
+MAPPING
+Thread=0, CPUID=0
+Thread=1, CPUID=0
+Thread=2, CPUID=0
+Thread=3, CPUID=0
+Thread=4, CPUID=0
+Thread=5, CPUID=0
+Thread=6, CPUID=0
+Thread=7, CPUID=0
+Thread=8, CPUID=0
+Thread=9, CPUID=0
+Thread=10, CPUID=0
+Thread=11, CPUID=0
+Thread=12, CPUID=0
+Thread=13, CPUID=0
+Thread=14, CPUID=0
+Thread=15, CPUID=0
+Thread=16, CPUID=0
+Thread=17, CPUID=0
+Thread=18, CPUID=0
+Thread=19, CPUID=0
+Thread=20, CPUID=0
+Thread=21, CPUID=0
+Thread=22, CPUID=0
+Thread=23, CPUID=0
+Thread=24, CPUID=0
+Thread=25, CPUID=0
+Thread=26, CPUID=0
+Thread=27, CPUID=0
+Thread=28, CPUID=0
+Thread=29, CPUID=0
+Thread=30, CPUID=0
+Thread=31, CPUID=0
+Thread=32, CPUID=0
+Thread=33, CPUID=0
+Thread=34, CPUID=0
+Thread=35, CPUID=0
+Thread=36, CPUID=0
+Thread=37, CPUID=0
+Thread=38, CPUID=0
+Thread=39, CPUID=0
+
+----------------------
+OMP_NUM_THREADS=40
+OMP_PROC_BIND=false
+OMP_PLACES=cores
+MAPPING
+Thread=0, CPUID=37
+Thread=1, CPUID=4
+Thread=2, CPUID=5
+Thread=3, CPUID=6
+Thread=4, CPUID=17
+Thread=5, CPUID=8
+Thread=6, CPUID=15
+Thread=7, CPUID=16
+Thread=8, CPUID=28
+Thread=9, CPUID=29
+Thread=10, CPUID=30
+Thread=11, CPUID=31
+Thread=12, CPUID=24
+Thread=13, CPUID=25
+Thread=14, CPUID=32
+Thread=15, CPUID=38
+Thread=16, CPUID=39
+Thread=17, CPUID=19
+Thread=18, CPUID=21
+Thread=19, CPUID=20
+Thread=20, CPUID=20
+Thread=21, CPUID=10
+Thread=22, CPUID=12
+Thread=23, CPUID=13
+Thread=24, CPUID=14
+Thread=25, CPUID=35
+Thread=26, CPUID=11
+Thread=27, CPUID=0
+Thread=28, CPUID=1
+Thread=29, CPUID=2
+Thread=30, CPUID=3
+Thread=31, CPUID=99
+Thread=32, CPUID=47
+Thread=33, CPUID=47
+Thread=34, CPUID=7
+Thread=35, CPUID=3
+Thread=36, CPUID=18
+Thread=37, CPUID=9
+Thread=38, CPUID=22
+Thread=39, CPUID=9
+
+----------------------
+OMP_NUM_THREADS=40
+OMP_PROC_BIND=true
+OMP_PLACES=cores
+MAPPING
+Thread=0, CPUID=0
+Thread=1, CPUID=1
+Thread=2, CPUID=8
+Thread=3, CPUID=9
+Thread=4, CPUID=16
+Thread=5, CPUID=17
+Thread=6, CPUID=24
+Thread=7, CPUID=25
+Thread=8, CPUID=32
+Thread=9, CPUID=33
+Thread=10, CPUID=40
+Thread=11, CPUID=41
+Thread=12, CPUID=48
+Thread=13, CPUID=49
+Thread=14, CPUID=56
+Thread=15, CPUID=57
+Thread=16, CPUID=64
+Thread=17, CPUID=65
+Thread=18, CPUID=72
+Thread=19, CPUID=73
+Thread=20, CPUID=80
+Thread=21, CPUID=81
+Thread=22, CPUID=88
+Thread=23, CPUID=89
+Thread=24, CPUID=97
+Thread=25, CPUID=96
+Thread=26, CPUID=105
+Thread=27, CPUID=104
+Thread=28, CPUID=113
+Thread=29, CPUID=112
+Thread=30, CPUID=121
+Thread=31, CPUID=120
+Thread=32, CPUID=129
+Thread=33, CPUID=128
+Thread=34, CPUID=137
+Thread=35, CPUID=136
+Thread=36, CPUID=145
+Thread=37, CPUID=144
+Thread=38, CPUID=152
+Thread=39, CPUID=152
+
+----------------------
+OMP_NUM_THREADS=40
+OMP_PROC_BIND=close
+OMP_PLACES=cores
+MAPPING
+Thread=0, CPUID=0
+Thread=1, CPUID=3
+Thread=2, CPUID=8
+Thread=3, CPUID=9
+Thread=4, CPUID=16
+Thread=5, CPUID=20
+Thread=6, CPUID=26
+Thread=7, CPUID=27
+Thread=8, CPUID=38
+Thread=9, CPUID=33
+Thread=10, CPUID=45
+Thread=11, CPUID=42
+Thread=12, CPUID=50
+Thread=13, CPUID=51
+Thread=14, CPUID=58
+Thread=15, CPUID=56
+Thread=16, CPUID=66
+Thread=17, CPUID=64
+Thread=18, CPUID=74
+Thread=19, CPUID=72
+Thread=20, CPUID=82
+Thread=21, CPUID=80
+Thread=22, CPUID=90
+Thread=23, CPUID=88
+Thread=24, CPUID=98
+Thread=25, CPUID=96
+Thread=26, CPUID=106
+Thread=27, CPUID=104
+Thread=28, CPUID=112
+Thread=29, CPUID=112
+Thread=30, CPUID=120
+Thread=31, CPUID=120
+Thread=32, CPUID=128
+Thread=33, CPUID=128
+Thread=34, CPUID=136
+Thread=35, CPUID=136
+Thread=36, CPUID=144
+Thread=37, CPUID=145
+Thread=38, CPUID=152
+Thread=39, CPUID=152
+
+----------------------
+OMP_NUM_THREADS=40
+OMP_PROC_BIND=spread
+OMP_PLACES=cores
+MAPPING
+Thread=0, CPUID=0
+Thread=1, CPUID=1
+Thread=2, CPUID=8
+Thread=3, CPUID=9
+Thread=4, CPUID=16
+Thread=5, CPUID=17
+Thread=6, CPUID=24
+Thread=7, CPUID=25
+Thread=8, CPUID=32
+Thread=9, CPUID=33
+Thread=10, CPUID=40
+Thread=11, CPUID=41
+Thread=12, CPUID=48
+Thread=13, CPUID=49
+Thread=14, CPUID=56
+Thread=15, CPUID=57
+Thread=16, CPUID=64
+Thread=17, CPUID=65
+Thread=18, CPUID=72
+Thread=19, CPUID=73
+Thread=20, CPUID=80
+Thread=21, CPUID=81
+Thread=22, CPUID=88
+Thread=23, CPUID=89
+Thread=24, CPUID=96
+Thread=25, CPUID=97
+Thread=26, CPUID=105
+Thread=27, CPUID=104
+Thread=28, CPUID=113
+Thread=29, CPUID=112
+Thread=30, CPUID=121
+Thread=31, CPUID=120
+Thread=32, CPUID=129
+Thread=33, CPUID=128
+Thread=34, CPUID=137
+Thread=35, CPUID=136
+Thread=36, CPUID=145
+Thread=37, CPUID=144
+Thread=38, CPUID=153
+Thread=39, CPUID=152
+
+----------------------
+OMP_NUM_THREADS=40
+OMP_PROC_BIND=master
+OMP_PLACES=cores
+MAPPING
+Thread=0, CPUID=0
+Thread=1, CPUID=1
+Thread=2, CPUID=2
+Thread=3, CPUID=3
+Thread=4, CPUID=4
+Thread=5, CPUID=5
+Thread=6, CPUID=0
+Thread=7, CPUID=7
+Thread=8, CPUID=7
+Thread=9, CPUID=2
+Thread=10, CPUID=7
+Thread=11, CPUID=4
+Thread=12, CPUID=7
+Thread=13, CPUID=7
+Thread=14, CPUID=0
+Thread=15, CPUID=0
+Thread=16, CPUID=0
+Thread=17, CPUID=1
+Thread=18, CPUID=1
+Thread=19, CPUID=1
+Thread=20, CPUID=1
+Thread=21, CPUID=3
+Thread=22, CPUID=3
+Thread=23, CPUID=3
+Thread=24, CPUID=3
+Thread=25, CPUID=6
+Thread=26, CPUID=6
+Thread=27, CPUID=2
+Thread=28, CPUID=2
+Thread=29, CPUID=2
+Thread=30, CPUID=6
+Thread=31, CPUID=6
+Thread=32, CPUID=6
+Thread=33, CPUID=5
+Thread=34, CPUID=5
+Thread=35, CPUID=5
+Thread=36, CPUID=5
+Thread=37, CPUID=5
+Thread=38, CPUID=4
+Thread=39, CPUID=4
+
+----------------------
+OMP_NUM_THREADS=40
+OMP_PROC_BIND=false
+OMP_PLACES=sockets
+MAPPING
+Thread=0, CPUID=37
+Thread=1, CPUID=17
+Thread=2, CPUID=18
+Thread=3, CPUID=16
+Thread=4, CPUID=13
+Thread=5, CPUID=21
+Thread=6, CPUID=28
+Thread=7, CPUID=29
+Thread=8, CPUID=20
+Thread=9, CPUID=11
+Thread=10, CPUID=38
+Thread=11, CPUID=30
+Thread=12, CPUID=19
+Thread=13, CPUID=14
+Thread=14, CPUID=39
+Thread=15, CPUID=31
+Thread=16, CPUID=20
+Thread=17, CPUID=15
+Thread=18, CPUID=32
+Thread=19, CPUID=21
+Thread=20, CPUID=24
+Thread=21, CPUID=8
+Thread=22, CPUID=33
+Thread=23, CPUID=22
+Thread=24, CPUID=25
+Thread=25, CPUID=9
+Thread=26, CPUID=34
+Thread=27, CPUID=4
+Thread=28, CPUID=5
+Thread=29, CPUID=6
+Thread=30, CPUID=7
+Thread=31, CPUID=0
+Thread=32, CPUID=1
+Thread=33, CPUID=2
+Thread=34, CPUID=3
+Thread=35, CPUID=12
+Thread=36, CPUID=23
+Thread=37, CPUID=26
+Thread=38, CPUID=10
+Thread=39, CPUID=130
+
+----------------------
+OMP_NUM_THREADS=40
+OMP_PROC_BIND=true
+OMP_PLACES=sockets
+MAPPING
+Thread=0, CPUID=35
+Thread=1, CPUID=4
+Thread=2, CPUID=5
+Thread=3, CPUID=11
+Thread=4, CPUID=12
+Thread=5, CPUID=18
+Thread=6, CPUID=25
+Thread=7, CPUID=36
+Thread=8, CPUID=17
+Thread=9, CPUID=24
+Thread=10, CPUID=41
+Thread=11, CPUID=42
+Thread=12, CPUID=43
+Thread=13, CPUID=45
+Thread=14, CPUID=47
+Thread=15, CPUID=44
+Thread=16, CPUID=46
+Thread=17, CPUID=40
+Thread=18, CPUID=46
+Thread=19, CPUID=40
+Thread=20, CPUID=83
+Thread=21, CPUID=84
+Thread=22, CPUID=86
+Thread=23, CPUID=85
+Thread=24, CPUID=81
+Thread=25, CPUID=80
+Thread=26, CPUID=82
+Thread=27, CPUID=87
+Thread=28, CPUID=80
+Thread=29, CPUID=82
+Thread=30, CPUID=121
+Thread=31, CPUID=122
+Thread=32, CPUID=123
+Thread=33, CPUID=121
+Thread=34, CPUID=124
+Thread=35, CPUID=125
+Thread=36, CPUID=126
+Thread=37, CPUID=120
+Thread=38, CPUID=134
+Thread=39, CPUID=135
+
+----------------------
+OMP_NUM_THREADS=40
+OMP_PROC_BIND=close
+OMP_PLACES=sockets
+MAPPING
+Thread=0, CPUID=33
+Thread=1, CPUID=7
+Thread=2, CPUID=12
+Thread=3, CPUID=17
+Thread=4, CPUID=26
+Thread=5, CPUID=27
+Thread=6, CPUID=18
+Thread=7, CPUID=13
+Thread=8, CPUID=34
+Thread=9, CPUID=28
+Thread=10, CPUID=40
+Thread=11, CPUID=41
+Thread=12, CPUID=40
+Thread=13, CPUID=42
+Thread=14, CPUID=43
+Thread=15, CPUID=44
+Thread=16, CPUID=47
+Thread=17, CPUID=64
+Thread=18, CPUID=45
+Thread=19, CPUID=46
+Thread=20, CPUID=81
+Thread=21, CPUID=82
+Thread=22, CPUID=83
+Thread=23, CPUID=84
+Thread=24, CPUID=85
+Thread=25, CPUID=86
+Thread=26, CPUID=87
+Thread=27, CPUID=82
+Thread=28, CPUID=81
+Thread=29, CPUID=80
+Thread=30, CPUID=120
+Thread=31, CPUID=121
+Thread=32, CPUID=122
+Thread=33, CPUID=123
+Thread=34, CPUID=124
+Thread=35, CPUID=152
+Thread=36, CPUID=127
+Thread=37, CPUID=153
+Thread=38, CPUID=138
+Thread=39, CPUID=139
+
+----------------------
+OMP_NUM_THREADS=40
+OMP_PROC_BIND=spread
+OMP_PLACES=sockets
+MAPPING
+Thread=0, CPUID=35
+Thread=1, CPUID=0
+Thread=2, CPUID=15
+Thread=3, CPUID=23
+Thread=4, CPUID=16
+Thread=5, CPUID=17
+Thread=6, CPUID=18
+Thread=7, CPUID=1
+Thread=8, CPUID=36
+Thread=9, CPUID=7
+Thread=10, CPUID=40
+Thread=11, CPUID=41
+Thread=12, CPUID=42
+Thread=13, CPUID=43
+Thread=14, CPUID=44
+Thread=15, CPUID=45
+Thread=16, CPUID=46
+Thread=17, CPUID=47
+Thread=18, CPUID=41
+Thread=19, CPUID=40
+Thread=20, CPUID=80
+Thread=21, CPUID=81
+Thread=22, CPUID=82
+Thread=23, CPUID=83
+Thread=24, CPUID=84
+Thread=25, CPUID=85
+Thread=26, CPUID=86
+Thread=27, CPUID=87
+Thread=28, CPUID=81
+Thread=29, CPUID=80
+Thread=30, CPUID=126
+Thread=31, CPUID=127
+Thread=32, CPUID=121
+Thread=33, CPUID=122
+Thread=34, CPUID=123
+Thread=35, CPUID=124
+Thread=36, CPUID=125
+Thread=37, CPUID=125
+Thread=38, CPUID=120
+Thread=39, CPUID=125
+
+----------------------
+OMP_NUM_THREADS=40
+OMP_PROC_BIND=master
+OMP_PLACES=sockets
+MAPPING
+Thread=0, CPUID=37
+Thread=1, CPUID=1
+Thread=2, CPUID=8
+Thread=3, CPUID=17
+Thread=4, CPUID=31
+Thread=5, CPUID=25
+Thread=6, CPUID=18
+Thread=7, CPUID=9
+Thread=8, CPUID=38
+Thread=9, CPUID=26
+Thread=10, CPUID=2
+Thread=11, CPUID=19
+Thread=12, CPUID=10
+Thread=13, CPUID=39
+Thread=14, CPUID=27
+Thread=15, CPUID=20
+Thread=16, CPUID=3
+Thread=17, CPUID=32
+Thread=18, CPUID=11
+Thread=19, CPUID=4
+Thread=20, CPUID=21
+Thread=21, CPUID=28
+Thread=22, CPUID=33
+Thread=23, CPUID=12
+Thread=24, CPUID=5
+Thread=25, CPUID=6
+Thread=26, CPUID=7
+Thread=27, CPUID=0
+Thread=28, CPUID=1
+Thread=29, CPUID=13
+Thread=30, CPUID=14
+Thread=31, CPUID=15
+Thread=32, CPUID=22
+Thread=33, CPUID=23
+Thread=34, CPUID=16
+Thread=35, CPUID=8
+Thread=36, CPUID=24
+Thread=37, CPUID=25
+Thread=38, CPUID=29
+Thread=39, CPUID=30
+
+----------------------
+OMP_NUM_THREADS=80
+OMP_PROC_BIND=false
+OMP_PLACES=threads
+MAPPING
+Thread=0, CPUID=24
+Thread=1, CPUID=32
+Thread=2, CPUID=26
+Thread=3, CPUID=9
+Thread=4, CPUID=21
+Thread=5, CPUID=24
+Thread=6, CPUID=24
+Thread=7, CPUID=12
+Thread=8, CPUID=33
+Thread=9, CPUID=3
+Thread=10, CPUID=26
+Thread=11, CPUID=22
+Thread=12, CPUID=13
+Thread=13, CPUID=3
+Thread=14, CPUID=34
+Thread=15, CPUID=27
+Thread=16, CPUID=35
+Thread=17, CPUID=4
+Thread=18, CPUID=14
+Thread=19, CPUID=18
+Thread=20, CPUID=5
+Thread=21, CPUID=36
+Thread=22, CPUID=38
+Thread=23, CPUID=6
+Thread=24, CPUID=28
+Thread=25, CPUID=23
+Thread=26, CPUID=15
+Thread=27, CPUID=8
+Thread=28, CPUID=16
+Thread=29, CPUID=19
+Thread=30, CPUID=20
+Thread=31, CPUID=9
+Thread=32, CPUID=31
+Thread=33, CPUID=38
+Thread=34, CPUID=7
+Thread=35, CPUID=10
+Thread=36, CPUID=17
+Thread=37, CPUID=39
+Thread=38, CPUID=0
+Thread=39, CPUID=21
+Thread=40, CPUID=25
+Thread=41, CPUID=11
+Thread=42, CPUID=32
+Thread=43, CPUID=30
+Thread=44, CPUID=33
+Thread=45, CPUID=2
+Thread=46, CPUID=34
+Thread=47, CPUID=27
+Thread=48, CPUID=29
+Thread=49, CPUID=30
+Thread=50, CPUID=12
+Thread=51, CPUID=31
+Thread=52, CPUID=35
+Thread=53, CPUID=22
+Thread=54, CPUID=28
+Thread=55, CPUID=29
+Thread=56, CPUID=19
+Thread=57, CPUID=2
+Thread=58, CPUID=8
+Thread=59, CPUID=15
+Thread=60, CPUID=6
+Thread=61, CPUID=31
+Thread=62, CPUID=18
+Thread=63, CPUID=23
+Thread=64, CPUID=13
+Thread=65, CPUID=16
+Thread=66, CPUID=10
+Thread=67, CPUID=25
+Thread=68, CPUID=37
+Thread=69, CPUID=14
+Thread=70, CPUID=4
+Thread=71, CPUID=1
+Thread=72, CPUID=20
+Thread=73, CPUID=0
+Thread=74, CPUID=7
+Thread=75, CPUID=17
+Thread=76, CPUID=36
+Thread=77, CPUID=5
+Thread=78, CPUID=39
+Thread=79, CPUID=11
+
+----------------------
+OMP_NUM_THREADS=80
+OMP_PROC_BIND=true
+OMP_PLACES=threads
+MAPPING
+Thread=0, CPUID=0
+Thread=1, CPUID=1
+Thread=2, CPUID=2
+Thread=3, CPUID=3
+Thread=4, CPUID=4
+Thread=5, CPUID=5
+Thread=6, CPUID=6
+Thread=7, CPUID=7
+Thread=8, CPUID=8
+Thread=9, CPUID=9
+Thread=10, CPUID=10
+Thread=11, CPUID=11
+Thread=12, CPUID=12
+Thread=13, CPUID=13
+Thread=14, CPUID=14
+Thread=15, CPUID=15
+Thread=16, CPUID=16
+Thread=17, CPUID=17
+Thread=18, CPUID=18
+Thread=19, CPUID=19
+Thread=20, CPUID=20
+Thread=21, CPUID=21
+Thread=22, CPUID=22
+Thread=23, CPUID=23
+Thread=24, CPUID=24
+Thread=25, CPUID=25
+Thread=26, CPUID=26
+Thread=27, CPUID=27
+Thread=28, CPUID=28
+Thread=29, CPUID=29
+Thread=30, CPUID=30
+Thread=31, CPUID=31
+Thread=32, CPUID=32
+Thread=33, CPUID=33
+Thread=34, CPUID=34
+Thread=35, CPUID=35
+Thread=36, CPUID=36
+Thread=37, CPUID=37
+Thread=38, CPUID=38
+Thread=39, CPUID=39
+Thread=40, CPUID=40
+Thread=41, CPUID=41
+Thread=42, CPUID=42
+Thread=43, CPUID=43
+Thread=44, CPUID=44
+Thread=45, CPUID=45
+Thread=46, CPUID=46
+Thread=47, CPUID=47
+Thread=48, CPUID=48
+Thread=49, CPUID=49
+Thread=50, CPUID=50
+Thread=51, CPUID=51
+Thread=52, CPUID=52
+Thread=53, CPUID=53
+Thread=54, CPUID=54
+Thread=55, CPUID=55
+Thread=56, CPUID=56
+Thread=57, CPUID=57
+Thread=58, CPUID=58
+Thread=59, CPUID=59
+Thread=60, CPUID=60
+Thread=61, CPUID=61
+Thread=62, CPUID=62
+Thread=63, CPUID=63
+Thread=64, CPUID=64
+Thread=65, CPUID=65
+Thread=66, CPUID=66
+Thread=67, CPUID=67
+Thread=68, CPUID=68
+Thread=69, CPUID=69
+Thread=70, CPUID=70
+Thread=71, CPUID=71
+Thread=72, CPUID=72
+Thread=73, CPUID=73
+Thread=74, CPUID=74
+Thread=75, CPUID=75
+Thread=76, CPUID=76
+Thread=77, CPUID=77
+Thread=78, CPUID=78
+Thread=79, CPUID=79
+
+----------------------
+OMP_NUM_THREADS=80
+OMP_PROC_BIND=close
+OMP_PLACES=threads
+MAPPING
+Thread=0, CPUID=0
+Thread=1, CPUID=1
+Thread=2, CPUID=2
+Thread=3, CPUID=3
+Thread=4, CPUID=4
+Thread=5, CPUID=5
+Thread=6, CPUID=6
+Thread=7, CPUID=7
+Thread=8, CPUID=8
+Thread=9, CPUID=9
+Thread=10, CPUID=10
+Thread=11, CPUID=11
+Thread=12, CPUID=12
+Thread=13, CPUID=13
+Thread=14, CPUID=14
+Thread=15, CPUID=15
+Thread=16, CPUID=16
+Thread=17, CPUID=17
+Thread=18, CPUID=18
+Thread=19, CPUID=19
+Thread=20, CPUID=20
+Thread=21, CPUID=21
+Thread=22, CPUID=22
+Thread=23, CPUID=23
+Thread=24, CPUID=24
+Thread=25, CPUID=25
+Thread=26, CPUID=26
+Thread=27, CPUID=27
+Thread=28, CPUID=28
+Thread=29, CPUID=29
+Thread=30, CPUID=30
+Thread=31, CPUID=31
+Thread=32, CPUID=32
+Thread=33, CPUID=33
+Thread=34, CPUID=34
+Thread=35, CPUID=35
+Thread=36, CPUID=36
+Thread=37, CPUID=37
+Thread=38, CPUID=38
+Thread=39, CPUID=39
+Thread=40, CPUID=40
+Thread=41, CPUID=41
+Thread=42, CPUID=42
+Thread=43, CPUID=43
+Thread=44, CPUID=44
+Thread=45, CPUID=45
+Thread=46, CPUID=46
+Thread=47, CPUID=47
+Thread=48, CPUID=48
+Thread=49, CPUID=49
+Thread=50, CPUID=50
+Thread=51, CPUID=51
+Thread=52, CPUID=52
+Thread=53, CPUID=53
+Thread=54, CPUID=54
+Thread=55, CPUID=55
+Thread=56, CPUID=56
+Thread=57, CPUID=57
+Thread=58, CPUID=58
+Thread=59, CPUID=59
+Thread=60, CPUID=60
+Thread=61, CPUID=61
+Thread=62, CPUID=62
+Thread=63, CPUID=63
+Thread=64, CPUID=64
+Thread=65, CPUID=65
+Thread=66, CPUID=66
+Thread=67, CPUID=67
+Thread=68, CPUID=68
+Thread=69, CPUID=69
+Thread=70, CPUID=70
+Thread=71, CPUID=71
+Thread=72, CPUID=72
+Thread=73, CPUID=73
+Thread=74, CPUID=74
+Thread=75, CPUID=75
+Thread=76, CPUID=76
+Thread=77, CPUID=77
+Thread=78, CPUID=78
+Thread=79, CPUID=79
+
+----------------------
+OMP_NUM_THREADS=80
+OMP_PROC_BIND=spread
+OMP_PLACES=threads
+MAPPING
+Thread=0, CPUID=0
+Thread=1, CPUID=2
+Thread=2, CPUID=4
+Thread=3, CPUID=6
+Thread=4, CPUID=8
+Thread=5, CPUID=10
+Thread=6, CPUID=12
+Thread=7, CPUID=14
+Thread=8, CPUID=16
+Thread=9, CPUID=18
+Thread=10, CPUID=20
+Thread=11, CPUID=22
+Thread=12, CPUID=24
+Thread=13, CPUID=26
+Thread=14, CPUID=28
+Thread=15, CPUID=30
+Thread=16, CPUID=32
+Thread=17, CPUID=34
+Thread=18, CPUID=36
+Thread=19, CPUID=38
+Thread=20, CPUID=40
+Thread=21, CPUID=42
+Thread=22, CPUID=44
+Thread=23, CPUID=46
+Thread=24, CPUID=48
+Thread=25, CPUID=50
+Thread=26, CPUID=52
+Thread=27, CPUID=54
+Thread=28, CPUID=56
+Thread=29, CPUID=58
+Thread=30, CPUID=60
+Thread=31, CPUID=62
+Thread=32, CPUID=64
+Thread=33, CPUID=66
+Thread=34, CPUID=68
+Thread=35, CPUID=70
+Thread=36, CPUID=72
+Thread=37, CPUID=74
+Thread=38, CPUID=76
+Thread=39, CPUID=78
+Thread=40, CPUID=80
+Thread=41, CPUID=82
+Thread=42, CPUID=84
+Thread=43, CPUID=86
+Thread=44, CPUID=88
+Thread=45, CPUID=90
+Thread=46, CPUID=92
+Thread=47, CPUID=94
+Thread=48, CPUID=96
+Thread=49, CPUID=98
+Thread=50, CPUID=100
+Thread=51, CPUID=102
+Thread=52, CPUID=104
+Thread=53, CPUID=106
+Thread=54, CPUID=108
+Thread=55, CPUID=110
+Thread=56, CPUID=112
+Thread=57, CPUID=114
+Thread=58, CPUID=116
+Thread=59, CPUID=118
+Thread=60, CPUID=120
+Thread=61, CPUID=122
+Thread=62, CPUID=124
+Thread=63, CPUID=126
+Thread=64, CPUID=128
+Thread=65, CPUID=130
+Thread=66, CPUID=132
+Thread=67, CPUID=134
+Thread=68, CPUID=136
+Thread=69, CPUID=138
+Thread=70, CPUID=140
+Thread=71, CPUID=142
+Thread=72, CPUID=144
+Thread=73, CPUID=146
+Thread=74, CPUID=148
+Thread=75, CPUID=150
+Thread=76, CPUID=152
+Thread=77, CPUID=154
+Thread=78, CPUID=156
+Thread=79, CPUID=158
+
+----------------------
+OMP_NUM_THREADS=80
+OMP_PROC_BIND=master
+OMP_PLACES=threads
+MAPPING
+Thread=0, CPUID=0
+Thread=1, CPUID=0
+Thread=2, CPUID=0
+Thread=3, CPUID=0
+Thread=4, CPUID=0
+Thread=5, CPUID=0
+Thread=6, CPUID=0
+Thread=7, CPUID=0
+Thread=8, CPUID=0
+Thread=9, CPUID=0
+Thread=10, CPUID=0
+Thread=11, CPUID=0
+Thread=12, CPUID=0
+Thread=13, CPUID=0
+Thread=14, CPUID=0
+Thread=15, CPUID=0
+Thread=16, CPUID=0
+Thread=17, CPUID=0
+Thread=18, CPUID=0
+Thread=19, CPUID=0
+Thread=20, CPUID=0
+Thread=21, CPUID=0
+Thread=22, CPUID=0
+Thread=23, CPUID=0
+Thread=24, CPUID=0
+Thread=25, CPUID=0
+Thread=26, CPUID=0
+Thread=27, CPUID=0
+Thread=28, CPUID=0
+Thread=29, CPUID=0
+Thread=30, CPUID=0
+Thread=31, CPUID=0
+Thread=32, CPUID=0
+Thread=33, CPUID=0
+Thread=34, CPUID=0
+Thread=35, CPUID=0
+Thread=36, CPUID=0
+Thread=37, CPUID=0
+Thread=38, CPUID=0
+Thread=39, CPUID=0
+Thread=40, CPUID=0
+Thread=41, CPUID=0
+Thread=42, CPUID=0
+Thread=43, CPUID=0
+Thread=44, CPUID=0
+Thread=45, CPUID=0
+Thread=46, CPUID=0
+Thread=47, CPUID=0
+Thread=48, CPUID=0
+Thread=49, CPUID=0
+Thread=50, CPUID=0
+Thread=51, CPUID=0
+Thread=52, CPUID=0
+Thread=53, CPUID=0
+Thread=54, CPUID=0
+Thread=55, CPUID=0
+Thread=56, CPUID=0
+Thread=57, CPUID=0
+Thread=58, CPUID=0
+Thread=59, CPUID=0
+Thread=60, CPUID=0
+Thread=61, CPUID=0
+Thread=62, CPUID=0
+Thread=63, CPUID=0
+Thread=64, CPUID=0
+Thread=65, CPUID=0
+Thread=66, CPUID=0
+Thread=67, CPUID=0
+Thread=68, CPUID=0
+Thread=69, CPUID=0
+Thread=70, CPUID=0
+Thread=71, CPUID=0
+Thread=72, CPUID=0
+Thread=73, CPUID=0
+Thread=74, CPUID=0
+Thread=75, CPUID=0
+Thread=76, CPUID=0
+Thread=77, CPUID=0
+Thread=78, CPUID=0
+Thread=79, CPUID=0
+
+----------------------
+OMP_NUM_THREADS=80
+OMP_PROC_BIND=false
+OMP_PLACES=cores
+MAPPING
+Thread=0, CPUID=37
+Thread=1, CPUID=3
+Thread=2, CPUID=12
+Thread=3, CPUID=16
+Thread=4, CPUID=29
+Thread=5, CPUID=30
+Thread=6, CPUID=17
+Thread=7, CPUID=13
+Thread=8, CPUID=4
+Thread=9, CPUID=31
+Thread=10, CPUID=38
+Thread=11, CPUID=14
+Thread=12, CPUID=5
+Thread=13, CPUID=6
+Thread=14, CPUID=7
+Thread=15, CPUID=0
+Thread=16, CPUID=1
+Thread=17, CPUID=39
+Thread=18, CPUID=24
+Thread=19, CPUID=15
+Thread=20, CPUID=18
+Thread=21, CPUID=2
+Thread=22, CPUID=32
+Thread=23, CPUID=18
+Thread=24, CPUID=19
+Thread=25, CPUID=20
+Thread=26, CPUID=21
+Thread=27, CPUID=30
+Thread=28, CPUID=2
+Thread=29, CPUID=22
+Thread=30, CPUID=8
+Thread=31, CPUID=23
+Thread=32, CPUID=9
+Thread=33, CPUID=17
+Thread=34, CPUID=10
+Thread=35, CPUID=11
+Thread=36, CPUID=16
+Thread=37, CPUID=29
+Thread=38, CPUID=110
+Thread=39, CPUID=26
+Thread=40, CPUID=13
+Thread=41, CPUID=27
+Thread=42, CPUID=9
+Thread=43, CPUID=28
+Thread=44, CPUID=10
+Thread=45, CPUID=8
+Thread=46, CPUID=12
+Thread=47, CPUID=11
+Thread=48, CPUID=104
+Thread=49, CPUID=24
+Thread=50, CPUID=31
+Thread=51, CPUID=31
+Thread=52, CPUID=1
+Thread=53, CPUID=3
+Thread=54, CPUID=4
+Thread=55, CPUID=4
+Thread=56, CPUID=5
+Thread=57, CPUID=6
+Thread=58, CPUID=7
+Thread=59, CPUID=0
+Thread=60, CPUID=3
+Thread=61, CPUID=109
+Thread=62, CPUID=107
+Thread=63, CPUID=109
+Thread=64, CPUID=104
+Thread=65, CPUID=110
+Thread=66, CPUID=109
+Thread=67, CPUID=105
+Thread=68, CPUID=106
+Thread=69, CPUID=104
+Thread=70, CPUID=108
+Thread=71, CPUID=109
+Thread=72, CPUID=25
+Thread=73, CPUID=28
+Thread=74, CPUID=27
+Thread=75, CPUID=110
+Thread=76, CPUID=26
+Thread=77, CPUID=111
+Thread=78, CPUID=25
+Thread=79, CPUID=29
+
+----------------------
+OMP_NUM_THREADS=80
+OMP_PROC_BIND=true
+OMP_PLACES=cores
+MAPPING
+Thread=0, CPUID=0
+Thread=1, CPUID=1
+Thread=2, CPUID=2
+Thread=3, CPUID=3
+Thread=4, CPUID=8
+Thread=5, CPUID=9
+Thread=6, CPUID=11
+Thread=7, CPUID=12
+Thread=8, CPUID=16
+Thread=9, CPUID=22
+Thread=10, CPUID=17
+Thread=11, CPUID=20
+Thread=12, CPUID=24
+Thread=13, CPUID=25
+Thread=14, CPUID=26
+Thread=15, CPUID=27
+Thread=16, CPUID=33
+Thread=17, CPUID=32
+Thread=18, CPUID=34
+Thread=19, CPUID=35
+Thread=20, CPUID=40
+Thread=21, CPUID=41
+Thread=22, CPUID=42
+Thread=23, CPUID=43
+Thread=24, CPUID=48
+Thread=25, CPUID=49
+Thread=26, CPUID=50
+Thread=27, CPUID=51
+Thread=28, CPUID=56
+Thread=29, CPUID=57
+Thread=30, CPUID=58
+Thread=31, CPUID=59
+Thread=32, CPUID=64
+Thread=33, CPUID=66
+Thread=34, CPUID=65
+Thread=35, CPUID=67
+Thread=36, CPUID=72
+Thread=37, CPUID=74
+Thread=38, CPUID=75
+Thread=39, CPUID=73
+Thread=40, CPUID=80
+Thread=41, CPUID=81
+Thread=42, CPUID=82
+Thread=43, CPUID=83
+Thread=44, CPUID=88
+Thread=45, CPUID=89
+Thread=46, CPUID=91
+Thread=47, CPUID=90
+Thread=48, CPUID=96
+Thread=49, CPUID=97
+Thread=50, CPUID=98
+Thread=51, CPUID=99
+Thread=52, CPUID=104
+Thread=53, CPUID=106
+Thread=54, CPUID=107
+Thread=55, CPUID=105
+Thread=56, CPUID=113
+Thread=57, CPUID=112
+Thread=58, CPUID=114
+Thread=59, CPUID=115
+Thread=60, CPUID=121
+Thread=61, CPUID=122
+Thread=62, CPUID=123
+Thread=63, CPUID=120
+Thread=64, CPUID=129
+Thread=65, CPUID=130
+Thread=66, CPUID=131
+Thread=67, CPUID=128
+Thread=68, CPUID=137
+Thread=69, CPUID=138
+Thread=70, CPUID=139
+Thread=71, CPUID=136
+Thread=72, CPUID=145
+Thread=73, CPUID=146
+Thread=74, CPUID=147
+Thread=75, CPUID=144
+Thread=76, CPUID=153
+Thread=77, CPUID=154
+Thread=78, CPUID=155
+Thread=79, CPUID=152
+
+----------------------
+OMP_NUM_THREADS=80
+OMP_PROC_BIND=close
+OMP_PLACES=cores
+MAPPING
+Thread=0, CPUID=0
+Thread=1, CPUID=1
+Thread=2, CPUID=2
+Thread=3, CPUID=3
+Thread=4, CPUID=8
+Thread=5, CPUID=9
+Thread=6, CPUID=10
+Thread=7, CPUID=11
+Thread=8, CPUID=16
+Thread=9, CPUID=17
+Thread=10, CPUID=18
+Thread=11, CPUID=19
+Thread=12, CPUID=24
+Thread=13, CPUID=25
+Thread=14, CPUID=26
+Thread=15, CPUID=27
+Thread=16, CPUID=32
+Thread=17, CPUID=33
+Thread=18, CPUID=34
+Thread=19, CPUID=35
+Thread=20, CPUID=40
+Thread=21, CPUID=41
+Thread=22, CPUID=42
+Thread=23, CPUID=43
+Thread=24, CPUID=48
+Thread=25, CPUID=49
+Thread=26, CPUID=50
+Thread=27, CPUID=51
+Thread=28, CPUID=56
+Thread=29, CPUID=57
+Thread=30, CPUID=58
+Thread=31, CPUID=59
+Thread=32, CPUID=64
+Thread=33, CPUID=65
+Thread=34, CPUID=66
+Thread=35, CPUID=67
+Thread=36, CPUID=72
+Thread=37, CPUID=73
+Thread=38, CPUID=74
+Thread=39, CPUID=75
+Thread=40, CPUID=80
+Thread=41, CPUID=81
+Thread=42, CPUID=82
+Thread=43, CPUID=83
+Thread=44, CPUID=89
+Thread=45, CPUID=90
+Thread=46, CPUID=91
+Thread=47, CPUID=88
+Thread=48, CPUID=97
+Thread=49, CPUID=98
+Thread=50, CPUID=99
+Thread=51, CPUID=96
+Thread=52, CPUID=104
+Thread=53, CPUID=105
+Thread=54, CPUID=106
+Thread=55, CPUID=107
+Thread=56, CPUID=113
+Thread=57, CPUID=114
+Thread=58, CPUID=112
+Thread=59, CPUID=116
+Thread=60, CPUID=121
+Thread=61, CPUID=122
+Thread=62, CPUID=120
+Thread=63, CPUID=124
+Thread=64, CPUID=129
+Thread=65, CPUID=130
+Thread=66, CPUID=128
+Thread=67, CPUID=132
+Thread=68, CPUID=136
+Thread=69, CPUID=137
+Thread=70, CPUID=141
+Thread=71, CPUID=140
+Thread=72, CPUID=145
+Thread=73, CPUID=144
+Thread=74, CPUID=149
+Thread=75, CPUID=148
+Thread=76, CPUID=153
+Thread=77, CPUID=152
+Thread=78, CPUID=157
+Thread=79, CPUID=156
+
+----------------------
+OMP_NUM_THREADS=80
+OMP_PROC_BIND=spread
+OMP_PLACES=cores
+MAPPING
+Thread=0, CPUID=0
+Thread=1, CPUID=1
+Thread=2, CPUID=2
+Thread=3, CPUID=3
+Thread=4, CPUID=8
+Thread=5, CPUID=9
+Thread=6, CPUID=10
+Thread=7, CPUID=11
+Thread=8, CPUID=16
+Thread=9, CPUID=17
+Thread=10, CPUID=18
+Thread=11, CPUID=19
+Thread=12, CPUID=24
+Thread=13, CPUID=25
+Thread=14, CPUID=26
+Thread=15, CPUID=27
+Thread=16, CPUID=32
+Thread=17, CPUID=34
+Thread=18, CPUID=33
+Thread=19, CPUID=35
+Thread=20, CPUID=40
+Thread=21, CPUID=42
+Thread=22, CPUID=41
+Thread=23, CPUID=43
+Thread=24, CPUID=48
+Thread=25, CPUID=49
+Thread=26, CPUID=50
+Thread=27, CPUID=51
+Thread=28, CPUID=56
+Thread=29, CPUID=57
+Thread=30, CPUID=58
+Thread=31, CPUID=59
+Thread=32, CPUID=64
+Thread=33, CPUID=65
+Thread=34, CPUID=66
+Thread=35, CPUID=67
+Thread=36, CPUID=72
+Thread=37, CPUID=73
+Thread=38, CPUID=74
+Thread=39, CPUID=75
+Thread=40, CPUID=80
+Thread=41, CPUID=81
+Thread=42, CPUID=82
+Thread=43, CPUID=83
+Thread=44, CPUID=88
+Thread=45, CPUID=89
+Thread=46, CPUID=90
+Thread=47, CPUID=91
+Thread=48, CPUID=96
+Thread=49, CPUID=97
+Thread=50, CPUID=98
+Thread=51, CPUID=99
+Thread=52, CPUID=104
+Thread=53, CPUID=105
+Thread=54, CPUID=111
+Thread=55, CPUID=109
+Thread=56, CPUID=112
+Thread=57, CPUID=114
+Thread=58, CPUID=113
+Thread=59, CPUID=116
+Thread=60, CPUID=120
+Thread=61, CPUID=122
+Thread=62, CPUID=124
+Thread=63, CPUID=121
+Thread=64, CPUID=128
+Thread=65, CPUID=129
+Thread=66, CPUID=130
+Thread=67, CPUID=131
+Thread=68, CPUID=137
+Thread=69, CPUID=138
+Thread=70, CPUID=139
+Thread=71, CPUID=136
+Thread=72, CPUID=145
+Thread=73, CPUID=146
+Thread=74, CPUID=147
+Thread=75, CPUID=144
+Thread=76, CPUID=153
+Thread=77, CPUID=154
+Thread=78, CPUID=155
+Thread=79, CPUID=152
+
+----------------------
+OMP_NUM_THREADS=80
+OMP_PROC_BIND=master
+OMP_PLACES=cores
+MAPPING
+Thread=0, CPUID=0
+Thread=1, CPUID=1
+Thread=2, CPUID=0
+Thread=3, CPUID=0
+Thread=4, CPUID=0
+Thread=5, CPUID=0
+Thread=6, CPUID=0
+Thread=7, CPUID=0
+Thread=8, CPUID=7
+Thread=9, CPUID=5
+Thread=10, CPUID=2
+Thread=11, CPUID=1
+Thread=12, CPUID=2
+Thread=13, CPUID=1
+Thread=14, CPUID=3
+Thread=15, CPUID=5
+Thread=16, CPUID=0
+Thread=17, CPUID=5
+Thread=18, CPUID=4
+Thread=19, CPUID=3
+Thread=20, CPUID=1
+Thread=21, CPUID=2
+Thread=22, CPUID=7
+Thread=23, CPUID=6
+Thread=24, CPUID=2
+Thread=25, CPUID=1
+Thread=26, CPUID=0
+Thread=27, CPUID=0
+Thread=28, CPUID=6
+Thread=29, CPUID=4
+Thread=30, CPUID=4
+Thread=31, CPUID=0
+Thread=32, CPUID=4
+Thread=33, CPUID=3
+Thread=34, CPUID=2
+Thread=35, CPUID=1
+Thread=36, CPUID=0
+Thread=37, CPUID=3
+Thread=38, CPUID=1
+Thread=39, CPUID=3
+Thread=40, CPUID=6
+Thread=41, CPUID=4
+Thread=42, CPUID=3
+Thread=43, CPUID=1
+Thread=44, CPUID=6
+Thread=45, CPUID=0
+Thread=46, CPUID=0
+Thread=47, CPUID=7
+Thread=48, CPUID=7
+Thread=49, CPUID=0
+Thread=50, CPUID=2
+Thread=51, CPUID=2
+Thread=52, CPUID=1
+Thread=53, CPUID=1
+Thread=54, CPUID=1
+Thread=55, CPUID=3
+Thread=56, CPUID=0
+Thread=57, CPUID=0
+Thread=58, CPUID=0
+Thread=59, CPUID=3
+Thread=60, CPUID=0
+Thread=61, CPUID=6
+Thread=62, CPUID=1
+Thread=63, CPUID=2
+Thread=64, CPUID=5
+Thread=65, CPUID=4
+Thread=66, CPUID=3
+Thread=67, CPUID=7
+Thread=68, CPUID=4
+Thread=69, CPUID=2
+Thread=70, CPUID=1
+Thread=71, CPUID=7
+Thread=72, CPUID=0
+Thread=73, CPUID=1
+Thread=74, CPUID=1
+Thread=75, CPUID=3
+Thread=76, CPUID=5
+Thread=77, CPUID=4
+Thread=78, CPUID=3
+Thread=79, CPUID=0
+
+----------------------
+OMP_NUM_THREADS=80
+OMP_PROC_BIND=false
+OMP_PLACES=sockets
+MAPPING
+Thread=0, CPUID=39
+Thread=1, CPUID=3
+Thread=2, CPUID=11
+Thread=3, CPUID=18
+Thread=4, CPUID=28
+Thread=5, CPUID=30
+Thread=6, CPUID=138
+Thread=7, CPUID=9
+Thread=8, CPUID=32
+Thread=9, CPUID=25
+Thread=10, CPUID=23
+Thread=11, CPUID=4
+Thread=12, CPUID=5
+Thread=13, CPUID=6
+Thread=14, CPUID=7
+Thread=15, CPUID=0
+Thread=16, CPUID=1
+Thread=17, CPUID=10
+Thread=18, CPUID=33
+Thread=19, CPUID=2
+Thread=20, CPUID=26
+Thread=21, CPUID=16
+Thread=22, CPUID=138
+Thread=23, CPUID=36
+Thread=24, CPUID=138
+Thread=25, CPUID=138
+Thread=26, CPUID=27
+Thread=27, CPUID=21
+Thread=28, CPUID=12
+Thread=29, CPUID=22
+Thread=30, CPUID=27
+Thread=31, CPUID=22
+Thread=32, CPUID=23
+Thread=33, CPUID=16
+Thread=34, CPUID=26
+Thread=35, CPUID=16
+Thread=36, CPUID=28
+Thread=37, CPUID=22
+Thread=38, CPUID=29
+Thread=39, CPUID=17
+Thread=40, CPUID=31
+Thread=41, CPUID=8
+Thread=42, CPUID=30
+Thread=43, CPUID=32
+Thread=44, CPUID=16
+Thread=45, CPUID=36
+Thread=46, CPUID=138
+Thread=47, CPUID=138
+Thread=48, CPUID=138
+Thread=49, CPUID=3
+Thread=50, CPUID=13
+Thread=51, CPUID=138
+Thread=52, CPUID=26
+Thread=53, CPUID=33
+Thread=54, CPUID=14
+Thread=55, CPUID=34
+Thread=56, CPUID=9
+Thread=57, CPUID=12
+Thread=58, CPUID=37
+Thread=59, CPUID=6
+Thread=60, CPUID=38
+Thread=61, CPUID=15
+Thread=62, CPUID=30
+Thread=63, CPUID=35
+Thread=64, CPUID=17
+Thread=65, CPUID=29
+Thread=66, CPUID=4
+Thread=67, CPUID=23
+Thread=68, CPUID=22
+Thread=69, CPUID=17
+Thread=70, CPUID=21
+Thread=71, CPUID=21
+Thread=72, CPUID=19
+Thread=73, CPUID=10
+Thread=74, CPUID=17
+Thread=75, CPUID=138
+Thread=76, CPUID=13
+Thread=77, CPUID=20
+Thread=78, CPUID=24
+Thread=79, CPUID=31
+
+----------------------
+OMP_NUM_THREADS=80
+OMP_PROC_BIND=true
+OMP_PLACES=sockets
+MAPPING
+Thread=0, CPUID=18
+Thread=1, CPUID=22
+Thread=2, CPUID=28
+Thread=3, CPUID=33
+Thread=4, CPUID=2
+Thread=5, CPUID=3
+Thread=6, CPUID=34
+Thread=7, CPUID=29
+Thread=8, CPUID=8
+Thread=9, CPUID=23
+Thread=10, CPUID=4
+Thread=11, CPUID=35
+Thread=12, CPUID=9
+Thread=13, CPUID=30
+Thread=14, CPUID=16
+Thread=15, CPUID=5
+Thread=16, CPUID=36
+Thread=17, CPUID=10
+Thread=18, CPUID=31
+Thread=19, CPUID=17
+Thread=20, CPUID=41
+Thread=21, CPUID=42
+Thread=22, CPUID=42
+Thread=23, CPUID=44
+Thread=24, CPUID=43
+Thread=25, CPUID=43
+Thread=26, CPUID=46
+Thread=27, CPUID=43
+Thread=28, CPUID=41
+Thread=29, CPUID=41
+Thread=30, CPUID=40
+Thread=31, CPUID=44
+Thread=32, CPUID=40
+Thread=33, CPUID=42
+Thread=34, CPUID=47
+Thread=35, CPUID=47
+Thread=36, CPUID=46
+Thread=37, CPUID=45
+Thread=38, CPUID=45
+Thread=39, CPUID=44
+Thread=40, CPUID=81
+Thread=41, CPUID=82
+Thread=42, CPUID=80
+Thread=43, CPUID=84
+Thread=44, CPUID=82
+Thread=45, CPUID=84
+Thread=46, CPUID=80
+Thread=47, CPUID=85
+Thread=48, CPUID=83
+Thread=49, CPUID=83
+Thread=50, CPUID=81
+Thread=51, CPUID=81
+Thread=52, CPUID=80
+Thread=53, CPUID=86
+Thread=54, CPUID=87
+Thread=55, CPUID=87
+Thread=56, CPUID=87
+Thread=57, CPUID=85
+Thread=58, CPUID=86
+Thread=59, CPUID=84
+Thread=60, CPUID=120
+Thread=61, CPUID=139
+Thread=62, CPUID=140
+Thread=63, CPUID=138
+Thread=64, CPUID=121
+Thread=65, CPUID=122
+Thread=66, CPUID=123
+Thread=67, CPUID=124
+Thread=68, CPUID=125
+Thread=69, CPUID=142
+Thread=70, CPUID=137
+Thread=71, CPUID=143
+Thread=72, CPUID=140
+Thread=73, CPUID=141
+Thread=74, CPUID=136
+Thread=75, CPUID=141
+Thread=76, CPUID=139
+Thread=77, CPUID=126
+Thread=78, CPUID=142
+Thread=79, CPUID=138
+
+----------------------
+OMP_NUM_THREADS=80
+OMP_PROC_BIND=close
+OMP_PLACES=sockets
+MAPPING
+Thread=0, CPUID=22
+Thread=1, CPUID=17
+Thread=2, CPUID=28
+Thread=3, CPUID=33
+Thread=4, CPUID=1
+Thread=5, CPUID=2
+Thread=6, CPUID=34
+Thread=7, CPUID=29
+Thread=8, CPUID=8
+Thread=9, CPUID=3
+Thread=10, CPUID=18
+Thread=11, CPUID=35
+Thread=12, CPUID=30
+Thread=13, CPUID=9
+Thread=14, CPUID=4
+Thread=15, CPUID=36
+Thread=16, CPUID=19
+Thread=17, CPUID=31
+Thread=18, CPUID=10
+Thread=19, CPUID=20
+Thread=20, CPUID=40
+Thread=21, CPUID=41
+Thread=22, CPUID=42
+Thread=23, CPUID=43
+Thread=24, CPUID=44
+Thread=25, CPUID=45
+Thread=26, CPUID=45
+Thread=27, CPUID=46
+Thread=28, CPUID=47
+Thread=29, CPUID=40
+Thread=30, CPUID=40
+Thread=31, CPUID=46
+Thread=32, CPUID=44
+Thread=33, CPUID=40
+Thread=34, CPUID=43
+Thread=35, CPUID=47
+Thread=36, CPUID=41
+Thread=37, CPUID=41
+Thread=38, CPUID=42
+Thread=39, CPUID=42
+Thread=40, CPUID=80
+Thread=41, CPUID=82
+Thread=42, CPUID=83
+Thread=43, CPUID=84
+Thread=44, CPUID=85
+Thread=45, CPUID=81
+Thread=46, CPUID=83
+Thread=47, CPUID=86
+Thread=48, CPUID=87
+Thread=49, CPUID=80
+Thread=50, CPUID=82
+Thread=51, CPUID=87
+Thread=52, CPUID=86
+Thread=53, CPUID=80
+Thread=54, CPUID=84
+Thread=55, CPUID=82
+Thread=56, CPUID=81
+Thread=57, CPUID=85
+Thread=58, CPUID=81
+Thread=59, CPUID=85
+Thread=60, CPUID=121
+Thread=61, CPUID=122
+Thread=62, CPUID=123
+Thread=63, CPUID=124
+Thread=64, CPUID=125
+Thread=65, CPUID=126
+Thread=66, CPUID=127
+Thread=67, CPUID=143
+Thread=68, CPUID=142
+Thread=69, CPUID=138
+Thread=70, CPUID=136
+Thread=71, CPUID=120
+Thread=72, CPUID=140
+Thread=73, CPUID=141
+Thread=74, CPUID=126
+Thread=75, CPUID=139
+Thread=76, CPUID=120
+Thread=77, CPUID=126
+Thread=78, CPUID=121
+Thread=79, CPUID=121
+
+----------------------
+OMP_NUM_THREADS=80
+OMP_PROC_BIND=spread
+OMP_PLACES=sockets
+MAPPING
+Thread=0, CPUID=17
+Thread=1, CPUID=19
+Thread=2, CPUID=20
+Thread=3, CPUID=21
+Thread=4, CPUID=0
+Thread=5, CPUID=37
+Thread=6, CPUID=12
+Thread=7, CPUID=7
+Thread=8, CPUID=36
+Thread=9, CPUID=11
+Thread=10, CPUID=4
+Thread=11, CPUID=6
+Thread=12, CPUID=5
+Thread=13, CPUID=33
+Thread=14, CPUID=35
+Thread=15, CPUID=34
+Thread=16, CPUID=24
+Thread=17, CPUID=22
+Thread=18, CPUID=13
+Thread=19, CPUID=25
+Thread=20, CPUID=40
+Thread=21, CPUID=41
+Thread=22, CPUID=44
+Thread=23, CPUID=40
+Thread=24, CPUID=42
+Thread=25, CPUID=47
+Thread=26, CPUID=46
+Thread=27, CPUID=73
+Thread=28, CPUID=45
+Thread=29, CPUID=43
+Thread=30, CPUID=72
+Thread=31, CPUID=47
+Thread=32, CPUID=44
+Thread=33, CPUID=43
+Thread=34, CPUID=42
+Thread=35, CPUID=46
+Thread=36, CPUID=41
+Thread=37, CPUID=45
+Thread=38, CPUID=72
+Thread=39, CPUID=73
+Thread=40, CPUID=81
+Thread=41, CPUID=82
+Thread=42, CPUID=86
+Thread=43, CPUID=87
+Thread=44, CPUID=83
+Thread=45, CPUID=80
+Thread=46, CPUID=84
+Thread=47, CPUID=80
+Thread=48, CPUID=83
+Thread=49, CPUID=82
+Thread=50, CPUID=80
+Thread=51, CPUID=85
+Thread=52, CPUID=85
+Thread=53, CPUID=87
+Thread=54, CPUID=86
+Thread=55, CPUID=82
+Thread=56, CPUID=83
+Thread=57, CPUID=84
+Thread=58, CPUID=84
+Thread=59, CPUID=81
+Thread=60, CPUID=127
+Thread=61, CPUID=122
+Thread=62, CPUID=123
+Thread=63, CPUID=126
+Thread=64, CPUID=127
+Thread=65, CPUID=136
+Thread=66, CPUID=120
+Thread=67, CPUID=125
+Thread=68, CPUID=120
+Thread=69, CPUID=143
+Thread=70, CPUID=121
+Thread=71, CPUID=124
+Thread=72, CPUID=123
+Thread=73, CPUID=122
+Thread=74, CPUID=124
+Thread=75, CPUID=125
+Thread=76, CPUID=121
+Thread=77, CPUID=136
+Thread=78, CPUID=126
+Thread=79, CPUID=126
+
+----------------------
+OMP_NUM_THREADS=80
+OMP_PROC_BIND=master
+OMP_PLACES=sockets
+MAPPING
+Thread=0, CPUID=14
+Thread=1, CPUID=22
+Thread=2, CPUID=26
+Thread=3, CPUID=33
+Thread=4, CPUID=6
+Thread=5, CPUID=7
+Thread=6, CPUID=34
+Thread=7, CPUID=28
+Thread=8, CPUID=15
+Thread=9, CPUID=23
+Thread=10, CPUID=0
+Thread=11, CPUID=35
+Thread=12, CPUID=29
+Thread=13, CPUID=8
+Thread=14, CPUID=16
+Thread=15, CPUID=1
+Thread=16, CPUID=36
+Thread=17, CPUID=12
+Thread=18, CPUID=22
+Thread=19, CPUID=17
+Thread=20, CPUID=32
+Thread=21, CPUID=18
+Thread=22, CPUID=19
+Thread=23, CPUID=20
+Thread=24, CPUID=21
+Thread=25, CPUID=23
+Thread=26, CPUID=35
+Thread=27, CPUID=12
+Thread=28, CPUID=13
+Thread=29, CPUID=30
+Thread=30, CPUID=34
+Thread=31, CPUID=31
+Thread=32, CPUID=37
+Thread=33, CPUID=24
+Thread=34, CPUID=38
+Thread=35, CPUID=25
+Thread=36, CPUID=3
+Thread=37, CPUID=39
+Thread=38, CPUID=27
+Thread=39, CPUID=26
+Thread=40, CPUID=4
+Thread=41, CPUID=13
+Thread=42, CPUID=5
+Thread=43, CPUID=9
+Thread=44, CPUID=15
+Thread=45, CPUID=5
+Thread=46, CPUID=0
+Thread=47, CPUID=8
+Thread=48, CPUID=10
+Thread=49, CPUID=4
+Thread=50, CPUID=7
+Thread=51, CPUID=3
+Thread=52, CPUID=16
+Thread=53, CPUID=32
+Thread=54, CPUID=2
+Thread=55, CPUID=1
+Thread=56, CPUID=6
+Thread=57, CPUID=28
+Thread=58, CPUID=22
+Thread=59, CPUID=23
+Thread=60, CPUID=19
+Thread=61, CPUID=16
+Thread=62, CPUID=15
+Thread=63, CPUID=31
+Thread=64, CPUID=29
+Thread=65, CPUID=27
+Thread=66, CPUID=32
+Thread=67, CPUID=35
+Thread=68, CPUID=34
+Thread=69, CPUID=11
+Thread=70, CPUID=25
+Thread=71, CPUID=30
+Thread=72, CPUID=24
+Thread=73, CPUID=9
+Thread=74, CPUID=10
+Thread=75, CPUID=11
+Thread=76, CPUID=11
+Thread=77, CPUID=14
+Thread=78, CPUID=9
+Thread=79, CPUID=10
+
+----------------------
+OMP_NUM_THREADS=160
+OMP_PROC_BIND=false
+OMP_PLACES=threads
+MAPPING
+Thread=0, CPUID=23
+Thread=1, CPUID=27
+Thread=2, CPUID=32
+Thread=3, CPUID=4
+Thread=4, CPUID=9
+Thread=5, CPUID=11
+Thread=6, CPUID=0
+Thread=7, CPUID=5
+Thread=8, CPUID=33
+Thread=9, CPUID=16
+Thread=10, CPUID=28
+Thread=11, CPUID=6
+Thread=12, CPUID=17
+Thread=13, CPUID=34
+Thread=14, CPUID=29
+Thread=15, CPUID=7
+Thread=16, CPUID=10
+Thread=17, CPUID=18
+Thread=18, CPUID=35
+Thread=19, CPUID=29
+Thread=20, CPUID=13
+Thread=21, CPUID=12
+Thread=22, CPUID=15
+Thread=23, CPUID=14
+Thread=24, CPUID=36
+Thread=25, CPUID=30
+Thread=26, CPUID=19
+Thread=27, CPUID=3
+Thread=28, CPUID=1
+Thread=29, CPUID=15
+Thread=30, CPUID=37
+Thread=31, CPUID=24
+Thread=32, CPUID=31
+Thread=33, CPUID=25
+Thread=34, CPUID=20
+Thread=35, CPUID=7
+Thread=36, CPUID=39
+Thread=37, CPUID=1
+Thread=38, CPUID=38
+Thread=39, CPUID=21
+Thread=40, CPUID=2
+Thread=41, CPUID=39
+Thread=42, CPUID=8
+Thread=43, CPUID=26
+Thread=44, CPUID=38
+Thread=45, CPUID=27
+Thread=46, CPUID=25
+Thread=47, CPUID=26
+Thread=48, CPUID=4
+Thread=49, CPUID=4
+Thread=50, CPUID=3
+Thread=51, CPUID=6
+Thread=52, CPUID=7
+Thread=53, CPUID=5
+Thread=54, CPUID=42
+Thread=55, CPUID=44
+Thread=56, CPUID=0
+Thread=57, CPUID=0
+Thread=58, CPUID=9
+Thread=59, CPUID=33
+Thread=60, CPUID=2
+Thread=61, CPUID=2
+Thread=62, CPUID=28
+Thread=63, CPUID=30
+Thread=64, CPUID=17
+Thread=65, CPUID=23
+Thread=66, CPUID=12
+Thread=67, CPUID=32
+Thread=68, CPUID=33
+Thread=69, CPUID=35
+Thread=70, CPUID=14
+Thread=71, CPUID=11
+Thread=72, CPUID=8
+Thread=73, CPUID=10
+Thread=74, CPUID=13
+Thread=75, CPUID=12
+Thread=76, CPUID=6
+Thread=77, CPUID=3
+Thread=78, CPUID=9
+Thread=79, CPUID=11
+Thread=80, CPUID=5
+Thread=81, CPUID=14
+Thread=82, CPUID=36
+Thread=83, CPUID=34
+Thread=84, CPUID=1
+Thread=85, CPUID=32
+Thread=86, CPUID=15
+Thread=87, CPUID=43
+Thread=88, CPUID=42
+Thread=89, CPUID=42
+Thread=90, CPUID=45
+Thread=91, CPUID=46
+Thread=92, CPUID=47
+Thread=93, CPUID=40
+Thread=94, CPUID=41
+Thread=95, CPUID=43
+Thread=96, CPUID=43
+Thread=97, CPUID=43
+Thread=98, CPUID=42
+Thread=99, CPUID=39
+Thread=100, CPUID=43
+Thread=101, CPUID=37
+Thread=102, CPUID=38
+Thread=103, CPUID=36
+Thread=104, CPUID=35
+Thread=105, CPUID=33
+Thread=106, CPUID=32
+Thread=107, CPUID=26
+Thread=108, CPUID=34
+Thread=109, CPUID=28
+Thread=110, CPUID=9
+Thread=111, CPUID=8
+Thread=112, CPUID=25
+Thread=113, CPUID=15
+Thread=114, CPUID=31
+Thread=115, CPUID=10
+Thread=116, CPUID=10
+Thread=117, CPUID=13
+Thread=118, CPUID=12
+Thread=119, CPUID=13
+Thread=120, CPUID=14
+Thread=121, CPUID=11
+Thread=122, CPUID=16
+Thread=123, CPUID=17
+Thread=124, CPUID=18
+Thread=125, CPUID=31
+Thread=126, CPUID=24
+Thread=127, CPUID=19
+Thread=128, CPUID=25
+Thread=129, CPUID=26
+Thread=130, CPUID=20
+Thread=131, CPUID=27
+Thread=132, CPUID=21
+Thread=133, CPUID=22
+Thread=134, CPUID=22
+Thread=135, CPUID=22
+Thread=136, CPUID=21
+Thread=137, CPUID=20
+Thread=138, CPUID=19
+Thread=139, CPUID=22
+Thread=140, CPUID=23
+Thread=141, CPUID=28
+Thread=142, CPUID=18
+Thread=143, CPUID=18
+Thread=144, CPUID=16
+Thread=145, CPUID=16
+Thread=146, CPUID=42
+Thread=147, CPUID=29
+Thread=148, CPUID=30
+Thread=149, CPUID=24
+Thread=150, CPUID=31
+Thread=151, CPUID=27
+Thread=152, CPUID=35
+Thread=153, CPUID=34
+Thread=154, CPUID=24
+Thread=155, CPUID=37
+Thread=156, CPUID=37
+Thread=157, CPUID=42
+Thread=158, CPUID=8
+Thread=159, CPUID=30
+
+----------------------
+OMP_NUM_THREADS=160
+OMP_PROC_BIND=true
+OMP_PLACES=threads
+MAPPING
+Thread=0, CPUID=0
+Thread=1, CPUID=1
+Thread=2, CPUID=2
+Thread=3, CPUID=3
+Thread=4, CPUID=4
+Thread=5, CPUID=5
+Thread=6, CPUID=6
+Thread=7, CPUID=7
+Thread=8, CPUID=8
+Thread=9, CPUID=9
+Thread=10, CPUID=10
+Thread=11, CPUID=11
+Thread=12, CPUID=12
+Thread=13, CPUID=13
+Thread=14, CPUID=14
+Thread=15, CPUID=15
+Thread=16, CPUID=16
+Thread=17, CPUID=17
+Thread=18, CPUID=18
+Thread=19, CPUID=19
+Thread=20, CPUID=20
+Thread=21, CPUID=21
+Thread=22, CPUID=22
+Thread=23, CPUID=23
+Thread=24, CPUID=24
+Thread=25, CPUID=25
+Thread=26, CPUID=26
+Thread=27, CPUID=27
+Thread=28, CPUID=28
+Thread=29, CPUID=29
+Thread=30, CPUID=30
+Thread=31, CPUID=31
+Thread=32, CPUID=32
+Thread=33, CPUID=33
+Thread=34, CPUID=34
+Thread=35, CPUID=35
+Thread=36, CPUID=36
+Thread=37, CPUID=37
+Thread=38, CPUID=38
+Thread=39, CPUID=39
+Thread=40, CPUID=40
+Thread=41, CPUID=41
+Thread=42, CPUID=42
+Thread=43, CPUID=43
+Thread=44, CPUID=44
+Thread=45, CPUID=45
+Thread=46, CPUID=46
+Thread=47, CPUID=47
+Thread=48, CPUID=48
+Thread=49, CPUID=49
+Thread=50, CPUID=50
+Thread=51, CPUID=51
+Thread=52, CPUID=52
+Thread=53, CPUID=53
+Thread=54, CPUID=54
+Thread=55, CPUID=55
+Thread=56, CPUID=56
+Thread=57, CPUID=57
+Thread=58, CPUID=58
+Thread=59, CPUID=59
+Thread=60, CPUID=60
+Thread=61, CPUID=61
+Thread=62, CPUID=62
+Thread=63, CPUID=63
+Thread=64, CPUID=64
+Thread=65, CPUID=65
+Thread=66, CPUID=66
+Thread=67, CPUID=67
+Thread=68, CPUID=68
+Thread=69, CPUID=69
+Thread=70, CPUID=70
+Thread=71, CPUID=71
+Thread=72, CPUID=72
+Thread=73, CPUID=73
+Thread=74, CPUID=74
+Thread=75, CPUID=75
+Thread=76, CPUID=76
+Thread=77, CPUID=77
+Thread=78, CPUID=78
+Thread=79, CPUID=79
+Thread=80, CPUID=80
+Thread=81, CPUID=81
+Thread=82, CPUID=82
+Thread=83, CPUID=83
+Thread=84, CPUID=84
+Thread=85, CPUID=85
+Thread=86, CPUID=86
+Thread=87, CPUID=87
+Thread=88, CPUID=88
+Thread=89, CPUID=89
+Thread=90, CPUID=90
+Thread=91, CPUID=91
+Thread=92, CPUID=92
+Thread=93, CPUID=93
+Thread=94, CPUID=94
+Thread=95, CPUID=95
+Thread=96, CPUID=96
+Thread=97, CPUID=97
+Thread=98, CPUID=98
+Thread=99, CPUID=99
+Thread=100, CPUID=100
+Thread=101, CPUID=101
+Thread=102, CPUID=102
+Thread=103, CPUID=103
+Thread=104, CPUID=104
+Thread=105, CPUID=105
+Thread=106, CPUID=106
+Thread=107, CPUID=107
+Thread=108, CPUID=108
+Thread=109, CPUID=109
+Thread=110, CPUID=110
+Thread=111, CPUID=111
+Thread=112, CPUID=112
+Thread=113, CPUID=113
+Thread=114, CPUID=114
+Thread=115, CPUID=115
+Thread=116, CPUID=116
+Thread=117, CPUID=117
+Thread=118, CPUID=118
+Thread=119, CPUID=119
+Thread=120, CPUID=120
+Thread=121, CPUID=121
+Thread=122, CPUID=122
+Thread=123, CPUID=123
+Thread=124, CPUID=124
+Thread=125, CPUID=125
+Thread=126, CPUID=126
+Thread=127, CPUID=127
+Thread=128, CPUID=128
+Thread=129, CPUID=129
+Thread=130, CPUID=130
+Thread=131, CPUID=131
+Thread=132, CPUID=132
+Thread=133, CPUID=133
+Thread=134, CPUID=134
+Thread=135, CPUID=135
+Thread=136, CPUID=136
+Thread=137, CPUID=137
+Thread=138, CPUID=138
+Thread=139, CPUID=139
+Thread=140, CPUID=140
+Thread=141, CPUID=141
+Thread=142, CPUID=142
+Thread=143, CPUID=143
+Thread=144, CPUID=144
+Thread=145, CPUID=145
+Thread=146, CPUID=146
+Thread=147, CPUID=147
+Thread=148, CPUID=148
+Thread=149, CPUID=149
+Thread=150, CPUID=150
+Thread=151, CPUID=151
+Thread=152, CPUID=152
+Thread=153, CPUID=153
+Thread=154, CPUID=154
+Thread=155, CPUID=155
+Thread=156, CPUID=156
+Thread=157, CPUID=157
+Thread=158, CPUID=158
+Thread=159, CPUID=159
+
+----------------------
+OMP_NUM_THREADS=160
+OMP_PROC_BIND=close
+OMP_PLACES=threads
+MAPPING
+Thread=0, CPUID=0
+Thread=1, CPUID=1
+Thread=2, CPUID=2
+Thread=3, CPUID=3
+Thread=4, CPUID=4
+Thread=5, CPUID=5
+Thread=6, CPUID=6
+Thread=7, CPUID=7
+Thread=8, CPUID=8
+Thread=9, CPUID=9
+Thread=10, CPUID=10
+Thread=11, CPUID=11
+Thread=12, CPUID=12
+Thread=13, CPUID=13
+Thread=14, CPUID=14
+Thread=15, CPUID=15
+Thread=16, CPUID=16
+Thread=17, CPUID=17
+Thread=18, CPUID=18
+Thread=19, CPUID=19
+Thread=20, CPUID=20
+Thread=21, CPUID=21
+Thread=22, CPUID=22
+Thread=23, CPUID=23
+Thread=24, CPUID=24
+Thread=25, CPUID=25
+Thread=26, CPUID=26
+Thread=27, CPUID=27
+Thread=28, CPUID=28
+Thread=29, CPUID=29
+Thread=30, CPUID=30
+Thread=31, CPUID=31
+Thread=32, CPUID=32
+Thread=33, CPUID=33
+Thread=34, CPUID=34
+Thread=35, CPUID=35
+Thread=36, CPUID=36
+Thread=37, CPUID=37
+Thread=38, CPUID=38
+Thread=39, CPUID=39
+Thread=40, CPUID=40
+Thread=41, CPUID=41
+Thread=42, CPUID=42
+Thread=43, CPUID=43
+Thread=44, CPUID=44
+Thread=45, CPUID=45
+Thread=46, CPUID=46
+Thread=47, CPUID=47
+Thread=48, CPUID=48
+Thread=49, CPUID=49
+Thread=50, CPUID=50
+Thread=51, CPUID=51
+Thread=52, CPUID=52
+Thread=53, CPUID=53
+Thread=54, CPUID=54
+Thread=55, CPUID=55
+Thread=56, CPUID=56
+Thread=57, CPUID=57
+Thread=58, CPUID=58
+Thread=59, CPUID=59
+Thread=60, CPUID=60
+Thread=61, CPUID=61
+Thread=62, CPUID=62
+Thread=63, CPUID=63
+Thread=64, CPUID=64
+Thread=65, CPUID=65
+Thread=66, CPUID=66
+Thread=67, CPUID=67
+Thread=68, CPUID=68
+Thread=69, CPUID=69
+Thread=70, CPUID=70
+Thread=71, CPUID=71
+Thread=72, CPUID=72
+Thread=73, CPUID=73
+Thread=74, CPUID=74
+Thread=75, CPUID=75
+Thread=76, CPUID=76
+Thread=77, CPUID=77
+Thread=78, CPUID=78
+Thread=79, CPUID=79
+Thread=80, CPUID=80
+Thread=81, CPUID=81
+Thread=82, CPUID=82
+Thread=83, CPUID=83
+Thread=84, CPUID=84
+Thread=85, CPUID=85
+Thread=86, CPUID=86
+Thread=87, CPUID=87
+Thread=88, CPUID=88
+Thread=89, CPUID=89
+Thread=90, CPUID=90
+Thread=91, CPUID=91
+Thread=92, CPUID=92
+Thread=93, CPUID=93
+Thread=94, CPUID=94
+Thread=95, CPUID=95
+Thread=96, CPUID=96
+Thread=97, CPUID=97
+Thread=98, CPUID=98
+Thread=99, CPUID=99
+Thread=100, CPUID=100
+Thread=101, CPUID=101
+Thread=102, CPUID=102
+Thread=103, CPUID=103
+Thread=104, CPUID=104
+Thread=105, CPUID=105
+Thread=106, CPUID=106
+Thread=107, CPUID=107
+Thread=108, CPUID=108
+Thread=109, CPUID=109
+Thread=110, CPUID=110
+Thread=111, CPUID=111
+Thread=112, CPUID=112
+Thread=113, CPUID=113
+Thread=114, CPUID=114
+Thread=115, CPUID=115
+Thread=116, CPUID=116
+Thread=117, CPUID=117
+Thread=118, CPUID=118
+Thread=119, CPUID=119
+Thread=120, CPUID=120
+Thread=121, CPUID=121
+Thread=122, CPUID=122
+Thread=123, CPUID=123
+Thread=124, CPUID=124
+Thread=125, CPUID=125
+Thread=126, CPUID=126
+Thread=127, CPUID=127
+Thread=128, CPUID=128
+Thread=129, CPUID=129
+Thread=130, CPUID=130
+Thread=131, CPUID=131
+Thread=132, CPUID=132
+Thread=133, CPUID=133
+Thread=134, CPUID=134
+Thread=135, CPUID=135
+Thread=136, CPUID=136
+Thread=137, CPUID=137
+Thread=138, CPUID=138
+Thread=139, CPUID=139
+Thread=140, CPUID=140
+Thread=141, CPUID=141
+Thread=142, CPUID=142
+Thread=143, CPUID=143
+Thread=144, CPUID=144
+Thread=145, CPUID=145
+Thread=146, CPUID=146
+Thread=147, CPUID=147
+Thread=148, CPUID=148
+Thread=149, CPUID=149
+Thread=150, CPUID=150
+Thread=151, CPUID=151
+Thread=152, CPUID=152
+Thread=153, CPUID=153
+Thread=154, CPUID=154
+Thread=155, CPUID=155
+Thread=156, CPUID=156
+Thread=157, CPUID=157
+Thread=158, CPUID=158
+Thread=159, CPUID=159
+
+----------------------
+OMP_NUM_THREADS=160
+OMP_PROC_BIND=spread
+OMP_PLACES=threads
+MAPPING
+Thread=0, CPUID=0
+Thread=1, CPUID=1
+Thread=2, CPUID=2
+Thread=3, CPUID=3
+Thread=4, CPUID=4
+Thread=5, CPUID=5
+Thread=6, CPUID=6
+Thread=7, CPUID=7
+Thread=8, CPUID=8
+Thread=9, CPUID=9
+Thread=10, CPUID=10
+Thread=11, CPUID=11
+Thread=12, CPUID=12
+Thread=13, CPUID=13
+Thread=14, CPUID=14
+Thread=15, CPUID=15
+Thread=16, CPUID=16
+Thread=17, CPUID=17
+Thread=18, CPUID=18
+Thread=19, CPUID=19
+Thread=20, CPUID=20
+Thread=21, CPUID=21
+Thread=22, CPUID=22
+Thread=23, CPUID=23
+Thread=24, CPUID=24
+Thread=25, CPUID=25
+Thread=26, CPUID=26
+Thread=27, CPUID=27
+Thread=28, CPUID=28
+Thread=29, CPUID=29
+Thread=30, CPUID=30
+Thread=31, CPUID=31
+Thread=32, CPUID=32
+Thread=33, CPUID=33
+Thread=34, CPUID=34
+Thread=35, CPUID=35
+Thread=36, CPUID=36
+Thread=37, CPUID=37
+Thread=38, CPUID=38
+Thread=39, CPUID=39
+Thread=40, CPUID=40
+Thread=41, CPUID=41
+Thread=42, CPUID=42
+Thread=43, CPUID=43
+Thread=44, CPUID=44
+Thread=45, CPUID=45
+Thread=46, CPUID=46
+Thread=47, CPUID=47
+Thread=48, CPUID=48
+Thread=49, CPUID=49
+Thread=50, CPUID=50
+Thread=51, CPUID=51
+Thread=52, CPUID=52
+Thread=53, CPUID=53
+Thread=54, CPUID=54
+Thread=55, CPUID=55
+Thread=56, CPUID=56
+Thread=57, CPUID=57
+Thread=58, CPUID=58
+Thread=59, CPUID=59
+Thread=60, CPUID=60
+Thread=61, CPUID=61
+Thread=62, CPUID=62
+Thread=63, CPUID=63
+Thread=64, CPUID=64
+Thread=65, CPUID=65
+Thread=66, CPUID=66
+Thread=67, CPUID=67
+Thread=68, CPUID=68
+Thread=69, CPUID=69
+Thread=70, CPUID=70
+Thread=71, CPUID=71
+Thread=72, CPUID=72
+Thread=73, CPUID=73
+Thread=74, CPUID=74
+Thread=75, CPUID=75
+Thread=76, CPUID=76
+Thread=77, CPUID=77
+Thread=78, CPUID=78
+Thread=79, CPUID=79
+Thread=80, CPUID=80
+Thread=81, CPUID=81
+Thread=82, CPUID=82
+Thread=83, CPUID=83
+Thread=84, CPUID=84
+Thread=85, CPUID=85
+Thread=86, CPUID=86
+Thread=87, CPUID=87
+Thread=88, CPUID=88
+Thread=89, CPUID=89
+Thread=90, CPUID=90
+Thread=91, CPUID=91
+Thread=92, CPUID=92
+Thread=93, CPUID=93
+Thread=94, CPUID=94
+Thread=95, CPUID=95
+Thread=96, CPUID=96
+Thread=97, CPUID=97
+Thread=98, CPUID=98
+Thread=99, CPUID=99
+Thread=100, CPUID=100
+Thread=101, CPUID=101
+Thread=102, CPUID=102
+Thread=103, CPUID=103
+Thread=104, CPUID=104
+Thread=105, CPUID=105
+Thread=106, CPUID=106
+Thread=107, CPUID=107
+Thread=108, CPUID=108
+Thread=109, CPUID=109
+Thread=110, CPUID=110
+Thread=111, CPUID=111
+Thread=112, CPUID=112
+Thread=113, CPUID=113
+Thread=114, CPUID=114
+Thread=115, CPUID=115
+Thread=116, CPUID=116
+Thread=117, CPUID=117
+Thread=118, CPUID=118
+Thread=119, CPUID=119
+Thread=120, CPUID=120
+Thread=121, CPUID=121
+Thread=122, CPUID=122
+Thread=123, CPUID=123
+Thread=124, CPUID=124
+Thread=125, CPUID=125
+Thread=126, CPUID=126
+Thread=127, CPUID=127
+Thread=128, CPUID=128
+Thread=129, CPUID=129
+Thread=130, CPUID=130
+Thread=131, CPUID=131
+Thread=132, CPUID=132
+Thread=133, CPUID=133
+Thread=134, CPUID=134
+Thread=135, CPUID=135
+Thread=136, CPUID=136
+Thread=137, CPUID=137
+Thread=138, CPUID=138
+Thread=139, CPUID=139
+Thread=140, CPUID=140
+Thread=141, CPUID=141
+Thread=142, CPUID=142
+Thread=143, CPUID=143
+Thread=144, CPUID=144
+Thread=145, CPUID=145
+Thread=146, CPUID=146
+Thread=147, CPUID=147
+Thread=148, CPUID=148
+Thread=149, CPUID=149
+Thread=150, CPUID=150
+Thread=151, CPUID=151
+Thread=152, CPUID=152
+Thread=153, CPUID=153
+Thread=154, CPUID=154
+Thread=155, CPUID=155
+Thread=156, CPUID=156
+Thread=157, CPUID=157
+Thread=158, CPUID=158
+Thread=159, CPUID=159
+
+----------------------
+OMP_NUM_THREADS=160
+OMP_PROC_BIND=master
+OMP_PLACES=threads
+MAPPING
+Thread=0, CPUID=0
+Thread=1, CPUID=0
+Thread=2, CPUID=0
+Thread=3, CPUID=0
+Thread=4, CPUID=0
+Thread=5, CPUID=0
+Thread=6, CPUID=0
+Thread=7, CPUID=0
+Thread=8, CPUID=0
+Thread=9, CPUID=0
+Thread=10, CPUID=0
+Thread=11, CPUID=0
+Thread=12, CPUID=0
+Thread=13, CPUID=0
+Thread=14, CPUID=0
+Thread=15, CPUID=0
+Thread=16, CPUID=0
+Thread=17, CPUID=0
+Thread=18, CPUID=0
+Thread=19, CPUID=0
+Thread=20, CPUID=0
+Thread=21, CPUID=0
+Thread=22, CPUID=0
+Thread=23, CPUID=0
+Thread=24, CPUID=0
+Thread=25, CPUID=0
+Thread=26, CPUID=0
+Thread=27, CPUID=0
+Thread=28, CPUID=0
+Thread=29, CPUID=0
+Thread=30, CPUID=0
+Thread=31, CPUID=0
+Thread=32, CPUID=0
+Thread=33, CPUID=0
+Thread=34, CPUID=0
+Thread=35, CPUID=0
+Thread=36, CPUID=0
+Thread=37, CPUID=0
+Thread=38, CPUID=0
+Thread=39, CPUID=0
+Thread=40, CPUID=0
+Thread=41, CPUID=0
+Thread=42, CPUID=0
+Thread=43, CPUID=0
+Thread=44, CPUID=0
+Thread=45, CPUID=0
+Thread=46, CPUID=0
+Thread=47, CPUID=0
+Thread=48, CPUID=0
+Thread=49, CPUID=0
+Thread=50, CPUID=0
+Thread=51, CPUID=0
+Thread=52, CPUID=0
+Thread=53, CPUID=0
+Thread=54, CPUID=0
+Thread=55, CPUID=0
+Thread=56, CPUID=0
+Thread=57, CPUID=0
+Thread=58, CPUID=0
+Thread=59, CPUID=0
+Thread=60, CPUID=0
+Thread=61, CPUID=0
+Thread=62, CPUID=0
+Thread=63, CPUID=0
+Thread=64, CPUID=0
+Thread=65, CPUID=0
+Thread=66, CPUID=0
+Thread=67, CPUID=0
+Thread=68, CPUID=0
+Thread=69, CPUID=0
+Thread=70, CPUID=0
+Thread=71, CPUID=0
+Thread=72, CPUID=0
+Thread=73, CPUID=0
+Thread=74, CPUID=0
+Thread=75, CPUID=0
+Thread=76, CPUID=0
+Thread=77, CPUID=0
+Thread=78, CPUID=0
+Thread=79, CPUID=0
+Thread=80, CPUID=0
+Thread=81, CPUID=0
+Thread=82, CPUID=0
+Thread=83, CPUID=0
+Thread=84, CPUID=0
+Thread=85, CPUID=0
+Thread=86, CPUID=0
+Thread=87, CPUID=0
+Thread=88, CPUID=0
+Thread=89, CPUID=0
+Thread=90, CPUID=0
+Thread=91, CPUID=0
+Thread=92, CPUID=0
+Thread=93, CPUID=0
+Thread=94, CPUID=0
+Thread=95, CPUID=0
+Thread=96, CPUID=0
+Thread=97, CPUID=0
+Thread=98, CPUID=0
+Thread=99, CPUID=0
+Thread=100, CPUID=0
+Thread=101, CPUID=0
+Thread=102, CPUID=0
+Thread=103, CPUID=0
+Thread=104, CPUID=0
+Thread=105, CPUID=0
+Thread=106, CPUID=0
+Thread=107, CPUID=0
+Thread=108, CPUID=0
+Thread=109, CPUID=0
+Thread=110, CPUID=0
+Thread=111, CPUID=0
+Thread=112, CPUID=0
+Thread=113, CPUID=0
+Thread=114, CPUID=0
+Thread=115, CPUID=0
+Thread=116, CPUID=0
+Thread=117, CPUID=0
+Thread=118, CPUID=0
+Thread=119, CPUID=0
+Thread=120, CPUID=0
+Thread=121, CPUID=0
+Thread=122, CPUID=0
+Thread=123, CPUID=0
+Thread=124, CPUID=0
+Thread=125, CPUID=0
+Thread=126, CPUID=0
+Thread=127, CPUID=0
+Thread=128, CPUID=0
+Thread=129, CPUID=0
+Thread=130, CPUID=0
+Thread=131, CPUID=0
+Thread=132, CPUID=0
+Thread=133, CPUID=0
+Thread=134, CPUID=0
+Thread=135, CPUID=0
+Thread=136, CPUID=0
+Thread=137, CPUID=0
+Thread=138, CPUID=0
+Thread=139, CPUID=0
+Thread=140, CPUID=0
+Thread=141, CPUID=0
+Thread=142, CPUID=0
+Thread=143, CPUID=0
+Thread=144, CPUID=0
+Thread=145, CPUID=0
+Thread=146, CPUID=0
+Thread=147, CPUID=0
+Thread=148, CPUID=0
+Thread=149, CPUID=0
+Thread=150, CPUID=0
+Thread=151, CPUID=0
+Thread=152, CPUID=0
+Thread=153, CPUID=0
+Thread=154, CPUID=0
+Thread=155, CPUID=0
+Thread=156, CPUID=0
+Thread=157, CPUID=0
+Thread=158, CPUID=0
+Thread=159, CPUID=0
+
+----------------------
+OMP_NUM_THREADS=160
+OMP_PROC_BIND=false
+OMP_PLACES=cores
+MAPPING
+Thread=0, CPUID=38
+Thread=1, CPUID=4
+Thread=2, CPUID=13
+Thread=3, CPUID=17
+Thread=4, CPUID=30
+Thread=5, CPUID=26
+Thread=6, CPUID=18
+Thread=7, CPUID=14
+Thread=8, CPUID=39
+Thread=9, CPUID=27
+Thread=10, CPUID=19
+Thread=11, CPUID=5
+Thread=12, CPUID=15
+Thread=13, CPUID=32
+Thread=14, CPUID=6
+Thread=15, CPUID=7
+Thread=16, CPUID=0
+Thread=17, CPUID=1
+Thread=18, CPUID=2
+Thread=19, CPUID=3
+Thread=20, CPUID=31
+Thread=21, CPUID=20
+Thread=22, CPUID=2
+Thread=23, CPUID=8
+Thread=24, CPUID=33
+Thread=25, CPUID=29
+Thread=26, CPUID=21
+Thread=27, CPUID=9
+Thread=28, CPUID=10
+Thread=29, CPUID=11
+Thread=30, CPUID=12
+Thread=31, CPUID=22
+Thread=32, CPUID=23
+Thread=33, CPUID=16
+Thread=34, CPUID=13
+Thread=35, CPUID=14
+Thread=36, CPUID=25
+Thread=37, CPUID=26
+Thread=38, CPUID=16
+Thread=39, CPUID=21
+Thread=40, CPUID=43
+Thread=41, CPUID=0
+Thread=42, CPUID=47
+Thread=43, CPUID=7
+Thread=44, CPUID=19
+Thread=45, CPUID=46
+Thread=46, CPUID=47
+Thread=47, CPUID=40
+Thread=48, CPUID=31
+Thread=49, CPUID=41
+Thread=50, CPUID=42
+Thread=51, CPUID=43
+Thread=52, CPUID=44
+Thread=53, CPUID=45
+Thread=54, CPUID=15
+Thread=55, CPUID=15
+Thread=56, CPUID=41
+Thread=57, CPUID=27
+Thread=58, CPUID=30
+Thread=59, CPUID=40
+Thread=60, CPUID=24
+Thread=61, CPUID=47
+Thread=62, CPUID=7
+Thread=63, CPUID=6
+Thread=64, CPUID=44
+Thread=65, CPUID=4
+Thread=66, CPUID=45
+Thread=67, CPUID=3
+Thread=68, CPUID=3
+Thread=69, CPUID=6
+Thread=70, CPUID=4
+Thread=71, CPUID=43
+Thread=72, CPUID=0
+Thread=73, CPUID=46
+Thread=74, CPUID=35
+Thread=75, CPUID=34
+Thread=76, CPUID=35
+Thread=77, CPUID=37
+Thread=78, CPUID=47
+Thread=79, CPUID=27
+Thread=80, CPUID=19
+Thread=81, CPUID=30
+Thread=82, CPUID=38
+Thread=83, CPUID=43
+Thread=84, CPUID=36
+Thread=85, CPUID=9
+Thread=86, CPUID=26
+Thread=87, CPUID=20
+Thread=88, CPUID=18
+Thread=89, CPUID=14
+Thread=90, CPUID=17
+Thread=91, CPUID=22
+Thread=92, CPUID=16
+Thread=93, CPUID=18
+Thread=94, CPUID=22
+Thread=95, CPUID=23
+Thread=96, CPUID=25
+Thread=97, CPUID=26
+Thread=98, CPUID=20
+Thread=99, CPUID=21
+Thread=100, CPUID=17
+Thread=101, CPUID=29
+Thread=102, CPUID=11
+Thread=103, CPUID=8
+Thread=104, CPUID=9
+Thread=105, CPUID=10
+Thread=106, CPUID=11
+Thread=107, CPUID=12
+Thread=108, CPUID=13
+Thread=109, CPUID=12
+Thread=110, CPUID=46
+Thread=111, CPUID=47
+Thread=112, CPUID=3
+Thread=113, CPUID=13
+Thread=114, CPUID=10
+Thread=115, CPUID=5
+Thread=116, CPUID=15
+Thread=117, CPUID=8
+Thread=118, CPUID=14
+Thread=119, CPUID=4
+Thread=120, CPUID=24
+Thread=121, CPUID=24
+Thread=122, CPUID=40
+Thread=123, CPUID=42
+Thread=124, CPUID=45
+Thread=125, CPUID=5
+Thread=126, CPUID=28
+Thread=127, CPUID=28
+Thread=128, CPUID=4
+Thread=129, CPUID=0
+Thread=130, CPUID=28
+Thread=131, CPUID=31
+Thread=132, CPUID=42
+Thread=133, CPUID=27
+Thread=134, CPUID=41
+Thread=135, CPUID=44
+Thread=136, CPUID=31
+Thread=137, CPUID=24
+Thread=138, CPUID=29
+Thread=139, CPUID=30
+Thread=140, CPUID=28
+Thread=141, CPUID=26
+Thread=142, CPUID=25
+Thread=143, CPUID=6
+Thread=144, CPUID=33
+Thread=145, CPUID=34
+Thread=146, CPUID=39
+Thread=147, CPUID=43
+Thread=148, CPUID=5
+Thread=149, CPUID=1
+Thread=150, CPUID=32
+Thread=151, CPUID=0
+Thread=152, CPUID=36
+Thread=153, CPUID=37
+Thread=154, CPUID=25
+Thread=155, CPUID=31
+Thread=156, CPUID=17
+Thread=157, CPUID=23
+Thread=158, CPUID=7
+Thread=159, CPUID=29
+
+----------------------
+OMP_NUM_THREADS=160
+OMP_PROC_BIND=true
+OMP_PLACES=cores
+MAPPING
+Thread=0, CPUID=0
+Thread=1, CPUID=1
+Thread=2, CPUID=6
+Thread=3, CPUID=5
+Thread=4, CPUID=4
+Thread=5, CPUID=3
+Thread=6, CPUID=2
+Thread=7, CPUID=7
+Thread=8, CPUID=8
+Thread=9, CPUID=9
+Thread=10, CPUID=10
+Thread=11, CPUID=11
+Thread=12, CPUID=12
+Thread=13, CPUID=13
+Thread=14, CPUID=14
+Thread=15, CPUID=15
+Thread=16, CPUID=16
+Thread=17, CPUID=17
+Thread=18, CPUID=19
+Thread=19, CPUID=20
+Thread=20, CPUID=21
+Thread=21, CPUID=22
+Thread=22, CPUID=23
+Thread=23, CPUID=18
+Thread=24, CPUID=24
+Thread=25, CPUID=25
+Thread=26, CPUID=29
+Thread=27, CPUID=28
+Thread=28, CPUID=27
+Thread=29, CPUID=26
+Thread=30, CPUID=30
+Thread=31, CPUID=31
+Thread=32, CPUID=32
+Thread=33, CPUID=33
+Thread=34, CPUID=34
+Thread=35, CPUID=35
+Thread=36, CPUID=36
+Thread=37, CPUID=37
+Thread=38, CPUID=38
+Thread=39, CPUID=39
+Thread=40, CPUID=41
+Thread=41, CPUID=40
+Thread=42, CPUID=42
+Thread=43, CPUID=45
+Thread=44, CPUID=43
+Thread=45, CPUID=46
+Thread=46, CPUID=44
+Thread=47, CPUID=47
+Thread=48, CPUID=48
+Thread=49, CPUID=54
+Thread=50, CPUID=49
+Thread=51, CPUID=52
+Thread=52, CPUID=50
+Thread=53, CPUID=53
+Thread=54, CPUID=55
+Thread=55, CPUID=51
+Thread=56, CPUID=56
+Thread=57, CPUID=61
+Thread=58, CPUID=57
+Thread=59, CPUID=62
+Thread=60, CPUID=58
+Thread=61, CPUID=60
+Thread=62, CPUID=63
+Thread=63, CPUID=59
+Thread=64, CPUID=64
+Thread=65, CPUID=65
+Thread=66, CPUID=69
+Thread=67, CPUID=66
+Thread=68, CPUID=71
+Thread=69, CPUID=67
+Thread=70, CPUID=68
+Thread=71, CPUID=69
+Thread=72, CPUID=72
+Thread=73, CPUID=73
+Thread=74, CPUID=74
+Thread=75, CPUID=77
+Thread=76, CPUID=78
+Thread=77, CPUID=77
+Thread=78, CPUID=75
+Thread=79, CPUID=76
+Thread=80, CPUID=80
+Thread=81, CPUID=84
+Thread=82, CPUID=81
+Thread=83, CPUID=87
+Thread=84, CPUID=85
+Thread=85, CPUID=86
+Thread=86, CPUID=83
+Thread=87, CPUID=82
+Thread=88, CPUID=90
+Thread=89, CPUID=88
+Thread=90, CPUID=95
+Thread=91, CPUID=94
+Thread=92, CPUID=93
+Thread=93, CPUID=92
+Thread=94, CPUID=91
+Thread=95, CPUID=89
+Thread=96, CPUID=101
+Thread=97, CPUID=96
+Thread=98, CPUID=103
+Thread=99, CPUID=99
+Thread=100, CPUID=97
+Thread=101, CPUID=100
+Thread=102, CPUID=102
+Thread=103, CPUID=98
+Thread=104, CPUID=104
+Thread=105, CPUID=105
+Thread=106, CPUID=106
+Thread=107, CPUID=107
+Thread=108, CPUID=108
+Thread=109, CPUID=109
+Thread=110, CPUID=110
+Thread=111, CPUID=111
+Thread=112, CPUID=112
+Thread=113, CPUID=113
+Thread=114, CPUID=114
+Thread=115, CPUID=115
+Thread=116, CPUID=116
+Thread=117, CPUID=117
+Thread=118, CPUID=118
+Thread=119, CPUID=119
+Thread=120, CPUID=121
+Thread=121, CPUID=122
+Thread=122, CPUID=123
+Thread=123, CPUID=124
+Thread=124, CPUID=125
+Thread=125, CPUID=126
+Thread=126, CPUID=127
+Thread=127, CPUID=120
+Thread=128, CPUID=129
+Thread=129, CPUID=130
+Thread=130, CPUID=131
+Thread=131, CPUID=132
+Thread=132, CPUID=133
+Thread=133, CPUID=134
+Thread=134, CPUID=135
+Thread=135, CPUID=128
+Thread=136, CPUID=137
+Thread=137, CPUID=138
+Thread=138, CPUID=139
+Thread=139, CPUID=140
+Thread=140, CPUID=141
+Thread=141, CPUID=142
+Thread=142, CPUID=143
+Thread=143, CPUID=136
+Thread=144, CPUID=145
+Thread=145, CPUID=146
+Thread=146, CPUID=147
+Thread=147, CPUID=148
+Thread=148, CPUID=149
+Thread=149, CPUID=150
+Thread=150, CPUID=144
+Thread=151, CPUID=144
+Thread=152, CPUID=154
+Thread=153, CPUID=155
+Thread=154, CPUID=156
+Thread=155, CPUID=157
+Thread=156, CPUID=158
+Thread=157, CPUID=152
+Thread=158, CPUID=152
+Thread=159, CPUID=153
+
+----------------------
+OMP_NUM_THREADS=160
+OMP_PROC_BIND=close
+OMP_PLACES=cores
+MAPPING
+Thread=0, CPUID=0
+Thread=1, CPUID=1
+Thread=2, CPUID=2
+Thread=3, CPUID=3
+Thread=4, CPUID=4
+Thread=5, CPUID=6
+Thread=6, CPUID=5
+Thread=7, CPUID=4
+Thread=8, CPUID=8
+Thread=9, CPUID=15
+Thread=10, CPUID=9
+Thread=11, CPUID=10
+Thread=12, CPUID=11
+Thread=13, CPUID=12
+Thread=14, CPUID=13
+Thread=15, CPUID=14
+Thread=16, CPUID=18
+Thread=17, CPUID=16
+Thread=18, CPUID=21
+Thread=19, CPUID=23
+Thread=20, CPUID=17
+Thread=21, CPUID=22
+Thread=22, CPUID=20
+Thread=23, CPUID=19
+Thread=24, CPUID=24
+Thread=25, CPUID=25
+Thread=26, CPUID=29
+Thread=27, CPUID=26
+Thread=28, CPUID=28
+Thread=29, CPUID=27
+Thread=30, CPUID=30
+Thread=31, CPUID=31
+Thread=32, CPUID=32
+Thread=33, CPUID=33
+Thread=34, CPUID=38
+Thread=35, CPUID=39
+Thread=36, CPUID=34
+Thread=37, CPUID=35
+Thread=38, CPUID=36
+Thread=39, CPUID=37
+Thread=40, CPUID=40
+Thread=41, CPUID=41
+Thread=42, CPUID=42
+Thread=43, CPUID=43
+Thread=44, CPUID=44
+Thread=45, CPUID=45
+Thread=46, CPUID=46
+Thread=47, CPUID=47
+Thread=48, CPUID=48
+Thread=49, CPUID=49
+Thread=50, CPUID=50
+Thread=51, CPUID=51
+Thread=52, CPUID=52
+Thread=53, CPUID=53
+Thread=54, CPUID=54
+Thread=55, CPUID=55
+Thread=56, CPUID=56
+Thread=57, CPUID=57
+Thread=58, CPUID=58
+Thread=59, CPUID=59
+Thread=60, CPUID=60
+Thread=61, CPUID=61
+Thread=62, CPUID=62
+Thread=63, CPUID=63
+Thread=64, CPUID=64
+Thread=65, CPUID=65
+Thread=66, CPUID=66
+Thread=67, CPUID=67
+Thread=68, CPUID=68
+Thread=69, CPUID=69
+Thread=70, CPUID=70
+Thread=71, CPUID=71
+Thread=72, CPUID=72
+Thread=73, CPUID=73
+Thread=74, CPUID=74
+Thread=75, CPUID=75
+Thread=76, CPUID=76
+Thread=77, CPUID=77
+Thread=78, CPUID=79
+Thread=79, CPUID=78
+Thread=80, CPUID=80
+Thread=81, CPUID=81
+Thread=82, CPUID=82
+Thread=83, CPUID=83
+Thread=84, CPUID=84
+Thread=85, CPUID=85
+Thread=86, CPUID=86
+Thread=87, CPUID=87
+Thread=88, CPUID=88
+Thread=89, CPUID=89
+Thread=90, CPUID=90
+Thread=91, CPUID=91
+Thread=92, CPUID=92
+Thread=93, CPUID=93
+Thread=94, CPUID=94
+Thread=95, CPUID=95
+Thread=96, CPUID=96
+Thread=97, CPUID=97
+Thread=98, CPUID=98
+Thread=99, CPUID=99
+Thread=100, CPUID=100
+Thread=101, CPUID=101
+Thread=102, CPUID=102
+Thread=103, CPUID=103
+Thread=104, CPUID=104
+Thread=105, CPUID=105
+Thread=106, CPUID=106
+Thread=107, CPUID=107
+Thread=108, CPUID=108
+Thread=109, CPUID=109
+Thread=110, CPUID=110
+Thread=111, CPUID=111
+Thread=112, CPUID=112
+Thread=113, CPUID=113
+Thread=114, CPUID=114
+Thread=115, CPUID=115
+Thread=116, CPUID=116
+Thread=117, CPUID=117
+Thread=118, CPUID=118
+Thread=119, CPUID=119
+Thread=120, CPUID=120
+Thread=121, CPUID=121
+Thread=122, CPUID=122
+Thread=123, CPUID=123
+Thread=124, CPUID=124
+Thread=125, CPUID=125
+Thread=126, CPUID=126
+Thread=127, CPUID=127
+Thread=128, CPUID=128
+Thread=129, CPUID=129
+Thread=130, CPUID=130
+Thread=131, CPUID=131
+Thread=132, CPUID=132
+Thread=133, CPUID=133
+Thread=134, CPUID=134
+Thread=135, CPUID=135
+Thread=136, CPUID=136
+Thread=137, CPUID=137
+Thread=138, CPUID=138
+Thread=139, CPUID=139
+Thread=140, CPUID=140
+Thread=141, CPUID=141
+Thread=142, CPUID=142
+Thread=143, CPUID=143
+Thread=144, CPUID=145
+Thread=145, CPUID=146
+Thread=146, CPUID=147
+Thread=147, CPUID=148
+Thread=148, CPUID=149
+Thread=149, CPUID=150
+Thread=150, CPUID=151
+Thread=151, CPUID=144
+Thread=152, CPUID=153
+Thread=153, CPUID=154
+Thread=154, CPUID=155
+Thread=155, CPUID=156
+Thread=156, CPUID=157
+Thread=157, CPUID=158
+Thread=158, CPUID=159
+Thread=159, CPUID=152
+
+----------------------
+OMP_NUM_THREADS=160
+OMP_PROC_BIND=spread
+OMP_PLACES=cores
+MAPPING
+Thread=0, CPUID=0
+Thread=1, CPUID=1
+Thread=2, CPUID=2
+Thread=3, CPUID=3
+Thread=4, CPUID=4
+Thread=5, CPUID=5
+Thread=6, CPUID=6
+Thread=7, CPUID=7
+Thread=8, CPUID=8
+Thread=9, CPUID=9
+Thread=10, CPUID=11
+Thread=11, CPUID=14
+Thread=12, CPUID=10
+Thread=13, CPUID=12
+Thread=14, CPUID=9
+Thread=15, CPUID=13
+Thread=16, CPUID=17
+Thread=17, CPUID=16
+Thread=18, CPUID=18
+Thread=19, CPUID=23
+Thread=20, CPUID=22
+Thread=21, CPUID=19
+Thread=22, CPUID=21
+Thread=23, CPUID=20
+Thread=24, CPUID=24
+Thread=25, CPUID=26
+Thread=26, CPUID=29
+Thread=27, CPUID=28
+Thread=28, CPUID=31
+Thread=29, CPUID=27
+Thread=30, CPUID=25
+Thread=31, CPUID=30
+Thread=32, CPUID=32
+Thread=33, CPUID=38
+Thread=34, CPUID=34
+Thread=35, CPUID=33
+Thread=36, CPUID=33
+Thread=37, CPUID=37
+Thread=38, CPUID=35
+Thread=39, CPUID=36
+Thread=40, CPUID=40
+Thread=41, CPUID=41
+Thread=42, CPUID=42
+Thread=43, CPUID=43
+Thread=44, CPUID=44
+Thread=45, CPUID=45
+Thread=46, CPUID=46
+Thread=47, CPUID=47
+Thread=48, CPUID=48
+Thread=49, CPUID=49
+Thread=50, CPUID=50
+Thread=51, CPUID=51
+Thread=52, CPUID=52
+Thread=53, CPUID=53
+Thread=54, CPUID=54
+Thread=55, CPUID=55
+Thread=56, CPUID=56
+Thread=57, CPUID=57
+Thread=58, CPUID=58
+Thread=59, CPUID=59
+Thread=60, CPUID=60
+Thread=61, CPUID=61
+Thread=62, CPUID=62
+Thread=63, CPUID=63
+Thread=64, CPUID=64
+Thread=65, CPUID=65
+Thread=66, CPUID=66
+Thread=67, CPUID=67
+Thread=68, CPUID=68
+Thread=69, CPUID=69
+Thread=70, CPUID=70
+Thread=71, CPUID=71
+Thread=72, CPUID=72
+Thread=73, CPUID=73
+Thread=74, CPUID=74
+Thread=75, CPUID=75
+Thread=76, CPUID=76
+Thread=77, CPUID=77
+Thread=78, CPUID=78
+Thread=79, CPUID=79
+Thread=80, CPUID=80
+Thread=81, CPUID=81
+Thread=82, CPUID=82
+Thread=83, CPUID=83
+Thread=84, CPUID=84
+Thread=85, CPUID=85
+Thread=86, CPUID=86
+Thread=87, CPUID=87
+Thread=88, CPUID=88
+Thread=89, CPUID=89
+Thread=90, CPUID=90
+Thread=91, CPUID=91
+Thread=92, CPUID=92
+Thread=93, CPUID=93
+Thread=94, CPUID=94
+Thread=95, CPUID=95
+Thread=96, CPUID=96
+Thread=97, CPUID=97
+Thread=98, CPUID=98
+Thread=99, CPUID=99
+Thread=100, CPUID=100
+Thread=101, CPUID=101
+Thread=102, CPUID=103
+Thread=103, CPUID=102
+Thread=104, CPUID=104
+Thread=105, CPUID=105
+Thread=106, CPUID=106
+Thread=107, CPUID=107
+Thread=108, CPUID=108
+Thread=109, CPUID=109
+Thread=110, CPUID=111
+Thread=111, CPUID=110
+Thread=112, CPUID=112
+Thread=113, CPUID=113
+Thread=114, CPUID=114
+Thread=115, CPUID=115
+Thread=116, CPUID=116
+Thread=117, CPUID=119
+Thread=118, CPUID=117
+Thread=119, CPUID=118
+Thread=120, CPUID=120
+Thread=121, CPUID=121
+Thread=122, CPUID=122
+Thread=123, CPUID=123
+Thread=124, CPUID=124
+Thread=125, CPUID=121
+Thread=126, CPUID=125
+Thread=127, CPUID=127
+Thread=128, CPUID=128
+Thread=129, CPUID=129
+Thread=130, CPUID=130
+Thread=131, CPUID=134
+Thread=132, CPUID=131
+Thread=133, CPUID=132
+Thread=134, CPUID=133
+Thread=135, CPUID=135
+Thread=136, CPUID=136
+Thread=137, CPUID=137
+Thread=138, CPUID=139
+Thread=139, CPUID=137
+Thread=140, CPUID=138
+Thread=141, CPUID=142
+Thread=142, CPUID=141
+Thread=143, CPUID=143
+Thread=144, CPUID=144
+Thread=145, CPUID=145
+Thread=146, CPUID=149
+Thread=147, CPUID=147
+Thread=148, CPUID=150
+Thread=149, CPUID=146
+Thread=150, CPUID=148
+Thread=151, CPUID=151
+Thread=152, CPUID=152
+Thread=153, CPUID=156
+Thread=154, CPUID=153
+Thread=155, CPUID=157
+Thread=156, CPUID=159
+Thread=157, CPUID=154
+Thread=158, CPUID=158
+Thread=159, CPUID=155
+
+----------------------
+OMP_NUM_THREADS=160
+OMP_PROC_BIND=master
+OMP_PLACES=cores
+MAPPING
+Thread=0, CPUID=6
+Thread=1, CPUID=1
+Thread=2, CPUID=4
+Thread=3, CPUID=2
+Thread=4, CPUID=4
+Thread=5, CPUID=5
+Thread=6, CPUID=3
+Thread=7, CPUID=7
+Thread=8, CPUID=3
+Thread=9, CPUID=2
+Thread=10, CPUID=5
+Thread=11, CPUID=0
+Thread=12, CPUID=2
+Thread=13, CPUID=2
+Thread=14, CPUID=2
+Thread=15, CPUID=2
+Thread=16, CPUID=2
+Thread=17, CPUID=7
+Thread=18, CPUID=3
+Thread=19, CPUID=3
+Thread=20, CPUID=3
+Thread=21, CPUID=6
+Thread=22, CPUID=3
+Thread=23, CPUID=5
+Thread=24, CPUID=4
+Thread=25, CPUID=4
+Thread=26, CPUID=4
+Thread=27, CPUID=4
+Thread=28, CPUID=4
+Thread=29, CPUID=4
+Thread=30, CPUID=4
+Thread=31, CPUID=4
+Thread=32, CPUID=4
+Thread=33, CPUID=3
+Thread=34, CPUID=6
+Thread=35, CPUID=6
+Thread=36, CPUID=7
+Thread=37, CPUID=7
+Thread=38, CPUID=7
+Thread=39, CPUID=3
+Thread=40, CPUID=7
+Thread=41, CPUID=7
+Thread=42, CPUID=7
+Thread=43, CPUID=3
+Thread=44, CPUID=3
+Thread=45, CPUID=3
+Thread=46, CPUID=7
+Thread=47, CPUID=7
+Thread=48, CPUID=7
+Thread=49, CPUID=2
+Thread=50, CPUID=2
+Thread=51, CPUID=2
+Thread=52, CPUID=2
+Thread=53, CPUID=7
+Thread=54, CPUID=1
+Thread=55, CPUID=7
+Thread=56, CPUID=3
+Thread=57, CPUID=3
+Thread=58, CPUID=6
+Thread=59, CPUID=6
+Thread=60, CPUID=6
+Thread=61, CPUID=1
+Thread=62, CPUID=3
+Thread=63, CPUID=5
+Thread=64, CPUID=1
+Thread=65, CPUID=0
+Thread=66, CPUID=7
+Thread=67, CPUID=0
+Thread=68, CPUID=5
+Thread=69, CPUID=5
+Thread=70, CPUID=3
+Thread=71, CPUID=5
+Thread=72, CPUID=5
+Thread=73, CPUID=5
+Thread=74, CPUID=5
+Thread=75, CPUID=5
+Thread=76, CPUID=5
+Thread=77, CPUID=5
+Thread=78, CPUID=5
+Thread=79, CPUID=5
+Thread=80, CPUID=7
+Thread=81, CPUID=7
+Thread=82, CPUID=7
+Thread=83, CPUID=7
+Thread=84, CPUID=7
+Thread=85, CPUID=7
+Thread=86, CPUID=3
+Thread=87, CPUID=7
+Thread=88, CPUID=3
+Thread=89, CPUID=7
+Thread=90, CPUID=0
+Thread=91, CPUID=7
+Thread=92, CPUID=3
+Thread=93, CPUID=6
+Thread=94, CPUID=6
+Thread=95, CPUID=6
+Thread=96, CPUID=6
+Thread=97, CPUID=6
+Thread=98, CPUID=6
+Thread=99, CPUID=0
+Thread=100, CPUID=0
+Thread=101, CPUID=0
+Thread=102, CPUID=0
+Thread=103, CPUID=0
+Thread=104, CPUID=3
+Thread=105, CPUID=3
+Thread=106, CPUID=7
+Thread=107, CPUID=7
+Thread=108, CPUID=3
+Thread=109, CPUID=7
+Thread=110, CPUID=6
+Thread=111, CPUID=7
+Thread=112, CPUID=3
+Thread=113, CPUID=6
+Thread=114, CPUID=6
+Thread=115, CPUID=6
+Thread=116, CPUID=1
+Thread=117, CPUID=5
+Thread=118, CPUID=0
+Thread=119, CPUID=0
+Thread=120, CPUID=0
+Thread=121, CPUID=5
+Thread=122, CPUID=5
+Thread=123, CPUID=2
+Thread=124, CPUID=2
+Thread=125, CPUID=2
+Thread=126, CPUID=2
+Thread=127, CPUID=2
+Thread=128, CPUID=2
+Thread=129, CPUID=0
+Thread=130, CPUID=4
+Thread=131, CPUID=4
+Thread=132, CPUID=4
+Thread=133, CPUID=4
+Thread=134, CPUID=4
+Thread=135, CPUID=5
+Thread=136, CPUID=5
+Thread=137, CPUID=0
+Thread=138, CPUID=0
+Thread=139, CPUID=1
+Thread=140, CPUID=1
+Thread=141, CPUID=1
+Thread=142, CPUID=1
+Thread=143, CPUID=5
+Thread=144, CPUID=1
+Thread=145, CPUID=0
+Thread=146, CPUID=0
+Thread=147, CPUID=6
+Thread=148, CPUID=6
+Thread=149, CPUID=6
+Thread=150, CPUID=1
+Thread=151, CPUID=5
+Thread=152, CPUID=0
+Thread=153, CPUID=1
+Thread=154, CPUID=1
+Thread=155, CPUID=0
+Thread=156, CPUID=1
+Thread=157, CPUID=0
+Thread=158, CPUID=5
+Thread=159, CPUID=5
+
+----------------------
+OMP_NUM_THREADS=160
+OMP_PROC_BIND=false
+OMP_PLACES=sockets
+MAPPING
+Thread=0, CPUID=32
+Thread=1, CPUID=0
+Thread=2, CPUID=37
+Thread=3, CPUID=16
+Thread=4, CPUID=28
+Thread=5, CPUID=24
+Thread=6, CPUID=17
+Thread=7, CPUID=37
+Thread=8, CPUID=3
+Thread=9, CPUID=2
+Thread=10, CPUID=18
+Thread=11, CPUID=1
+Thread=12, CPUID=12
+Thread=13, CPUID=2
+Thread=14, CPUID=3
+Thread=15, CPUID=4
+Thread=16, CPUID=5
+Thread=17, CPUID=6
+Thread=18, CPUID=7
+Thread=19, CPUID=2
+Thread=20, CPUID=29
+Thread=21, CPUID=19
+Thread=22, CPUID=2
+Thread=23, CPUID=6
+Thread=24, CPUID=4
+Thread=25, CPUID=27
+Thread=26, CPUID=14
+Thread=27, CPUID=15
+Thread=28, CPUID=8
+Thread=29, CPUID=19
+Thread=30, CPUID=20
+Thread=31, CPUID=21
+Thread=32, CPUID=22
+Thread=33, CPUID=23
+Thread=34, CPUID=31
+Thread=35, CPUID=4
+Thread=36, CPUID=29
+Thread=37, CPUID=21
+Thread=38, CPUID=26
+Thread=39, CPUID=6
+Thread=40, CPUID=28
+Thread=41, CPUID=9
+Thread=42, CPUID=29
+Thread=43, CPUID=30
+Thread=44, CPUID=6
+Thread=45, CPUID=31
+Thread=46, CPUID=5
+Thread=47, CPUID=1
+Thread=48, CPUID=1
+Thread=49, CPUID=0
+Thread=50, CPUID=4
+Thread=51, CPUID=1
+Thread=52, CPUID=27
+Thread=53, CPUID=31
+Thread=54, CPUID=29
+Thread=55, CPUID=16
+Thread=56, CPUID=25
+Thread=57, CPUID=26
+Thread=58, CPUID=23
+Thread=59, CPUID=22
+Thread=60, CPUID=25
+Thread=61, CPUID=28
+Thread=62, CPUID=28
+Thread=63, CPUID=11
+Thread=64, CPUID=11
+Thread=65, CPUID=9
+Thread=66, CPUID=5
+Thread=67, CPUID=0
+Thread=68, CPUID=12
+Thread=69, CPUID=22
+Thread=70, CPUID=19
+Thread=71, CPUID=15
+Thread=72, CPUID=11
+Thread=73, CPUID=14
+Thread=74, CPUID=14
+Thread=75, CPUID=14
+Thread=76, CPUID=14
+Thread=77, CPUID=1
+Thread=78, CPUID=23
+Thread=79, CPUID=36
+Thread=80, CPUID=9
+Thread=81, CPUID=11
+Thread=82, CPUID=9
+Thread=83, CPUID=6
+Thread=84, CPUID=17
+Thread=85, CPUID=0
+Thread=86, CPUID=4
+Thread=87, CPUID=20
+Thread=88, CPUID=11
+Thread=89, CPUID=30
+Thread=90, CPUID=21
+Thread=91, CPUID=5
+Thread=92, CPUID=3
+Thread=93, CPUID=24
+Thread=94, CPUID=0
+Thread=95, CPUID=19
+Thread=96, CPUID=25
+Thread=97, CPUID=24
+Thread=98, CPUID=16
+Thread=99, CPUID=14
+Thread=100, CPUID=5
+Thread=101, CPUID=5
+Thread=102, CPUID=29
+Thread=103, CPUID=15
+Thread=104, CPUID=26
+Thread=105, CPUID=11
+Thread=106, CPUID=11
+Thread=107, CPUID=9
+Thread=108, CPUID=15
+Thread=109, CPUID=7
+Thread=110, CPUID=64
+Thread=111, CPUID=13
+Thread=112, CPUID=27
+Thread=113, CPUID=20
+Thread=114, CPUID=18
+Thread=115, CPUID=17
+Thread=116, CPUID=16
+Thread=117, CPUID=21
+Thread=118, CPUID=20
+Thread=119, CPUID=18
+Thread=120, CPUID=30
+Thread=121, CPUID=31
+Thread=122, CPUID=26
+Thread=123, CPUID=24
+Thread=124, CPUID=30
+Thread=125, CPUID=25
+Thread=126, CPUID=31
+Thread=127, CPUID=27
+Thread=128, CPUID=3
+Thread=129, CPUID=26
+Thread=130, CPUID=7
+Thread=131, CPUID=7
+Thread=132, CPUID=22
+Thread=133, CPUID=39
+Thread=134, CPUID=64
+Thread=135, CPUID=36
+Thread=136, CPUID=64
+Thread=137, CPUID=64
+Thread=138, CPUID=17
+Thread=139, CPUID=13
+Thread=140, CPUID=23
+Thread=141, CPUID=14
+Thread=142, CPUID=9
+Thread=143, CPUID=14
+Thread=144, CPUID=10
+Thread=145, CPUID=8
+Thread=146, CPUID=18
+Thread=147, CPUID=13
+Thread=148, CPUID=15
+Thread=149, CPUID=38
+Thread=150, CPUID=39
+Thread=151, CPUID=3
+Thread=152, CPUID=34
+Thread=153, CPUID=2
+Thread=154, CPUID=35
+Thread=155, CPUID=33
+Thread=156, CPUID=7
+Thread=157, CPUID=0
+Thread=158, CPUID=9
+Thread=159, CPUID=15
+
+----------------------
+OMP_NUM_THREADS=160
+OMP_PROC_BIND=true
+OMP_PLACES=sockets
+MAPPING
+Thread=0, CPUID=18
+Thread=1, CPUID=18
+Thread=2, CPUID=31
+Thread=3, CPUID=37
+Thread=4, CPUID=4
+Thread=5, CPUID=5
+Thread=6, CPUID=38
+Thread=7, CPUID=24
+Thread=8, CPUID=10
+Thread=9, CPUID=6
+Thread=10, CPUID=19
+Thread=11, CPUID=39
+Thread=12, CPUID=25
+Thread=13, CPUID=11
+Thread=14, CPUID=34
+Thread=15, CPUID=7
+Thread=16, CPUID=20
+Thread=17, CPUID=26
+Thread=18, CPUID=12
+Thread=19, CPUID=16
+Thread=20, CPUID=22
+Thread=21, CPUID=21
+Thread=22, CPUID=17
+Thread=23, CPUID=35
+Thread=24, CPUID=2
+Thread=25, CPUID=1
+Thread=26, CPUID=32
+Thread=27, CPUID=29
+Thread=28, CPUID=30
+Thread=29, CPUID=10
+Thread=30, CPUID=31
+Thread=31, CPUID=27
+Thread=32, CPUID=30
+Thread=33, CPUID=3
+Thread=34, CPUID=23
+Thread=35, CPUID=13
+Thread=36, CPUID=36
+Thread=37, CPUID=0
+Thread=38, CPUID=28
+Thread=39, CPUID=34
+Thread=40, CPUID=40
+Thread=41, CPUID=41
+Thread=42, CPUID=43
+Thread=43, CPUID=44
+Thread=44, CPUID=45
+Thread=45, CPUID=42
+Thread=46, CPUID=46
+Thread=47, CPUID=40
+Thread=48, CPUID=47
+Thread=49, CPUID=70
+Thread=50, CPUID=69
+Thread=51, CPUID=66
+Thread=52, CPUID=44
+Thread=53, CPUID=45
+Thread=54, CPUID=45
+Thread=55, CPUID=41
+Thread=56, CPUID=44
+Thread=57, CPUID=41
+Thread=58, CPUID=46
+Thread=59, CPUID=42
+Thread=60, CPUID=42
+Thread=61, CPUID=66
+Thread=62, CPUID=47
+Thread=63, CPUID=67
+Thread=64, CPUID=43
+Thread=65, CPUID=42
+Thread=66, CPUID=64
+Thread=67, CPUID=65
+Thread=68, CPUID=70
+Thread=69, CPUID=43
+Thread=70, CPUID=70
+Thread=71, CPUID=40
+Thread=72, CPUID=71
+Thread=73, CPUID=68
+Thread=74, CPUID=67
+Thread=75, CPUID=69
+Thread=76, CPUID=69
+Thread=77, CPUID=71
+Thread=78, CPUID=64
+Thread=79, CPUID=46
+Thread=80, CPUID=80
+Thread=81, CPUID=81
+Thread=82, CPUID=83
+Thread=83, CPUID=84
+Thread=84, CPUID=85
+Thread=85, CPUID=80
+Thread=86, CPUID=86
+Thread=87, CPUID=81
+Thread=88, CPUID=80
+Thread=89, CPUID=80
+Thread=90, CPUID=80
+Thread=91, CPUID=86
+Thread=92, CPUID=81
+Thread=93, CPUID=87
+Thread=94, CPUID=87
+Thread=95, CPUID=87
+Thread=96, CPUID=87
+Thread=97, CPUID=84
+Thread=98, CPUID=84
+Thread=99, CPUID=84
+Thread=100, CPUID=84
+Thread=101, CPUID=87
+Thread=102, CPUID=82
+Thread=103, CPUID=82
+Thread=104, CPUID=82
+Thread=105, CPUID=82
+Thread=106, CPUID=85
+Thread=107, CPUID=85
+Thread=108, CPUID=83
+Thread=109, CPUID=82
+Thread=110, CPUID=83
+Thread=111, CPUID=85
+Thread=112, CPUID=85
+Thread=113, CPUID=83
+Thread=114, CPUID=83
+Thread=115, CPUID=86
+Thread=116, CPUID=86
+Thread=117, CPUID=86
+Thread=118, CPUID=81
+Thread=119, CPUID=81
+Thread=120, CPUID=124
+Thread=121, CPUID=125
+Thread=122, CPUID=120
+Thread=123, CPUID=127
+Thread=124, CPUID=127
+Thread=125, CPUID=125
+Thread=126, CPUID=125
+Thread=127, CPUID=124
+Thread=128, CPUID=121
+Thread=129, CPUID=124
+Thread=130, CPUID=124
+Thread=131, CPUID=134
+Thread=132, CPUID=134
+Thread=133, CPUID=121
+Thread=134, CPUID=121
+Thread=135, CPUID=121
+Thread=136, CPUID=131
+Thread=137, CPUID=126
+Thread=138, CPUID=130
+Thread=139, CPUID=120
+Thread=140, CPUID=121
+Thread=141, CPUID=120
+Thread=142, CPUID=129
+Thread=143, CPUID=122
+Thread=144, CPUID=123
+Thread=145, CPUID=126
+Thread=146, CPUID=123
+Thread=147, CPUID=123
+Thread=148, CPUID=122
+Thread=149, CPUID=123
+Thread=150, CPUID=123
+Thread=151, CPUID=126
+Thread=152, CPUID=122
+Thread=153, CPUID=126
+Thread=154, CPUID=129
+Thread=155, CPUID=120
+Thread=156, CPUID=127
+Thread=157, CPUID=127
+Thread=158, CPUID=122
+Thread=159, CPUID=125
+
+----------------------
+OMP_NUM_THREADS=160
+OMP_PROC_BIND=close
+OMP_PLACES=sockets
+MAPPING
+Thread=0, CPUID=23
+Thread=1, CPUID=16
+Thread=2, CPUID=27
+Thread=3, CPUID=35
+Thread=4, CPUID=4
+Thread=5, CPUID=6
+Thread=6, CPUID=36
+Thread=7, CPUID=28
+Thread=8, CPUID=8
+Thread=9, CPUID=7
+Thread=10, CPUID=39
+Thread=11, CPUID=18
+Thread=12, CPUID=29
+Thread=13, CPUID=9
+Thread=14, CPUID=1
+Thread=15, CPUID=32
+Thread=16, CPUID=20
+Thread=17, CPUID=19
+Thread=18, CPUID=17
+Thread=19, CPUID=21
+Thread=20, CPUID=30
+Thread=21, CPUID=24
+Thread=22, CPUID=31
+Thread=23, CPUID=20
+Thread=24, CPUID=29
+Thread=25, CPUID=22
+Thread=26, CPUID=25
+Thread=27, CPUID=33
+Thread=28, CPUID=37
+Thread=29, CPUID=38
+Thread=30, CPUID=5
+Thread=31, CPUID=2
+Thread=32, CPUID=4
+Thread=33, CPUID=0
+Thread=34, CPUID=6
+Thread=35, CPUID=26
+Thread=36, CPUID=3
+Thread=37, CPUID=27
+Thread=38, CPUID=1
+Thread=39, CPUID=37
+Thread=40, CPUID=41
+Thread=41, CPUID=42
+Thread=42, CPUID=43
+Thread=43, CPUID=44
+Thread=44, CPUID=44
+Thread=45, CPUID=45
+Thread=46, CPUID=46
+Thread=47, CPUID=47
+Thread=48, CPUID=40
+Thread=49, CPUID=74
+Thread=50, CPUID=47
+Thread=51, CPUID=43
+Thread=52, CPUID=73
+Thread=53, CPUID=74
+Thread=54, CPUID=75
+Thread=55, CPUID=76
+Thread=56, CPUID=77
+Thread=57, CPUID=79
+Thread=58, CPUID=43
+Thread=59, CPUID=41
+Thread=60, CPUID=40
+Thread=61, CPUID=41
+Thread=62, CPUID=79
+Thread=63, CPUID=79
+Thread=64, CPUID=72
+Thread=65, CPUID=40
+Thread=66, CPUID=77
+Thread=67, CPUID=78
+Thread=68, CPUID=79
+Thread=69, CPUID=44
+Thread=70, CPUID=42
+Thread=71, CPUID=42
+Thread=72, CPUID=74
+Thread=73, CPUID=73
+Thread=74, CPUID=46
+Thread=75, CPUID=73
+Thread=76, CPUID=46
+Thread=77, CPUID=47
+Thread=78, CPUID=45
+Thread=79, CPUID=45
+Thread=80, CPUID=81
+Thread=81, CPUID=81
+Thread=82, CPUID=86
+Thread=83, CPUID=86
+Thread=84, CPUID=87
+Thread=85, CPUID=82
+Thread=86, CPUID=84
+Thread=87, CPUID=80
+Thread=88, CPUID=80
+Thread=89, CPUID=87
+Thread=90, CPUID=80
+Thread=91, CPUID=85
+Thread=92, CPUID=84
+Thread=93, CPUID=84
+Thread=94, CPUID=84
+Thread=95, CPUID=87
+Thread=96, CPUID=87
+Thread=97, CPUID=86
+Thread=98, CPUID=86
+Thread=99, CPUID=86
+Thread=100, CPUID=81
+Thread=101, CPUID=81
+Thread=102, CPUID=80
+Thread=103, CPUID=83
+Thread=104, CPUID=82
+Thread=105, CPUID=85
+Thread=106, CPUID=83
+Thread=107, CPUID=82
+Thread=108, CPUID=82
+Thread=109, CPUID=83
+Thread=110, CPUID=83
+Thread=111, CPUID=83
+Thread=112, CPUID=86
+Thread=113, CPUID=82
+Thread=114, CPUID=87
+Thread=115, CPUID=87
+Thread=116, CPUID=85
+Thread=117, CPUID=85
+Thread=118, CPUID=85
+Thread=119, CPUID=84
+Thread=120, CPUID=128
+Thread=121, CPUID=129
+Thread=122, CPUID=130
+Thread=123, CPUID=131
+Thread=124, CPUID=133
+Thread=125, CPUID=134
+Thread=126, CPUID=128
+Thread=127, CPUID=130
+Thread=128, CPUID=130
+Thread=129, CPUID=134
+Thread=130, CPUID=134
+Thread=131, CPUID=134
+Thread=132, CPUID=134
+Thread=133, CPUID=129
+Thread=134, CPUID=129
+Thread=135, CPUID=131
+Thread=136, CPUID=124
+Thread=137, CPUID=129
+Thread=138, CPUID=130
+Thread=139, CPUID=131
+Thread=140, CPUID=122
+Thread=141, CPUID=134
+Thread=142, CPUID=134
+Thread=143, CPUID=132
+Thread=144, CPUID=120
+Thread=145, CPUID=135
+Thread=146, CPUID=130
+Thread=147, CPUID=132
+Thread=148, CPUID=121
+Thread=149, CPUID=125
+Thread=150, CPUID=123
+Thread=151, CPUID=132
+Thread=152, CPUID=127
+Thread=153, CPUID=134
+Thread=154, CPUID=128
+Thread=155, CPUID=130
+Thread=156, CPUID=130
+Thread=157, CPUID=128
+Thread=158, CPUID=131
+Thread=159, CPUID=132
+
+----------------------
+OMP_NUM_THREADS=160
+OMP_PROC_BIND=spread
+OMP_PLACES=sockets
+MAPPING
+Thread=0, CPUID=22
+Thread=1, CPUID=16
+Thread=2, CPUID=29
+Thread=3, CPUID=37
+Thread=4, CPUID=6
+Thread=5, CPUID=14
+Thread=6, CPUID=15
+Thread=7, CPUID=7
+Thread=8, CPUID=38
+Thread=9, CPUID=8
+Thread=10, CPUID=0
+Thread=11, CPUID=30
+Thread=12, CPUID=39
+Thread=13, CPUID=17
+Thread=14, CPUID=18
+Thread=15, CPUID=31
+Thread=16, CPUID=19
+Thread=17, CPUID=24
+Thread=18, CPUID=20
+Thread=19, CPUID=32
+Thread=20, CPUID=25
+Thread=21, CPUID=1
+Thread=22, CPUID=33
+Thread=23, CPUID=21
+Thread=24, CPUID=26
+Thread=25, CPUID=2
+Thread=26, CPUID=3
+Thread=27, CPUID=34
+Thread=28, CPUID=6
+Thread=29, CPUID=5
+Thread=30, CPUID=4
+Thread=31, CPUID=35
+Thread=32, CPUID=27
+Thread=33, CPUID=8
+Thread=34, CPUID=9
+Thread=35, CPUID=36
+Thread=36, CPUID=11
+Thread=37, CPUID=10
+Thread=38, CPUID=12
+Thread=39, CPUID=9
+Thread=40, CPUID=40
+Thread=41, CPUID=41
+Thread=42, CPUID=43
+Thread=43, CPUID=44
+Thread=44, CPUID=45
+Thread=45, CPUID=46
+Thread=46, CPUID=42
+Thread=47, CPUID=78
+Thread=48, CPUID=79
+Thread=49, CPUID=75
+Thread=50, CPUID=78
+Thread=51, CPUID=40
+Thread=52, CPUID=74
+Thread=53, CPUID=76
+Thread=54, CPUID=40
+Thread=55, CPUID=75
+Thread=56, CPUID=47
+Thread=57, CPUID=47
+Thread=58, CPUID=46
+Thread=59, CPUID=46
+Thread=60, CPUID=41
+Thread=61, CPUID=44
+Thread=62, CPUID=44
+Thread=63, CPUID=79
+Thread=64, CPUID=41
+Thread=65, CPUID=77
+Thread=66, CPUID=79
+Thread=67, CPUID=77
+Thread=68, CPUID=42
+Thread=69, CPUID=47
+Thread=70, CPUID=42
+Thread=71, CPUID=45
+Thread=72, CPUID=45
+Thread=73, CPUID=43
+Thread=74, CPUID=43
+Thread=75, CPUID=73
+Thread=76, CPUID=74
+Thread=77, CPUID=75
+Thread=78, CPUID=78
+Thread=79, CPUID=76
+Thread=80, CPUID=83
+Thread=81, CPUID=83
+Thread=82, CPUID=83
+Thread=83, CPUID=86
+Thread=84, CPUID=81
+Thread=85, CPUID=82
+Thread=86, CPUID=87
+Thread=87, CPUID=82
+Thread=88, CPUID=86
+Thread=89, CPUID=83
+Thread=90, CPUID=85
+Thread=91, CPUID=85
+Thread=92, CPUID=85
+Thread=93, CPUID=81
+Thread=94, CPUID=80
+Thread=95, CPUID=84
+Thread=96, CPUID=80
+Thread=97, CPUID=87
+Thread=98, CPUID=85
+Thread=99, CPUID=86
+Thread=100, CPUID=84
+Thread=101, CPUID=87
+Thread=102, CPUID=86
+Thread=103, CPUID=86
+Thread=104, CPUID=85
+Thread=105, CPUID=81
+Thread=106, CPUID=87
+Thread=107, CPUID=87
+Thread=108, CPUID=80
+Thread=109, CPUID=84
+Thread=110, CPUID=82
+Thread=111, CPUID=82
+Thread=112, CPUID=82
+Thread=113, CPUID=80
+Thread=114, CPUID=84
+Thread=115, CPUID=81
+Thread=116, CPUID=80
+Thread=117, CPUID=84
+Thread=118, CPUID=83
+Thread=119, CPUID=81
+Thread=120, CPUID=122
+Thread=121, CPUID=126
+Thread=122, CPUID=120
+Thread=123, CPUID=120
+Thread=124, CPUID=134
+Thread=125, CPUID=130
+Thread=126, CPUID=131
+Thread=127, CPUID=129
+Thread=128, CPUID=127
+Thread=129, CPUID=128
+Thread=130, CPUID=135
+Thread=131, CPUID=135
+Thread=132, CPUID=131
+Thread=133, CPUID=132
+Thread=134, CPUID=122
+Thread=135, CPUID=121
+Thread=136, CPUID=121
+Thread=137, CPUID=123
+Thread=138, CPUID=124
+Thread=139, CPUID=124
+Thread=140, CPUID=124
+Thread=141, CPUID=121
+Thread=142, CPUID=123
+Thread=143, CPUID=123
+Thread=144, CPUID=130
+Thread=145, CPUID=134
+Thread=146, CPUID=122
+Thread=147, CPUID=128
+Thread=148, CPUID=132
+Thread=149, CPUID=133
+Thread=150, CPUID=126
+Thread=151, CPUID=126
+Thread=152, CPUID=129
+Thread=153, CPUID=125
+Thread=154, CPUID=125
+Thread=155, CPUID=128
+Thread=156, CPUID=127
+Thread=157, CPUID=127
+Thread=158, CPUID=125
+Thread=159, CPUID=120
+
+----------------------
+OMP_NUM_THREADS=160
+OMP_PROC_BIND=master
+OMP_PLACES=sockets
+MAPPING
+Thread=0, CPUID=14
+Thread=1, CPUID=23
+Thread=2, CPUID=26
+Thread=3, CPUID=37
+Thread=4, CPUID=3
+Thread=5, CPUID=6
+Thread=6, CPUID=38
+Thread=7, CPUID=27
+Thread=8, CPUID=15
+Thread=9, CPUID=1
+Thread=10, CPUID=39
+Thread=11, CPUID=16
+Thread=12, CPUID=28
+Thread=13, CPUID=8
+Thread=14, CPUID=0
+Thread=15, CPUID=32
+Thread=16, CPUID=17
+Thread=17, CPUID=18
+Thread=18, CPUID=19
+Thread=19, CPUID=20
+Thread=20, CPUID=21
+Thread=21, CPUID=29
+Thread=22, CPUID=30
+Thread=23, CPUID=31
+Thread=24, CPUID=24
+Thread=25, CPUID=22
+Thread=26, CPUID=33
+Thread=27, CPUID=34
+Thread=28, CPUID=3
+Thread=29, CPUID=25
+Thread=30, CPUID=0
+Thread=31, CPUID=35
+Thread=32, CPUID=5
+Thread=33, CPUID=36
+Thread=34, CPUID=6
+Thread=35, CPUID=26
+Thread=36, CPUID=9
+Thread=37, CPUID=11
+Thread=38, CPUID=10
+Thread=39, CPUID=10
+Thread=40, CPUID=13
+Thread=41, CPUID=12
+Thread=42, CPUID=37
+Thread=43, CPUID=7
+Thread=44, CPUID=38
+Thread=45, CPUID=1
+Thread=46, CPUID=14
+Thread=47, CPUID=17
+Thread=48, CPUID=34
+Thread=49, CPUID=39
+Thread=50, CPUID=1
+Thread=51, CPUID=27
+Thread=52, CPUID=10
+Thread=53, CPUID=15
+Thread=54, CPUID=33
+Thread=55, CPUID=21
+Thread=56, CPUID=23
+Thread=57, CPUID=16
+Thread=58, CPUID=18
+Thread=59, CPUID=28
+Thread=60, CPUID=5
+Thread=61, CPUID=32
+Thread=62, CPUID=31
+Thread=63, CPUID=25
+Thread=64, CPUID=3
+Thread=65, CPUID=24
+Thread=66, CPUID=20
+Thread=67, CPUID=30
+Thread=68, CPUID=6
+Thread=69, CPUID=2
+Thread=70, CPUID=22
+Thread=71, CPUID=19
+Thread=72, CPUID=38
+Thread=73, CPUID=35
+Thread=74, CPUID=36
+Thread=75, CPUID=2
+Thread=76, CPUID=29
+Thread=77, CPUID=8
+Thread=78, CPUID=26
+Thread=79, CPUID=4
+Thread=80, CPUID=9
+Thread=81, CPUID=11
+Thread=82, CPUID=37
+Thread=83, CPUID=7
+Thread=84, CPUID=12
+Thread=85, CPUID=0
+Thread=86, CPUID=28
+Thread=87, CPUID=5
+Thread=88, CPUID=13
+Thread=89, CPUID=16
+Thread=90, CPUID=39
+Thread=91, CPUID=23
+Thread=92, CPUID=33
+Thread=93, CPUID=27
+Thread=94, CPUID=15
+Thread=95, CPUID=25
+Thread=96, CPUID=32
+Thread=97, CPUID=17
+Thread=98, CPUID=24
+Thread=99, CPUID=3
+Thread=100, CPUID=18
+Thread=101, CPUID=21
+Thread=102, CPUID=20
+Thread=103, CPUID=31
+Thread=104, CPUID=6
+Thread=105, CPUID=22
+Thread=106, CPUID=10
+Thread=107, CPUID=12
+Thread=108, CPUID=5
+Thread=109, CPUID=29
+Thread=110, CPUID=30
+Thread=111, CPUID=34
+Thread=112, CPUID=9
+Thread=113, CPUID=37
+Thread=114, CPUID=38
+Thread=115, CPUID=19
+Thread=116, CPUID=35
+Thread=117, CPUID=4
+Thread=118, CPUID=36
+Thread=119, CPUID=8
+Thread=120, CPUID=26
+Thread=121, CPUID=2
+Thread=122, CPUID=10
+Thread=123, CPUID=39
+Thread=124, CPUID=13
+Thread=125, CPUID=11
+Thread=126, CPUID=28
+Thread=127, CPUID=29
+Thread=128, CPUID=8
+Thread=129, CPUID=14
+Thread=130, CPUID=15
+Thread=131, CPUID=8
+Thread=132, CPUID=21
+Thread=133, CPUID=15
+Thread=134, CPUID=33
+Thread=135, CPUID=9
+Thread=136, CPUID=2
+Thread=137, CPUID=0
+Thread=138, CPUID=14
+Thread=139, CPUID=4
+Thread=140, CPUID=12
+Thread=141, CPUID=5
+Thread=142, CPUID=13
+Thread=143, CPUID=7
+Thread=144, CPUID=4
+Thread=145, CPUID=11
+Thread=146, CPUID=9
+Thread=147, CPUID=30
+Thread=148, CPUID=16
+Thread=149, CPUID=27
+Thread=150, CPUID=25
+Thread=151, CPUID=23
+Thread=152, CPUID=20
+Thread=153, CPUID=17
+Thread=154, CPUID=32
+Thread=155, CPUID=36
+Thread=156, CPUID=18
+Thread=157, CPUID=7
+Thread=158, CPUID=34
+Thread=159, CPUID=19
+
