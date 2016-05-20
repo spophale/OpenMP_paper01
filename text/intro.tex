@@ -53,6 +53,9 @@ a hardware thread.
 
 In conjunction to places represented by non-negative numbers, intervals is another handy way to 
 express \textit{places} in OpenMP. They are specified using the \textit{$<$lower-bound$>$ : $<$length$>$ : $<$stride$>$} notation. For example, a user could specify exact CPUs to place the OpenMP threads or a range of CPUs based on the application characteristics to best utilize the underlying hardware.
+
+For example; setenv OMP_PLACES threads
+setenv OMP_PLACES "threads(4)", setenv OMP_PLACES "{0,1,2,3},{4,5,6,7},{8,9,10,11},{12,13,14,15}", setenv OMP_PLACES "{0:4},{4:4},{8:4},{12:4}", and setenv OMP_PLACES "{0:4}:4:4" are equivelent and will result in the placement on the same 4 places which corrospond to the smalest execution units exposed to the user.
 \subsection{POWER8 System}
 %Needs to be paraphrased 
 The POWER8 processor is the latest RISC (Reduced Instruction Set Computer) microprocessor from IBM and the first processor supporting the new OpenPOWER software environment. 
