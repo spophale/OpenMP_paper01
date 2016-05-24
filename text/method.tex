@@ -31,7 +31,7 @@ To quantify the effects of data affinity and data locality, we look closely at t
 \label{tab:hwct}
 \end{table*}
 %
-POWER8 has an enhanced Cycles Per Instruction (CPI) Accounting Model. The POWER8 CPI Stack accounts for stalled, waiting to complete, thread blocked, completion table empty, completion and other miscellaneous cycles. The stalled cycles are further classified based on the cause of the stall. Newly added to this group for the POWER8 architecture is the finer granularity of \textit{Stall cycles due to Dcache Misses}.  Since we want to quantify cycles wasted due to NUCA and NUMA latencies, we focus on the sub-set of hardware counters mentioned in Table~\ref{tab:hwct}. The collection of the counter values are enabled by a system provided script. This allows for access to counters that may not be represented as literary strings and accessible via other application profiling tools. PM\_CMPLU\_STALL\_DCACHE\_MISS is a combination of stall cycles 
+POWER8 has an enhanced Cycles Per Instruction (CPI) Accounting Model. The POWER8 CPI Stack accounts for stalled, waiting to complete, thread blocked, completion table empty, completion and other miscellaneous cycles. The stalled cycles are further classified based on the cause of the stall. Newly added to this group for the POWER8 architecture is the finer granularity of \textit{Stall cycles due to Dcache Misses}.  Since we want to quantify cycles wasted due to NUCA and NUMA latencies, we focus on the sub-set of hardware counters mentioned in Table~\ref{tab:hwct}. The collection of the counter values are enabled by a system provided script. This allows for access to counters that may not be represented as literary strings and accessible via other application profiling tools. In turn PM\_CMPLU\_STALL\_DCACHE\_MISS and PM\_CMPLU\_STALL\_DMISS\_L3MISS are a combination of stall cycles listed in Table ~\ref{tab:cl}. 
 %
 \begin{table*}[h]
 %\vspace{-0.5pc}
@@ -55,11 +55,11 @@ We use the experiment POWER8 system at the Oak Ridge National Laboratory for our
 % four NVIDIA Tesla K40m GPUs, two Mellanox Connect-IB InfiniBand FDR (56 Gb/s) ports and one 4-port Gigabit Ethernet switch. 
 
 \subsubsection{The Experiment}
-To able to identify the correlation between hardware counters and OpenMP affinity features, we use the Jacobi iterative method program to solve a 
-finite difference discretization of Helmholtz equation (here on referred to as \textit{Jacobi program}). We vary the affinity of data by controlling the initialization of the parallel loop at the start of the program. 
-When affinity characteristic is \textit{true}, all threads initialize the data arrays in parallel using the omp\_parallel construct, this allows for the 
-\textit{first-touch} policy described in Section~\ref{sec:intro} to place data closer to the physical CPU executing the OpenMP thread. When 
-affinity characteristic is \textit{false}, we use the \textit{num\_threads(1)} so that only the one thread will initialize the data causing data to be placed only near the physical NUMA domain executing the single thread. We then test combinations of OpenMP \textit{bindings} and \textit{places} and collect the performance data and the values of the hardware counters mentioned in Table~\ref{tab:hwct}. Based on this information we want to measure the effect of data locality under different OpenMP affinity setting. We also use the POWER8 hardware counters to measure the data locality effects.
+To able to identify the correlation between OpenMP affinity features, performance and the hardware counters, we use the Jacobi iterative method program to solve a 
+finite difference discretization of Helmholtz equation (here on referred to as \textit{Jacobi program}). We vary the locality of the data by controlling the initialization of the parallel loop at the start of the program. 
+When the \textit{locality} characteristic is \textit{true}, all threads initialize the data arrays in parallel using the omp\_parallel construct, this allows for the 
+\textit{first-touch} policy described in Section~\ref{sec:intro} to place data closer to the physical CPU executing the OpenMP thread. 
+When \textit{locality} characteristic is \textit{false}, we use the \textit{num\_threads(1)} so that only the one thread will initialize the data causing data to be placed only near the physical NUMA domain executing the single thread. We then test combinations of OpenMP \textit{bindings} and \textit{places} and collect the performance data and the values of the hardware counters mentioned in Table~\ref{tab:hwct}. Based on this information we want to measure the effect of data locality under different OpenMP affinity setting. We also use the POWER8 hardware counters to measure the data locality effects.
 
 %The ultimate aim of this experiment is to be able to \textit{suggest} the correct combination of OpenMP \textit{bindings} and \textit{places} based on 
 %either the range, ratio or value of the different hardware counters.
