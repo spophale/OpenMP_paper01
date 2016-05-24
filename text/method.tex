@@ -31,7 +31,7 @@ To quantify the effects of data affinity and data locality, we look closely at t
 \label{tab:hwct}
 \end{table*}
 %
-POWER8 has an enhanced Cycles Per Instruction (CPI) Accounting Model. The POWER8 CPI Stack accounts for stalled, waiting to complete, thread blocked, completion table empty, completion and other miscellaneous cycles. The stalled cycles are further classified based on the cause of the stall. Newly added to this group for the POWER8 architecture is the finer granularity of \textit{Stall cycles due to Dcache Misses}.  Since we want to prevent cycles wasted due to data misses, we focus on the sub-set of hardware counters mentioned in Table~\ref{tab:hwct}. The collection of the counter values are enabled by a system provided script. This allows for access to counters that may not be represented as literary strings and accessible via other application profiling tools. PM\_CMPLU\_STALL\_DCACHE\_MISS is a combination of stall cycles 
+POWER8 has an enhanced Cycles Per Instruction (CPI) Accounting Model. The POWER8 CPI Stack accounts for stalled, waiting to complete, thread blocked, completion table empty, completion and other miscellaneous cycles. The stalled cycles are further classified based on the cause of the stall. Newly added to this group for the POWER8 architecture is the finer granularity of \textit{Stall cycles due to Dcache Misses}.  Since we want to quantify cycles wasted due to data misses due to NUCA and NUMA latencies, we focus on the sub-set of hardware counters mentioned in Table~\ref{tab:hwct}. The collection of the counter values are enabled by a system provided script. This allows for access to counters that may not be represented as literary strings and accessible via other application profiling tools. PM\_CMPLU\_STALL\_DCACHE\_MISS is a combination of stall cycles 
 %
 \begin{table*}[h]
 %\vspace{-0.5pc}
@@ -51,7 +51,8 @@ POWER8 has an enhanced Cycles Per Instruction (CPI) Accounting Model. The POWER8
 %
 \subsection{Experimental Setup}
 \subsubsection{Test System}
-We use the experiment Crest system at the Oak Ridge National Laboratory for our experiments. This system consists of four NUMA nodes equipped with IBM POWER8 processors. Ten CPUs arranged over two sockets have the capacity to support 8 threads per CPU, thus providing a total of up to 160 threads for computation. The system has 256GB memory, four NVIDIA Tesla K40m GPUs, two Mellanox Connect-IB InfiniBand FDR (56 Gb/s) ports and one 4-port Gigabit Ethernet switch. 
+We use the experiment POWER8 system at the Oak Ridge National Laboratory for our experiments. This system consists of two POWER8 sockets with four chiplets that map to NUMA nodes. Ten CPUs arranged over two sockets have the capacity to support 8 threads per CPU, thus providing a total of up to 160 threads for computation. The system has 256GB of main memory memory.
+% four NVIDIA Tesla K40m GPUs, two Mellanox Connect-IB InfiniBand FDR (56 Gb/s) ports and one 4-port Gigabit Ethernet switch. 
 
 \subsubsection{The Experiment}
 To able to identify the correlation between hardware counters and OpenMP affinity features we use the Jacobi iterative method program to solve a 
