@@ -59,8 +59,7 @@ To able to identify the correlation between hardware counters and OpenMP affinit
 finite difference discretization of Helmholtz equation (here on referred to as \textit{Jacobi program}). We vary the affinity of data by controlling the initialization of the parallel loop at the start of the program. 
 When affinity characteristic is \textit{true}, all threads initialize the data arrays in parallel using the omp\_parallel construct, this allows for the 
 \textit{first-touch} policy described in Section~\ref{sec:intro} to place data closer to the physical CPU executing the OpenMP thread. When 
-affinity characteristic is \textit{false}, we use the \textit{num\_threads(1)} so that only the one thread will initialize the data causing data to be placed only near the physical NUMA domain executing the single thread. We then test combinations of OpenMP \textit{bindings} and \textit{places} and collect the performance data and the values of the hardware counters mentioned in Table~\ref{tab:hwct}.
+affinity characteristic is \textit{false}, we use the \textit{num\_threads(1)} so that only the one thread will initialize the data causing data to be placed only near the physical NUMA domain executing the single thread. We then test combinations of OpenMP \textit{bindings} and \textit{places} and collect the performance data and the values of the hardware counters mentioned in Table~\ref{tab:hwct}. Based on this information we want to measure the effect of data locality under different OpenMP affinity setting. We also use the POWER8 hardware counters to measure the data locality effects.
 
-Based on this information we hope to see a co-relation between the POWER8 hardware counters and data-affinity of the executing program. 
 %The ultimate aim of this experiment is to be able to \textit{suggest} the correct combination of OpenMP \textit{bindings} and \textit{places} based on 
 %either the range, ratio or value of the different hardware counters.
