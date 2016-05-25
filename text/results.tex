@@ -23,7 +23,7 @@ As explained in Section~\ref{sec:intro} OpenMP 4.0 provides two environment vari
        \caption{Comparing Performance Improvement between different number of OpenMP threads}
        \label{fig:imp}
 \end{figure}
-
+Figure~\ref{fig:imp} shows the improvement of the locality aware versions of the Jacobi program over the locality unaware version. We observed that there was no performance improvement after 20 OpenMP threads, hence we show the results for 10 and 20 OpenMP threads.
 For the \textit{(master, threads)} configuration all threads execute on CPUID 0. 
 All threads execute in the same core as the master when the configuration is set to \textit{(master, core)}, similarly for \textit{(master, socket)} all threads execute in the same socket. In this case all threads are executing on CPUs 0 through 79 which corresponds to a single NUMA domain. When OMP\_PROC\_BIND set to master we see in Figure ~ref{fig:Imp} that there is no improvement of locality aware algorithms over non-locality aware algorithms (both using the first-touch policy).
 For \textit{(close, threads)}, we observe that all OpenMP threads execute on random CPUs between 0-19. All of these cases don't suffer from memory locality issues because they access memory local to the memory within the chip.
@@ -38,9 +38,9 @@ For all OpenMP affinity settings  with OMP\_PROC\_BIND set to false, threads can
 %
 %Hardware Counter notes
 Next we look at the hardware counters on the POWER8 system corresponding to the different configurations. 
-We select the three cases of OpenMP Affinity tuple that represent the best, mid and worst improvement as seen in Figure~\ref{fig:Imp}. 
+We select the three cases of OpenMP Affinity tuple that represent the best, mid and worst improvement as seen in Figure~\ref{fig:imp}. 
 %the cases where we see more improvement for data locality on a given affinity setting 
-Selected cases are \textit{(spread, sockets)},  \textit(spread, cores)}, and  \textit(master, thread)}. For these cases we record the hardware counters for the locality aware and locality unaware versions and calculate the improvement as the value of their difference as a percentage of the value of the locality unaware hardware counter value. 
+Selected cases are \textit{(spread, sockets)},  \textit{(spread, cores)}, and  \textit{(master, thread)}. For these cases we record the hardware counters for the locality aware and locality unaware versions and calculate the improvement as the value of their difference as a percentage of the value of the locality unaware hardware counter value. 
 From Figure~\ref{fig:HW} we see that the two hardware counters that show the effects of data locality the most are DMISS\_DISTANT, DMISS\_L3MISS.
 We would have expected to see more significant variation in the value of DMISS\_REMOTE, but we found that in some cases, these remote accesses can be cached.
 For example, the case of \textit{(spread, sockets)} has better DMISS\_REMOTE improvement than  \textit{(spread, cores)}. 
