@@ -12,18 +12,18 @@ As explained in Section~\ref{sec:intro} OpenMP 4.0 provides two environment vari
 %
 \begin{figure}[h!]
   \centering
-  \includegraphics[height=0.4\textwidth, width=0.8\textwidth]{./Images/20Perf.pdf}
+  \includegraphics[height=0.4\textwidth, width=0.95\textwidth]{./Images/20Perf.pdf}
        \caption{Performance with 20 OpenMP threads on \textit{Crest}}
        \label{fig:20th}
 \end{figure}
 %
 \begin{figure}[h!]
   \centering
-  \includegraphics[height=0.4\textwidth, width=0.8\textwidth]{./Images/PerfI.pdf}
+  \includegraphics[height=0.4\textwidth, width=0.95\textwidth]{./Images/ImpAll.pdf}
        \caption{Comparing Performance Improvement between different number of OpenMP threads}
        \label{fig:imp}
 \end{figure}
-Figure~\ref{fig:imp} shows the improvement of the locality aware versions of the Jacobi program over the locality unaware version. We observed that there was no performance improvement after 20 OpenMP threads, hence we show the results for 10 and 20 OpenMP threads.
+Figure~\ref{fig:imp} shows the improvement of the locality aware versions of the Jacobi program over the locality unaware version when using different OpenMP Affinity setting for different OpenMP thread counts. 
 For the \textit{(master, threads)} configuration all threads execute on CPUID 0. 
 All threads execute in the same core as the master when the configuration is set to \textit{(master, core)}, similarly for \textit{(master, socket)} all threads execute in the same socket. In this case all threads are executing on CPUs 0 through 79 which corresponds to a single NUMA domain. When OMP\_PROC\_BIND set to master we see in Figure ~ref{fig:Imp} that there is no improvement of locality aware algorithms over non-locality aware algorithms (both using the first-touch policy).
 For \textit{(close, threads)}, we observe that all OpenMP threads execute on random CPUs between 0-19. All of these cases don't suffer from memory locality issues because they access memory local to the memory within the chip.
@@ -31,7 +31,7 @@ In the \textit{(spread, sockets)} and \textit{(close, sockets)} configuration th
 For all OpenMP affinity settings  with OMP\_PROC\_BIND set to false, threads can migrate and are not bound to a specific thread, core or socket. This migration makes it less impactful on the data placement, but suffers from degraded performance.
 \begin{figure}[h!]
   \centering
-  \includegraphics[height=0.4\textwidth, width=0.8\textwidth]{./Images/HW.pdf}
+  \includegraphics[height=0.4\textwidth, width=0.95\textwidth]{./Images/HW.pdf}
        \caption{Comparing Hardware Counter Change}
        \label{fig:HW}
 \end{figure}
