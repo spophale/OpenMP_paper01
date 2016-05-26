@@ -1,20 +1,22 @@
 The effects of affinity is a widely studied problem. Most programming models 
 take advantage of the architecture and data-access patterns by providing some 
-implicit or explicit control over data and process/thread placement. For example,
+implicit or explicit mechanism to control over data and process/thread placement. For example,
 Partitioned Global Address Space (PGAS) languages/APIs provide mechanisms to specify 
-globally accessible data (with local views) and memory affinities to physical memory. 
-For example, UPC provides a \textbf{shared} qualifier to distinguish between data 
+globally accessible data (with local views) that can be distributed to a thread local memory (affine memory). 
+Unified Parallel C, a PGAS language, provides a \textbf{shared} qualifier to distinguish between data 
 accessible to all the UPC \textit{threads} vs. private data and distribution keywords to place
 the data on different affine memories. For arrays UPC provides 
-three affinity granularities: blocked, cyclic and blocked-cyclic. 
+three affinity granularities: blocked, cyclic and blocked-cyclic. In addition to these
+UPC provides an affinity field in \textbf{upc\_forall} to schedule loop iterations to threads with local data.
+(A similar concept~\cite{nikolopoulos2001exploiting} has been proposed as a schedule in the OpenMP \textbf{parallel for} construct  as a proposed extension).
 %The \textit{shared} scalar data has 
 %affinity to thread 0, while arrays can have affinity granularity of \textit{cyclic, blocked-cyclic ,}
 %and \textit{blocked}. These are chosen by the application programmer based on the 
 %knowledge of the data access patterns within the application. 
 
 OpenMP 4.5 being a shared memory programming model, it has 
-different ways to control (implicit and explicitly) the affinity of data, threads, and the mapping of work to threads / devices via
-work-sharing constructs and target data regions. The new OpenMP 4.5 release provides a substantial 
+different ways to control (implicit and explicitly) the affinity of data (first touch policy, privatization, etc), threads, and the mapping of work to threads.
+work-sharing constructs. OpenMP 4.5 also provides a mechanism to map data to and from accelerators using the target data regions constructs. The new OpenMP 4.5 release provides a substantial 
 improvement on the support for programming of accelerator and GPU devices and to control
 how data is being ``copyin" and ``copyout" to/from a target device.
 %Amongst the new features introduced are, support for parallelization of loops with 
@@ -67,14 +69,14 @@ The IBM POWER8 system has three possible configurations of either 6, 10 or 12 (6
     \begin{subfigure}[b]{0.4\textwidth}
          {\includegraphics[width=1.0\textwidth]{./Images/P8.pdf}}
 %  	\vspace{-0.0pc}
-	 \caption{Power8 processor chip.~\cite{IBM_P8}}
+	 \caption{POWER8 processor chip.~\cite{IBM_P8}}
  	 \label{fig:p8_1}
     \end{subfigure}
      \centering
     \begin{subfigure}[b]{0.4\textwidth}
          {\includegraphics[height=0.7\textwidth]{./Images/P8_memory.pdf}}
   %	\vspace{-0.0pc}
-	 \caption{Power8 Memory Access.~\cite{IBM_P8}}
+	 \caption{POWER8 Memory Access.~\cite{IBM_P8}}
 	  \label{fig:p8_2}
     \end{subfigure}
   \caption{POWER8 Overview}\label{fig:POWER8}
