@@ -1,54 +1,5 @@
 To understand the relationship between OpenMP affinity and data locality in the POWER8 architecture we want to quantify the effect of data locality under different combinations of OMP\_PROC\_BIND and OMP\_PLACES settings and quantify their effects using the available POWER8 hardware counter information.
 
-\subsection{POWER8 Hardware Counters}
-To quantify the effects of data affinity and data locality, we look closely at the different hardware counters available on the POWER8 memory subsystem, including \textbf{data cache} stall cycles. Long cache latencies and cache misses usually indicate poor placement of data with respect to the executing thread in a OpenMP program. Performance instrumentation in POWER8 is provided in two layers: the \textbf{Core Level Performance Monitoring} (CLPM) and the \textbf{Nest Level Performance Monitoring} (NLPM). CLPM allows for monitoring of the core pipeline efficiency of the front-end, branch prediction, schedulers etc., along with behavioral metrics such as stalls, execution rates, thread prioritization and resource sharing, and utilizations of resources etc. On the other hand NLPM provides a way to instrument the L3 cache, interconnect fabric and memory channels/controllers. 
-%
-\begin{table*}[h]
-\vspace{-0.5pc}
-\centering
-\begin{tabular} { | l | l |}
-\hline
-%PM\_CMPLU\_STALL\_
-*DCACHE\_MISS & Stall by Data Cache (L1) misses\\  \hline
-%PM\_CMPLU\_STALL\_
-*DMISS\_L2L3 & Stall by Dcache miss which resolved in L2/L3 \\  \hline
-%PM\_CMPLU\_STALL\_
-*DMISS\_L2L3\_CONFLICT & Stall due to cache miss due to L2 L3 conflict \\  \hline
-%PM\_CMPLU\_STALL\_
-*DMISS\_L2L3\_NO\_CONFLICT & Stall due to cache miss due to L2 L3 conflict \\ \hline
-%PM\_CMPLU\_STALL\_
-*DMISS\_L3MISS & Stall due to cache miss resolving missed the L3 \\ \hline
-%PM\_CMPLU\_STALL\_
-*DMISS\_LMEM & GCT empty by branch mispredict + IC miss\\ \hline
-%PM\_CMPLU\_STALL\_
-*DMISS\_L21\_L31 &  Stall by Dcache miss which resolved on chip \\ \hline%(excluding local L2/L3)\\ \hline
-%PM\_CMPLU\_STALL\_
-*DMISS\_REMOTE  & Stall by Dcache miss which resolved from remote chip \\ \hline%(cache or memory)\\ \hline
-%PM\_CMPLU\_STALL\_
-*DMISS\_DISTANT & Stall by L1 reloads from distant interventions and memory \\ \hline
- \end{tabular}
- \caption{Explanation of the Data Cache Miss Stall Counters on POWER8 \\ * = PM\_CMPLU\_STALL\_}
-\label{tab:hwct}
-\end{table*}
-%
-POWER8 has an enhanced Cycles Per Instruction (CPI) Accounting Model. The POWER8 CPI Stack accounts for stalled, waiting to complete, thread blocked, completion table empty, completion and other miscellaneous cycles. The stalled cycles are further classified based on the cause of the stall. Newly added to this group for the POWER8 architecture is the finer granularity of \textit{Stall cycles due to Dcache Misses}.  Since we want to quantify cycles wasted due to NUCA and NUMA latencies, we focus on the sub-set of hardware counters mentioned in Table~\ref{tab:hwct}. The collection of the counter values are enabled by a system provided script. This allows for access to counters that may not be represented as literary strings and accessible via other application profiling tools. In turn PM\_CMPLU\_STALL\_DCACHE\_MISS and PM\_CMPLU\_STALL\_DMISS\_L3MISS are a combination of stall cycles listed in Table ~\ref{tab:cl}. 
-%
-\begin{table*}[h]
-%\vspace{-0.5pc}
-\centering
-\begin{tabular} { | l | l |}
-\hline
- \multirow{2}{*} {PM\_CMPLU\_STALL\_DMISS\_L2L3} & PM\_CMPLU\_STALL\_DMISS\_L2L3\_CONFLICT  \\ 
-   & PM\_CMPLU\_STALL\_DMISS\_L2L3\_NO\_CONFLICT  \\ \hline
-   \multirow{4}{*} {PM\_CMPLU\_STALL\_DMISS\_L3MISS} &	PM\_CMPLU\_STALL\_DMISS\_LMEM \\ 
-   & PM\_CMPLU\_STALL\_DMISS\_L21\_L31  \\ 
-   & PM\_CMPLU\_STALL\_DMISS\_REMOTE  \\ 
-   & PM\_CMPLU\_STALL\_DMISS\_DISTANT \\ \hline
- \end{tabular}
- \caption{Relationship between different Data Cache Miss Stall Counters on POWER8}
-\label{tab:cl}
-\end{table*}
-%
 \subsection{Experimental Setup}
 \subsubsection{Test System}
 Four our experiments we use a dual socket POWER8 system with 256GB of main memory. This system contains four POWER8 chiplets (two on each socket) that map to  four NUMA nodes. The system contains a total of 20 cores over two sockets (10 each) that have the capacity to runt 8 hardware threads per core, thus providing a total of up to 160 threads for computation. 
@@ -57,9 +8,10 @@ Four our experiments we use a dual socket POWER8 system with 256GB of main memor
 \subsubsection{The Experiment}
 To able to identify the correlation between OpenMP affinity features, performance and the hardware counters, we use the Jacobi iterative method program to solve a 
 finite difference discretization of Helmholtz equation (here on referred to as \textit{Jacobi program}). We vary the locality of the data by controlling the initialization of the parallel loop at the start of the program. 
-When the \textit{locality} characteristic is \textit{true}, all threads initialize the data arrays in parallel using the omp\_parallel construct, this allows for the 
-\textit{first-touch} policy described in Section~\ref{sec:intro} to place data closer to the physical CPU executing the OpenMP thread. 
-When \textit{locality} characteristic is \textit{false}, we use the \textit{num\_threads(1)} so that only the one thread will initialize the data causing data to be placed only near the physical NUMA domain executing the single thread. We then test combinations of OpenMP \textit{bindings} and \textit{places} and collect the performance data and the values of the hardware counters mentioned in Table~\ref{tab:hwct}. Based on this information we want to measure the effect of data locality under different OpenMP affinity setting. We also use the POWER8 hardware counters to measure the data placement effects on the memory subsystem.
+When all threads initialize the data arrays in parallel using the omp\_parallel construct, this allows for the 
+\textit{first-touch} policy described in Section~\ref{sec:intro} to place data closer to the physical CPU executing the OpenMP thread thus resulting in good data locality. 
+We use the \textit{num\_threads(1)} so that only the one thread will initialize the data causing data to be placed only near the physical NUMA domain executing the single thread. This results in bad data locality.
+We then test combinations of OpenMP \textit{bindings} and \textit{places} for both these versions to compare and contrast their performance and the values of the hardware counters mentioned in Table~\ref{tab:hwct}. Based on this information we want to measure the effect of data locality under different OpenMP affinity setting. We also use the POWER8 hardware counters to measure the data placement effects on the memory subsystem.
 
 %The ultimate aim of this experiment is to be able to \textit{suggest} the correct combination of OpenMP \textit{bindings} and \textit{places} based on 
 %either the range, ratio or value of the different hardware counters.

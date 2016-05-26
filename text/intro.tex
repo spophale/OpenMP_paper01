@@ -14,9 +14,9 @@ UPC provides an affinity field in \textbf{upc\_forall} to schedule loop iteratio
 %and \textit{blocked}. These are chosen by the application programmer based on the 
 %knowledge of the data access patterns within the application. 
 
-OpenMP 4.5 being a shared memory programming model, it has 
+OpenMP 4.0 being a shared memory programming model, it has 
 different ways to control (implicit and explicitly) the affinity of data (first touch policy, privatization, etc), threads, and the mapping of work to threads.
-work-sharing constructs. OpenMP 4.5 also provides a mechanism to map data to and from accelerators using \textit{target data} regions. The new OpenMP 4.5 release provides a substantial 
+work-sharing constructs. OpenMP 4.0 also provides a mechanism to map data to and from accelerators using \textit{target data} regions. The new OpenMP 4.5 release provides a substantial 
 improvement on the support for programming of accelerator and GPU devices and to control
 how data is being mapped to/from a target device by unstructured data regions and a new \textit{firstprivate} default for scalars.
 %Amongst the new features introduced are, support for parallelization of loops with 
@@ -51,7 +51,7 @@ users may have complete control on the thread affinity and their placement on a 
 OMP\_PLACES ICV can be one of two types of values: either an abstract name describing a set 
 of places or an explicit list of places described by non-negative numbers. Pre-defined abstract 
 names include \textit{threads, cores,} and \textit{sockets}. A hardware thread is the smallest execution 
-unit that a thread can be binded to with OpenMP 4.5). 
+unit that a thread can be bound to with OpenMP 4.5. 
 
 
 When expressed as numbers, places 
@@ -61,13 +61,11 @@ a hardware thread.
 In conjunction to places represented by non-negative numbers, intervals is another handy way to 
 express \textit{places} in OpenMP. They are specified using the \textit{$<$lower-bound$>$ : $<$length$>$ : $<$stride$>$} notation. For example, a user could specify exact cores to place the OpenMP threads or a range of cores based on the application characteristics to best utilize the underlying hardware.
 
-For example; setenv OMP\_PLACES threads
-setenv OMP\_PLACES ``threads(4)", setenv OMP\_PLACES ``{0, 1, 2, 3}, {4, 5, 6, 7},{ 8, 9, 10, 11},{ 12, 13, 14, 15}", setenv OMP\_PLACES ``{0:4}, {4:4}, {8:4}, {12:4}", and setenv OMP\_PLACES ``{0:4}:4:4" are equivalent and will result in the binding of OpenMP threads to sixteen consecutive hardware threads. 
+%For example; setenv OMP\_PLACES threads, setenv OMP\_PLACES ``threads(2)", setenv OMP\_PLACES ``{0, 1, 2, 3}, {4, 5, 6, 7}", setenv OMP\_PLACES ``{0:4}, {4:4}, {8:4}, {12:4}", and setenv OMP\_PLACES ``{0:4}:4:4" are equivalent and will result in the binding of OpenMP threads to sixteen consecutive hardware threads. 
 
 \subsection{POWER8 System}
-%Needs to be paraphrased 
-The POWER8 processor is the latest RISC (Reduced Instruction Set Computer) microprocessor from IBM and the first processor supporting the new OpenPOWER eco-system. 
-%End paraphrase
+
+The POWER8 processor is a RISC (Reduced Instruction Set Computer) microprocessor from IBM and the first processor supporting the new OpenPOWER eco-system. 
 The POWER8 processor has three possible configurations of either 6, 10 or 12 cores per processor chip. Each processor contains two chiplets of 3, 5 or 6 cores.  A typical 12 core processor, as shown in Figure~\ref{fig:p8_1} has  512 KB SRAM L2 caches per core, 96 MB eDRAM shared L3 and an off chip L4 cache that provides up to 128 MB eDRAM space. The L4 cache is supported via an external Centaur memory buffer chip. The Centaur chip is connected via a high-speed link to the POWER8 processor, eDRAM, DDR interfaces, and control logic.This is shown in Figure~\ref{fig:p8_2}. 
 
 \begin{figure}[h!]
@@ -103,7 +101,7 @@ The POWER8 processor has three possible configurations of either 6, 10 or 12 cor
 %Maybe introduce the concept of Chiplet on the P8. What is a chiplet since it defines a numa domain later on.
 The POWER8 processor has a Non-Uniform Cache Architecture (NUCA) Cache Policy within the chip, this allows a shared L3 cache with scalable bandwidth and latency, allowing migration of most used cache lines to the local L2 cache and then to the local L3 cache~\cite{IBM_P8}. This is a big improvement over the POWER7 processor.  
 
-When we run the \textit{numactl} command on a two socket POWER8 system with Ubuntu 14.04, the utility reports four NUMA domains: one domain per each POWER8 chiplet. \textit{numactl}  also reports the NUMA distances between domains, which is the ratio of the latency of accessing  a remote numa node memory and local memory access. Below are the values of different NUMA distances on a two socket POWER8 system as reported by \textit{numactl} (see ~\ref{fig:crest}): 
+When we run the \textit{numactl} command on a two socket POWER8 system with Ubuntu 14.04, the utility reports four NUMA domains: one domain per each POWER8 chiplet. \textit{numactl}  also reports the NUMA distances between domains, which is the ratio of the latency of accessing  a remote numa node memory and local memory access. Figure ~\ref{fig:crest} shows the values of different NUMA distances on a two socket POWER8 system, that we use for our experimentation, as reported by \textit{numactl}.
 
 \begin{figure}[h]
   \centering
@@ -117,6 +115,55 @@ When we run the \textit{numactl} command on a two socket POWER8 system with Ubun
 %[4/9/16, 12:38:25 PM] Oscar: and why we have these many rows and columns
 %[4/9/16, 12:38:38 PM] Oscar: and how that related to a dual socket POWER8 system
 
+\subsection{POWER8 Hardware Counters}
+To quantify the effects of data affinity and data locality, we look closely at the different hardware counters available on the POWER8 memory subsystem, including \textbf{data cache} stall cycles. Long cache latencies and cache misses usually indicate poor placement of data with respect to the executing thread in a OpenMP program. Performance instrumentation in POWER8 is provided in two layers: the \textbf{Core Level Performance Monitoring} (CLPM) and the \textbf{Nest Level Performance Monitoring} (NLPM). CLPM allows for monitoring of the core pipeline efficiency of the front-end, branch prediction, schedulers etc., along with behavioral metrics such as stalls, execution rates, thread prioritization and resource sharing, and utilizations of resources etc. On the other hand NLPM provides a way to instrument the L3 cache, interconnect fabric and memory channels/controllers. 
+%
+\begin{table*}[h]
+\vspace{-0.5pc}
+\centering
+\begin{tabular} { | l | l |}
+\hline
+%PM\_CMPLU\_STALL\_
+*DCACHE\_MISS & Stall by Data Cache (L1) misses\\  \hline
+%PM\_CMPLU\_STALL\_
+*DMISS\_L2L3 & Stall by Dcache miss which resolved in L2/L3 \\  \hline
+%PM\_CMPLU\_STALL\_
+*DMISS\_L2L3\_CONFLICT & Stall due to cache miss due to L2 L3 conflict \\  \hline
+%PM\_CMPLU\_STALL\_
+*DMISS\_L2L3\_NO\_CONFLICT & Stall due to cache miss due to L2 L3 conflict \\ \hline
+%PM\_CMPLU\_STALL\_
+*DMISS\_L3MISS & Stall due to cache miss resolving missed the L3 \\ \hline
+%PM\_CMPLU\_STALL\_
+*DMISS\_LMEM & GCT empty by branch mispredict + IC miss\\ \hline
+%PM\_CMPLU\_STALL\_
+*DMISS\_L21\_L31 &  Stall by Dcache miss which resolved on chip \\ \hline%(excluding local L2/L3)\\ \hline
+%PM\_CMPLU\_STALL\_
+*DMISS\_REMOTE  & Stall by Dcache miss which resolved from remote chip \\ \hline%(cache or memory)\\ \hline
+%PM\_CMPLU\_STALL\_
+*DMISS\_DISTANT & Stall by L1 reloads from distant interventions and memory \\ \hline
+ \end{tabular}
+ \caption{Explanation of the Data Cache Miss Stall Counters on POWER8 \\ * = PM\_CMPLU\_STALL\_}
+\label{tab:hwct}
+\end{table*}
+%
+POWER8 has an enhanced Cycles Per Instruction (CPI) Accounting Model. The POWER8 CPI Stack accounts for stalled, waiting to complete, thread blocked, completion table empty, completion and other miscellaneous cycles. The stalled cycles are further classified based on the cause of the stall. Newly added to this group for the POWER8 architecture is the finer granularity of \textit{Stall cycles due to Dcache Misses}.  Since we want to quantify cycles wasted due to NUCA and NUMA latencies, we focus on the sub-set of hardware counters mentioned in Table~\ref{tab:hwct}. The collection of the counter values are enabled by a system provided script. This allows for access to counters that may not be represented as literary strings and accessible via other application profiling tools. In turn PM\_CMPLU\_STALL\_DCACHE\_MISS and PM\_CMPLU\_STALL\_DMISS\_L3MISS are a combination of stall cycles listed in Table ~\ref{tab:cl}. 
+%
+\begin{table*}[h]
+%\vspace{-0.5pc}
+\centering
+\begin{tabular} { | l | l |}
+\hline
+ \multirow{2}{*} {PM\_CMPLU\_STALL\_DMISS\_L2L3} & PM\_CMPLU\_STALL\_DMISS\_L2L3\_CONFLICT  \\ 
+   & PM\_CMPLU\_STALL\_DMISS\_L2L3\_NO\_CONFLICT  \\ \hline
+   \multirow{4}{*} {PM\_CMPLU\_STALL\_DMISS\_L3MISS} &	PM\_CMPLU\_STALL\_DMISS\_LMEM \\ 
+   & PM\_CMPLU\_STALL\_DMISS\_L21\_L31  \\ 
+   & PM\_CMPLU\_STALL\_DMISS\_REMOTE  \\ 
+   & PM\_CMPLU\_STALL\_DMISS\_DISTANT \\ \hline
+ \end{tabular}
+ \caption{Relationship between different Data Cache Miss Stall Counters on POWER8}
+\label{tab:cl}
+\end{table*}
+%
 
 
  

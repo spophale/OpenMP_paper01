@@ -57,21 +57,28 @@ In the case of  \textit{(spread, cores)} we are effectively increasing the amoun
 L2 cache available to each OpenMP thread, as each thread has access to its own L2 cache on a given core. 
 For the \textit{(master, thread)} case, there is very little improvement in the memory subsystem utilization as everything is running on the same thread and the most of the data is local to the socket. In this case the data-locality version does not make any difference. This is also true for the case  \textit{(close, threads)} where
  we don't see improvements on the data locality version since data is local to the threads.
-%Option 1
-\begin{figure}[h!]
-  \centering
-  \includegraphics[height=0.4\textwidth, width=0.95\textwidth]{./Images/AllHW1.pdf}
-       \caption{Comparing Hardware Counters for Locality Aware Jacobi Program  Executions}
-       \label{fig:HW1}
-\end{figure}
-%Option 2
-\begin{figure}[h!]
-  \centering
-  \includegraphics[height=1\textwidth, width=0.95\textwidth]{./Images/AllHW2.pdf}
-       \caption{Comparing Hardware Counters for Locality Aware Jacobi Program  Executions}
-       \label{fig:HW2}
-\end{figure}
-Figure~\ref{fig:HW2} shows the values of the stall cycles for the hardware counters discussed in Table~\ref{tab:hwct} and Table~\ref{tab:cl}. Though the individual values are not significant, the figure gives a clear idea of the relative difference in the hardware counter values for all locality aware runs. 
-When faced with similar performance, POWER8 provides these unique set of hardware counters to distinguish OpenMP configurations that have less useless cycles on the memory sub-system. For example, from the data collected for 20 OpenMP threads \textit{(spread, threads)},  \textit{(close, cores)}, \textit{(true, cores)},  \textit{(close, sockets)}, \textit{(spread, sockets)} have similar high speed-ups but the PM\_CMPLU\_STALL\_DMISS\_L2L3 is least in the \textit{(spread, sockets)} configuration. 
+%%Option 1
+%\begin{figure}[h!]
+%  \centering
+%  \includegraphics[height=0.4\textwidth, width=0.95\textwidth]{./Images/AllHW1.pdf}
+%       \caption{Comparing Hardware Counters for Locality Aware Jacobi Program  Executions}
+%       \label{fig:HW1}
+%\end{figure}
+%%Option 2
+%\begin{figure}[h!]
+%  \centering
+%  \includegraphics[height=1\textwidth, width=0.95\textwidth]{./Images/AllHW2.pdf}
+%       \caption{Comparing Hardware Counters for Locality Aware Jacobi Program  Executions}
+%       \label{fig:HW2}
+%\end{figure}
+%\begin{figure}[h!]
+%  \centering
+%  \includegraphics[height=0.4\textwidth, width=0.95\textwidth]{./Images/HW_RD.pdf}
+%       \caption{Comparing Hardware Counters}
+%       \label{fig:HW3}
+%\end{figure}
+%Figure~\ref{fig:HW3} shows the values of the stall cycles for the hardware counters discussed in Table~\ref{tab:hwct} and Table~\ref{tab:cl}. Though the individual values are not significant, the figure gives a clear idea of the relative difference in the hardware counter values for all locality aware runs. 
+POWER8 provides these unique set of hardware counters to distinguish OpenMP configurations that have less useless cycles on the memory sub-system. Specifically, DMISS\_REMOTE and, more importantly, DMISS\_DISTANT are key in identifying if the program suffers from bad data locality as indicated in Figure~\ref{fig:imp}.
+%For example, from the data collected for 20 OpenMP threads \textit{(spread, threads)},  \textit{(close, cores)}, \textit{(true, cores)},  \textit{(close, sockets)}, \textit{(spread, sockets)} have similar high speed-ups but the PM\_CMPLU\_STALL\_DMISS\_L2L3 is least in the \textit{(spread, sockets)} configuration. 
 
 
