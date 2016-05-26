@@ -1,12 +1,10 @@
-In this paper we evaluated how OpenMP supports the concept of affinity as well as memory placement on on the POWER8 architecture. 
+In this paper we evaluated how OpenMP supports the concept of affinity as well as memory placement on the POWER8 architecture. 
 Data locality and affinity are key concepts to exploit the compute and memory capabilities to achieve good performance by minimizing data motion across NUMA domains. 
-The main contribution of this paper is to evaluate current affinity features of OpenMP 4.0 on the POWER8 processors, and on how to measure its 
-effects on data locality on a system with two P8 sockets. What we notice from the experiments the effect of data placement and data locality is dependent on how threads 
-are mapped to the architectures. In some OpenMP affinity test cases, we show that the POWER8 architectures using its NUCA L3 caches can hide the cost of accessing 
-remote memory (e.g, as shown in the experiment (spread, cores) when running a thread per core since maximizes local caches are available per thread. On other cases, 
-when threads share some of the cores, there is a benefit of cache reuse in the non-shared L2 and L1 caches. Improving data locality in the application. In this paper we show that optimizing an application for data locality, the improvements will depend on the kind of affinity used. 
+The main contribution of this paper is to evaluate current affinity features of OpenMP 4.0 on the POWER8 processors, and on how to measure its effects on data locality on a system with two P8 sockets. 
+What we observe from the experiments is that the effect of data placement and data locality is dependent on how threads are mapped to the architectures. In some OpenMP affinity test cases, we show that the POWER8 architecture, using its NUCA L3 caches, can hide the cost of accessing remote memory (e.g, as shown in the experiment (spread, cores) when running a thread per core since maximizes local caches are available per thread. 
+In other cases, when threads share some of the cores, there is a benefit of cache reuse in the non-shared L2 and L1 caches thus improving data locality in the application.
+ In this paper we show that optimizing an application for data locality, the improvements will depend on the kind of affinity used. 
 
-Future version of OpenMP affinity model need to support better the concept of NUMA domains. This is possibly an extension that can be added
-to OpenMP 5.0 via the \emph{OMP\_PLACES} so that threads can be mapped more efficiently to NUMA domains. Another type of extensions is to integrate
-the concept of OMP\_PLACES with the OpenMP target directive and device\_num. It would be great if we could map OpenMP \emph{target} and \emph{target data} 
+Future version of OpenMP affinity model need to support better the concept of NUMA domains. 
+This is possibly an extension that can be added to OpenMP 5.0 via the \emph{OMP\_PLACES} so that threads can be mapped more efficiently to NUMA domains. Another type of extensions is to integrate the concept of OMP\_PLACES with the OpenMP target directive and device\_num. Our next step would be to explore ways of mapping OpenMP \emph{target} and \emph{target data} 
 regions to NUMA domains to control data and thread placement.
