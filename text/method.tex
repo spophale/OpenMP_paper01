@@ -51,7 +51,7 @@ POWER8 has an enhanced Cycles Per Instruction (CPI) Accounting Model. The POWER8
 %
 \subsection{Experimental Setup}
 \subsubsection{Test System}
-We use the experiment POWER8 system at the Oak Ridge National Laboratory for our experiments. This system consists of two POWER8 sockets with two chiplets each that map to four NUMA nodes. Ten CPUs arranged over two sockets have the capacity to support 8 threads per CPU, thus providing a total of up to 160 threads for computation. The system has 256GB of main memory memory.
+Four our experiments we use a dual socket POWER8 system with 256GB of main memory. This system contains four POWER8 chiplets (two on each socket) that map to  four NUMA nodes. The system contains a total of 20 cores over two sockets (10 each) that have the capacity to runt 8 hardware threads per core, thus providing a total of up to 160 threads for computation. 
 % four NVIDIA Tesla K40m GPUs, two Mellanox Connect-IB InfiniBand FDR (56 Gb/s) ports and one 4-port Gigabit Ethernet switch. 
 
 \subsubsection{The Experiment}
@@ -59,7 +59,7 @@ To able to identify the correlation between OpenMP affinity features, performanc
 finite difference discretization of Helmholtz equation (here on referred to as \textit{Jacobi program}). We vary the locality of the data by controlling the initialization of the parallel loop at the start of the program. 
 When the \textit{locality} characteristic is \textit{true}, all threads initialize the data arrays in parallel using the omp\_parallel construct, this allows for the 
 \textit{first-touch} policy described in Section~\ref{sec:intro} to place data closer to the physical CPU executing the OpenMP thread. 
-When \textit{locality} characteristic is \textit{false}, we use the \textit{num\_threads(1)} so that only the one thread will initialize the data causing data to be placed only near the physical NUMA domain executing the single thread. We then test combinations of OpenMP \textit{bindings} and \textit{places} and collect the performance data and the values of the hardware counters mentioned in Table~\ref{tab:hwct}. Based on this information we want to measure the effect of data locality under different OpenMP affinity setting. We also use the POWER8 hardware counters to measure the data locality effects.
+When \textit{locality} characteristic is \textit{false}, we use the \textit{num\_threads(1)} so that only the one thread will initialize the data causing data to be placed only near the physical NUMA domain executing the single thread. We then test combinations of OpenMP \textit{bindings} and \textit{places} and collect the performance data and the values of the hardware counters mentioned in Table~\ref{tab:hwct}. Based on this information we want to measure the effect of data locality under different OpenMP affinity setting. We also use the POWER8 hardware counters to measure the data placement effects on the memory subsystem.
 
 %The ultimate aim of this experiment is to be able to \textit{suggest} the correct combination of OpenMP \textit{bindings} and \textit{places} based on 
 %either the range, ratio or value of the different hardware counters.
