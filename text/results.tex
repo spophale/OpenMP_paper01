@@ -8,7 +8,7 @@ As explained in Section~\ref{sec:intro} OpenMP 4.0 provides two environment vari
 %
  We experiment with the locality aware and locality unaware versions of the Jacobi program along with the default first-touch policy to observe the behavior over varying number of threads. 
  For each thread count we record the POWER8 hardware counters and the placement of the threads on the hardware. 
- Figure~\ref{fig:20th} shows the performance of 20 OpenMP threads with different OpenMP Affinity settings. We observed similar results for 10, 40, 80 and 160 OpenMP threads and hence do not show them here.
+ Figure~\ref{fig:20th} shows the performance of 20 OpenMP threads with different OpenMP Affinity settings. We observed similar results for 10, 40, 80 and 160 OpenMP threads and hence do not show them here. A point to note here is that the problem size we use, (60000 X 60000), is designed to specifically utilize the entire L3 cache. In this scenario, we observed that after 20 OpenMP threads the speedup does not vary significantly. The best speed-up and efficiency combination (16, 80\%) is achieved with 20 OpenMP threads with OpenMP Affinity configuration of \textit{(spread, threads)}.
 %
 \begin{figure}[h!]
   \centering
@@ -27,9 +27,12 @@ As explained in Section~\ref{sec:intro} OpenMP 4.0 provides two environment vari
 Figure~\ref{fig:imp} shows the improvement of the locality aware versions of the Jacobi program over the locality unaware version when using different OpenMP Affinity setting for different OpenMP thread counts. 
 For the \textit{(master, threads)} configuration all threads execute on CPUID 0. 
 All threads execute in the same core as the master when the configuration is set to \textit{(master, core)}, similarly for \textit{(master, socket)} all threads execute in the same socket. In this case all threads are executing on CPUs 0 through 79 which corresponds to a single NUMA domain. When OMP\_PROC\_BIND set to master we see in Figure ~ref{fig:Imp} that there is no improvement of locality aware algorithms over non-locality aware algorithms (both using the first-touch policy).
-For \textit{(close, threads)}, we observe that all OpenMP threads execute on random CPUs between 0-19. All of these cases don't suffer from memory locality issues because they access memory local to the memory within the chip.
+For \textit{(close, threads)}, we observe that all OpenMP threads execute on random CPUs. %between 0-19. 
+All of these cases don't suffer from memory locality issues because they access memory local to the memory within the chip.
 In the \textit{(spread, sockets)} and \textit{(close, sockets)} configuration threads are spread across sockets but may be mapped to the same core. We observed that the \textit{(true, threads)} configuration is equivalent to the \textit{(close,threads)} according to the thread mappings.
 For all OpenMP affinity settings  with OMP\_PROC\_BIND set to false, threads can migrate and are not bound to a specific thread, core or socket. This migration makes it less impactful on the data placement, but suffers from degraded performance.
+%What is the take-away form this part of the experiment?
+From the above discussion it is clear that not all OpenMP Affinity configurations are equal, moreover currently it lacks the ability to specify affinity that takes into account the NUMA \textbf{and} NUCA properties of emerging architectures like POWER8. This is the first step in understanding the need for new OpenMP affinity features to successfully deploying OpenMP on POWER machines. %Need something more here. 
 \begin{figure}[h!]
   \centering
   \includegraphics[height=0.4\textwidth, width=0.95\textwidth]{./Images/HW.pdf}
@@ -38,19 +41,22 @@ For all OpenMP affinity settings  with OMP\_PROC\_BIND set to false, threads can
 \end{figure}
 %
 %Hardware Counter notes
-Next we look at the hardware counters on the POWER8 system corresponding to the different configurations. 
-We select the three cases of OpenMP Affinity tuple that represent the best, mid and worst improvement as seen in Figure~\ref{fig:imp}. 
+Next we look at the hardware counters on the POWER8 system corresponding to the different configurations to see what hardware counters could potentially be used as indicators to signify a OpenMP Affinity choice for a given problem. 
+We select the three cases of OpenMP Affinity tuple that represent the best, mid, and worst improvement as seen in Figure~\ref{fig:imp}. 
 %the cases where we see more improvement for data locality on a given affinity setting 
-Selected cases are \textit{(spread, sockets)},  \textit{(spread, cores)}, and  \textit{(master, thread)}. For these cases we record the hardware counters for the locality aware and locality unaware versions and calculate the improvement as the value of their difference as a percentage of the value of the locality unaware hardware counter value. 
+Selected cases are \textit{(spread, sockets)},  \textit{(spread, cores)}, and \textit{(master, thread)}. 
+For these cases we record the hardware counters for the locality aware and locality unaware versions and calculate the improvement as the value of their difference as a percentage of the value of the locality unaware hardware counter value. 
 From Figure~\ref{fig:HW} we see that the two hardware counters that show the effects of data locality the most are DMISS\_DISTANT, DMISS\_L3MISS.
 We would have expected to see more significant variation in the value of DMISS\_REMOTE, but we found that in some cases, these remote accesses can be cached.
-For example, the case of \textit{(spread, sockets)} has better DMISS\_REMOTE improvement than  \textit{(spread, cores)}. 
-In (spread, sockets) some threads (not all) are running on the same core sharing local cache lines for (L1, L2) and thus taking advantage of cache reuse for remote data access. 
+For example, the case of \textit{(spread, sockets)} has better DMISS\_REMOTE improvement than  \textit{(spread, cores)} which is counterintuitive. 
+This is because in \textit{(spread, sockets)} some threads (not all) are running on the same core sharing local cache lines for (L1, L2) and thus taking advantage of cache reuse for remote data access. 
 This can also be seen by the significant improvement in DMISS\_DISTANT which quantifies the stalls by L1 reloads from distant interventions and memory. 
-The improvements we see in  \textit{(spread, cores)} are more due to DMISS\_L21\_L31, which shows a better utilization of the L2/L3 cache as this hardware counter measures the stall cycles by Dcache miss which are resolved on chip. 
+The improvements we see in \textit{(spread, cores)} are more due to DMISS\_L21\_L31, which shows a better utilization of the L2/L3 cache as this hardware counter measures the stall cycles by Dcache miss which are resolved on chip. 
 In the case of  \textit{(spread, cores)} we are effectively increasing the amount of 
 L2 cache available to each OpenMP thread, as each thread has access to its own L2 cache on a given core. 
 For the \textit{(master, thread)} case, there is very little improvement in the memory subsystem utilization as everything is running on the same thread and the most of the data is local to the socket. In this case the data-locality version does not make any difference. This is also true for the case  \textit{(close, threads)} where
  we don't see improvements on the data locality version since data is local to the threads.
 
+%What is the take-away form this part of the experiment?
+From the hardware counters we observe that even with 
 
