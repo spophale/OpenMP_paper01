@@ -7,5 +7,8 @@ In other cases, when threads share some of the cores, there is a benefit of cach
  In this paper we show that optimizing an application for data locality, the improvements will depend on the kind of affinity used. 
 
 Future version of OpenMP affinity model need to support better the concept of NUMA domains. 
-This is possibly an extension that can be added to OpenMP 5.0 via the \emph{OMP\_PLACES} so that threads can be mapped more efficiently to NUMA domains. Another type of extensions is to integrate the concept of OMP\_PLACES with the OpenMP target directive and device\_num. Our next step would be to explore ways of mapping OpenMP \emph{target} and \emph{target data} 
+This is possibly another \textit{place} option called \textit{Numa} can be added to OpenMP 5.0 via the \emph{OMP\_PLACES} so that threads can be mapped more efficiently to NUMA domains. Although this can be achieved by using OS supported bindings (\textit{taskset} on linux platforms), it is not a portable mechanism. By introducing the support of NUMA domains at the OpenMP level, we can keep the implementation details opaque from the programmer while providing a portable solution across all architectures.
+
+
+Another type of extensions is to integrate the concept of OMP\_PLACES with the OpenMP target directive and device\_num. Our next step would be to explore ways of mapping OpenMP \emph{target} and \emph{target data} 
 regions to NUMA domains to control data and thread placement.
