@@ -1,4 +1,4 @@
-As explained in Section~\ref{sec:intro} OpenMP 4.0 provides two environment variables OMP\_PROC\_BIND and OMP\_PLACES to help users define the thread placement for their shared memory OpenMP application which together we refer to as \textit{OpenMP Affinity}.%
+As explained in Section~\ref{sec:intro} OpenMP 4.0 / 4.5 provides two environment variables OMP\_PROC\_BIND and OMP\_PLACES to help users define the thread placement and bindings for their OpenMP application which we refer to as \textit{OpenMP Affinity}.%
 %\begin{figure}[h!]
 %  \centering
 %  \includegraphics[height=0.4\textwidth, width=0.8\textwidth]{./Images/10Perf.pdf}
@@ -6,33 +6,37 @@ As explained in Section~\ref{sec:intro} OpenMP 4.0 provides two environment vari
 %       \label{fig:10th}
 %\end{figure}
 %
- We experiment with the locality aware and locality unaware versions of the Jacobi program along with the default first-touch policy to observe the behavior over varying number of threads. 
- For each thread count we record the POWER8 hardware counters and the placement of the threads on the hardware. 
- Figure~\ref{fig:20th} shows the performance of 20 OpenMP threads with different OpenMP Affinity settings. We observed similar results for 10, 40, 80 and 160 OpenMP threads and hence do not show them here. A point to note here is that the problem size we use, (60000 X 60000), is designed to specifically utilize the entire L3 cache. In this scenario, we observed that after 20 OpenMP threads the speedup does not vary significantly. The best speed-up and efficiency combination (16, 80\%) is achieved with 20 OpenMP threads with OpenMP Affinity configuration of \textit{(spread, threads)}.
+ We experiment with two version of the Jacobi program: a version that is optimized for data locality via correct memory placement using the first touch policy and another version where 
+ all the data is close to where thread 0 is.   We use a jacobi problem size of (60000 X 60000)  to make to stress the memory subsystem, specifically to utilize the entire L3 and L4 caches.
+ 
+ We run both programs with 10, 20, 40, 80 and 160  number of threads threads with different OpenMP affinity settings and record the POWER8 hardware counters.
+ Figure~\ref{fig:20th} shows the performance of 20 OpenMP threads with different OpenMP Affinity settings. We observed that after 20 OpenMP threads the speedup does not vary significantly. The best speedup and efficiency combination (16 speedup, 80\% efficinecy) is achieved with 20 OpenMP threads with the OpenMP Affinity configuration of \textit{(spread, threads)}.
 %
 \begin{figure}[h!]
   \centering
   \includegraphics[height=0.4\textwidth, width=0.95\textwidth]{./Images/20Perf.pdf}
-       \caption{Performance with 20 OpenMP threads on a two POWER8 socket system}
+       \caption{Performance with 20 OpenMP threads on a two POWER8 socket system for the two versions of the Jacobi program.}
        \label{fig:20th}
 \end{figure}
 %
 \begin{figure}[h!]
   \centering
   \includegraphics[height=1.4\textwidth, width=0.95\textwidth]{./Images/ImpAllV.pdf}
-       \caption{Comparing Performance Improvement between different number of OpenMP threads on a two POWER8 socket system}
+       \caption{Comparing Performance Improvement between the two version of the Jacobi program using 
+       different number of OpenMP threads and thread affinity settings on a two POWER8 socket system}
        \label{fig:imp}
 \end{figure}
 
-Figure~\ref{fig:imp} shows the improvement of the locality aware versions of the Jacobi program over the locality unaware version when using different OpenMP Affinity setting for different OpenMP thread counts. 
-For the \textit{(master, threads)} configuration all threads execute on CPUID 0. 
-All threads execute in the same core as the master when the configuration is set to \textit{(master, core)}, similarly for \textit{(master, socket)} all threads execute in the same socket. In this case all threads are executing on CPUs 0 through 79 which corresponds to a single NUMA domain. When OMP\_PROC\_BIND set to master we see in Figure ~\ref{fig:imp} that there is no improvement of locality aware algorithms over non-locality aware algorithms (both using the first-touch policy).
-For \textit{(close, threads)}, we observe that all OpenMP threads execute on random CPUs. %between 0-19. 
-All of these cases don't suffer from memory locality issues because they access memory local to the memory within the chip.
-In the \textit{(spread, sockets)} and \textit{(close, sockets)} configuration threads are spread across sockets but may be mapped to the same core. We observed that the \textit{(true, threads)} configuration is equivalent to the \textit{(close,threads)} according to the thread mappings.
+Figure~\ref{fig:imp} shows the improvement of the locality-aware optimized version (with good data placement) of the Jacobi program over the unoptimized locality-unaware (all data local to thread 0) version when using different OpenMP Affinity settings for different OpenMP thread counts. 
+We observe that for the \textit{(master, threads)} OpenMP affinity configuration all threads execute on a single hardware thread (CPUID 0).
+ 
+When using \textit{(master, core)}, all threads execute on the different hardware threads that belong to the core where the master thread is running (the P8 processor has eight hardware threads per core), similarly for \textit{(master, socket)} all threads execute in the hardware threads of the socket where the master thread is running. In this case all threads will be bind to any of the CPU ids from 0 to 79. When OMP\_PROC\_BIND set to master we see in Figure ~\ref{fig:imp} that there is no improvement on the locality aware over the non-locality aware versions (e.g. using first-touch policy) because all the threads are running using the 
+same NUMA domains. For \textit{(close, threads)}, we observe that all OpenMP threads run on hardware threads close to each other (on CPU ids: 0-19). 
+All of these cases don't suffer from memory locality issues because they access memory memory that belong to the same NUMA domain or memory that is local to the socket (e.g. two NUMA domains per socket).
+In the \textit{(spread, sockets)} and \textit{(close, sockets)} configuration threads are spread across sockets but may be mapped to hardware threads running on same core. We observed that the \textit{(true, threads)} configuration is equivalent to the \textit{(close,threads)} according to the GCC OpenMP runtime thread mappings.
 For all OpenMP affinity settings  with OMP\_PROC\_BIND set to false, threads can migrate and are not bound to a specific thread, core or socket. This migration makes it less impactful on the data placement, but suffers from degraded performance.
 
-From the above discussion it is clear that not all OpenMP Affinity configurations are equal, moreover currently it lacks the ability to specify affinity that takes into account the NUMA \textbf{and} NUCA properties of emerging architectures like POWER8. This is the first step in understanding the need for new OpenMP affinity features to successfully deploying OpenMP on POWER machines. %Need something more here. 
+From the above discussion it is clear that not all OpenMP Affinity configurations are equal, moreover currently it lacks the ability to specify affinity based on NUMA \textbf{and} NUCA domains of emerging architectures like POWER8. This is the first step in understanding the need for new OpenMP affinity features to successfully deploying OpenMP on POWER machines. %Need something more here. 
 \begin{figure}[h!]
   \centering
   \includegraphics[height=0.4\textwidth, width=0.95\textwidth]{./Images/HW.pdf}
@@ -57,8 +61,8 @@ This can also be seen by the significant improvement in DMISS\_DISTANT which qua
 The improvements we see in \textit{(spread, cores)} are more due to DMISS\_L21\_L31, which shows a better utilization of the L2/L3 cache as this hardware counter measures the stall cycles by Dcache miss which are resolved on chip. 
 In the case of  \textit{(spread, cores)} we are effectively increasing the amount of 
 L2 cache available to each OpenMP thread, as each thread has access to its own L2 cache on a given core. 
-For the \textit{(master, thread)} case, there is very little improvement in the memory subsystem utilization as everything is running on the same thread and the most of the data is local to the socket. In this case the data-locality version does not make any difference. This is also true for the case  \textit{(close, threads)} where
- we don't see improvements on the data locality version since data is local to the threads.
+For the \textit{(master, thread)} case, there is very little improvement in the memory subsystem utilization as everything is running on the same thread (or CPU id) and the most of the data is local to the socket. In this case the data-locality version does not make any difference because all the threads are time-sharing the same hardware thread. This is also true for the case  \textit{(close, threads)} where
+ we don't see improvements on the data locality aware version since data is local to the threads. 
 %%Option 1
 %\begin{figure}[h!]
 %  \centering
