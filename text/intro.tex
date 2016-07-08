@@ -1,6 +1,6 @@
 The effects of affinity is a widely studied problem. Most programming models 
 take advantage of the architecture and data-access patterns by providing some 
-implicit or explicit mechanism to control over data and process/thread placement. For example,
+implicit or explicit mechanism to control data and process/thread placement. For example,
 Partitioned Global Address Space (PGAS) languages/APIs provide mechanisms to specify 
 globally accessible data (with local views) that can be distributed to a thread local memory (affine memory). 
 Unified Parallel C, a PGAS language, provides a \textbf{shared} qualifier to distinguish between data 
@@ -99,13 +99,13 @@ The POWER8 processor has three possible configurations of either 6, 10 or 12 cor
 %  \caption{POWER8 Overview}\label{fig:POWER8}
 %\end{figure}
 %Maybe introduce the concept of Chiplet on the P8. What is a chiplet since it defines a numa domain later on.
-The POWER8 processor has a Non-Uniform Cache Architecture (NUCA) Cache Policy within the chip, this allows a shared L3 cache with scalable bandwidth and latency, allowing migration of most used cache lines to the local L2 cache and then to the local L3 cache~\cite{IBM_P8}. This is a big improvement over the POWER7 processor.  
+The POWER8 processor has a Non-Uniform Cache Architecture (NUCA) Cache Policy within the chip, this allows a shared L3 cache with scalable bandwidth and latency, allowing migration of most used cache lines to the local L2 cache and then to the local L1 cache~\cite{IBM_P8}. This is a big improvement over the POWER7 processor.  
 
 When we run the \textit{numactl} command on a two socket POWER8 system with Ubuntu 14.04, the utility reports four NUMA domains: one domain per each POWER8 chiplet. \textit{numactl}  also reports the NUMA distances between domains, which is the ratio of the latency of accessing  a remote numa node memory and local memory access. Figure ~\ref{fig:crest} shows the values of different NUMA distances on a two socket POWER8 system, that we use for our experimentation, as reported by \textit{numactl}.
 
 \begin{figure}[h]
   \centering
-  \includegraphics[height=0.3\textwidth]{./Images/crest.pdf}
+  \includegraphics[height=0.25\textwidth]{./Images/crest.pdf}
        \caption{NUMA distances on a two socket POWER8 processor system as reported by \textit{numactl}}
        \label{fig:crest}
 \end{figure}
@@ -146,7 +146,7 @@ To quantify the effects of data affinity and data locality, we look closely at t
 \label{tab:hwct}
 \end{table*}
 %
-POWER8 has an enhanced Cycles Per Instruction (CPI) Accounting Model. The POWER8 CPI Stack accounts for stalled, waiting to complete, thread blocked, completion table empty, completion and other miscellaneous cycles. The stalled cycles are further classified based on the cause of the stall. Newly added to this group for the POWER8 architecture is the finer granularity of \textit{Stall cycles due to Dcache Misses}.  Since we want to quantify cycles wasted due to NUCA and NUMA latencies, we focus on the sub-set of hardware counters mentioned in Table~\ref{tab:hwct}. The collection of the counter values are enabled by a system provided script. This allows for access to counters that may not be represented as literary strings and accessible via other application profiling tools. In turn PM\_CMPLU\_STALL\_DCACHE\_MISS and PM\_CMPLU\_STALL\_DMISS\_L3MISS are a combination of stall cycles listed in Table ~\ref{tab:cl}. 
+POWER8 has an enhanced Cycles Per Instruction (CPI) Accounting Model. The POWER8 CPI Stack accounts for stalled, waiting to complete, thread blocked, completion table empty, completion and other miscellaneous cycles. The stalled cycles are further classified based on the cause of the stall. Newly added to this group for the POWER8 architecture is the finer granularity of \textit{Stall cycles due to Dcache Misses}.  Since we want to quantify cycles wasted due to NUCA and NUMA latencies, we focus on the sub-set of hardware counters mentioned in Table~\ref{tab:hwct}. The collection of the counter values are enabled by a system provided script. This allows for access to counters that may not be represented as literal strings and accessible via other application profiling tools. In turn PM\_CMPLU\_STALL\_DCACHE\_MISS and PM\_CMPLU\_STALL\_DMISS\_L3MISS are a summation of stall cycles listed in Table ~\ref{tab:cl}. Although we record all the hardware counter values we only report those that are significantly affected by data affinity.
 %
 \begin{table*}[h]
 %\vspace{-0.5pc}

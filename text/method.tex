@@ -7,11 +7,11 @@ Four our experiments we use a dual socket POWER8 system with 256GB of main memor
 
 \subsubsection{The Experiment}
 To able to identify the correlation between OpenMP affinity features, performance and the hardware counters, we use the Jacobi iterative method program to solve a 
-finite difference discretization of Helmholtz equation (here on referred to as \textit{Jacobi program}). We vary the locality of the data by controlling the initialization of the parallel loop at the start of the program. 
-When all threads initialize the data arrays in parallel using the omp\_parallel construct, this allows for the 
+finite difference discretization of Helmholtz equation (here on referred to as \textit{Jacobi program}). We experiment with the locality of the data by controlling the initialization of the parallel loop at the start of the program. 
+When all threads initialize the sections of data arrays in parallel using the omp\_parallel construct, this allows for the 
 \textit{first-touch} policy described in Section~\ref{sec:intro} to place data closer to the physical CPU executing the OpenMP thread thus resulting in good data locality. 
 We use the \textit{num\_threads(1)} so that only the one thread will initialize the data causing data to be placed only near the physical NUMA domain executing the single thread. This results in bad data locality.
-We then test combinations of OpenMP \textit{bindings} and \textit{places} for both these versions to compare and contrast their performance and the values of the hardware counters mentioned in Table~\ref{tab:hwct}. Based on this information we want to measure the effect of data locality under different OpenMP affinity setting. We also use the POWER8 hardware counters to measure the data placement effects on the memory subsystem.
+We then test combinations of OpenMP \textit{bindings} and \textit{places} for both these versions to compare and contrast their performance and the values of the hardware counters mentioned in Table~\ref{tab:hwct}. Based on this information we want to measure the effect of data locality under different OpenMP affinity setting. We also demonstrate the use of the POWER8 hardware counters to measure the data placement effects on the memory subsystem.
 
 %The ultimate aim of this experiment is to be able to \textit{suggest} the correct combination of OpenMP \textit{bindings} and \textit{places} based on 
 %either the range, ratio or value of the different hardware counters.
